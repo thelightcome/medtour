@@ -4,6 +4,7 @@
 # don't commit package-lock.json
 package-lock.json
 package.json
+dist
 
 # local directory
 _ignored
