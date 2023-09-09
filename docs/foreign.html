@@ -2,18 +2,19 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <title>Visa</title>
+  <title>Foreigners</title>
 
   <!-- load source favicon via Webpack alias '@images' -->
   <link href="../assets/img/favicon..png" rel="icon" type="image/png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/css/bootstrap-grid.min.css">
   <!-- load global source script via Webpack alias '@scripts' -->
-  <script src="../assets/js/common.279d0946.js" defer="defer"></script>
+  <link href="../assets/css/index.1.c9af4edf.css" rel="stylesheet">
+<script src="../assets/js/common.b5681087.js" defer="defer"></script>
 
   <!-- block for specific page styles -->
   
 <!-- load specific page style -->
-<link href="../assets/css/style.a0daadf0.css" rel="stylesheet">
+<link href="../assets/css/style.4fff4d49.css" rel="stylesheet">
 
 </head>
 
@@ -133,268 +134,154 @@
 
       <!-- block for specific page content -->
       
-
-<section class="visa">
+<section class="foreign">
   <div class="container">
-    <h1 class="title-1 visa__title gsap-reveal">Медицинская виза</h1>
-    <div class="visa__content">
-      <div class="visa__content-col">
-        <div class="overlay visa-card gsap-reveal" data-gsap-delay="300">
-          <div class="visa-card__title">До 14 дней</div>
-          <div class="visa-card__body">
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
+    <h1 class="title-1 foreign__title gsap-reveal">Пациенты из других стран</h1>
+    <div class="foreign__patients">
+      <div class="overlay patient gsap-reveal" data-gsap-delay="300">
+        <div class="patient__avatar">
+          <img src="../assets/img/foreign-patient-1..png" alt="">
+        </div>
+        <div class="patient__body">
+          <div class="title-4 patient__title">ЧЕКОШЕВА КАМИЛЛА</div>
+          <div class="patient__country">Бишкек, Кыргызстан</div>
+          <div class="patient__text">Мне понравилось, что самим не надо никуда ходить Я Вам позвонила и Вы все сделали.
+            Я думала в клинике проблемы будут, но и тут все было четко. Мы обязательно еще приедем. Я буду Вашим
+            "сарафанным радио" в Кырызстане. <br> Спасибо Вам большое!</div>
+          <div class="patient__gallery">
+            <a class="patient__gallery-item" href="@images/foreign/foreign-galler-1.png" data-fancybox="patient-1">
+              <img src="../assets/img/foreign-galler-1..png" alt="">
+            </a>
+            <a class="patient__gallery-item" href="@images/foreign/foreign-galler-1.png" data-fancybox="patient-1">
+              <img src="../assets/img/foreign-galler-1..png" alt="">
+            </a>
+            <a class="patient__gallery-item" href="@images/foreign/foreign-galler-1.png" data-fancybox="patient-1">
+              <img src="../assets/img/foreign-galler-1..png" alt="">
+            </a>
           </div>
         </div>
-        <div class="overlay visa-card gsap-reveal">
-          <div class="visa-card__title">До 90 дней</div>
-          <div class="visa-card__body">
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-          </div>
-        </div>
-        <div class="visa__image overlay gsap-reveal">
-          <img src="../assets/img/plane..png" alt="">
-        </div>
+        <button class="btn patient__play">
+          <svg viewBox="0 0 51 51" fill="none">
+<circle cx="25.5" cy="25.5" r="25.5" fill="#0C97CD"/>
+<path d="M18 26V22.44C18 18.02 21.13 16.21 24.96 18.42L28.05 20.2L31.14 21.98C34.97 24.19 34.97 27.81 31.14 30.02L28.05 31.8L24.96 33.58C21.13 35.79 18 33.98 18 29.56V26Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+        </button>
       </div>
-      <div class="visa__content-col">
-        <div class="overlay visa-card gsap-reveal" data-gsap-delay="600">
-          <div class="visa-card__title">До 30 дней</div>
-          <div class="visa-card__body">
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
-            <div class="visa-card__item">
-              <div class="visa-card__label">Flag</div>
-              <img title="Flag" src="../assets/img/flag..png" alt="">
-            </div>
+      <div class="overlay patient gsap-reveal">
+        <div class="patient__avatar">
+          <img src="../assets/img/foreign-patient-1..png" alt="">
+        </div>
+        <div class="patient__body">
+          <div class="title-4 patient__title">ЧЕКОШЕВА КАМИЛЛА</div>
+          <div class="patient__country">Бишкек, Кыргызстан</div>
+          <div class="patient__text">Мне понравилось, что самим не надо никуда ходить Я Вам позвонила и Вы все сделали.
+            Я думала в клинике проблемы будут, но и тут все было четко. Мы обязательно еще приедем. Я буду Вашим
+            "сарафанным радио" в Кырызстане. <br> Спасибо Вам большое!</div>
+          <div class="patient__gallery">
+            <a class="patient__gallery-item" href="@images/foreign/foreign-galler-1.png" data-fancybox="patient-2">
+              <img src="../assets/img/foreign-galler-1..png" alt="">
+            </a>
+            <a class="patient__gallery-item" href="@images/foreign/foreign-galler-1.png" data-fancybox="patient-2">
+              <img src="../assets/img/foreign-galler-1..png" alt="">
+            </a>
+            <a class="patient__gallery-item" href="@images/foreign/foreign-galler-1.png" data-fancybox="patient-2">
+              <img src="../assets/img/foreign-galler-1..png" alt="">
+            </a>
           </div>
         </div>
+        <button class="btn patient__play">
+          <svg viewBox="0 0 51 51" fill="none">
+<circle cx="25.5" cy="25.5" r="25.5" fill="#0C97CD"/>
+<path d="M18 26V22.44C18 18.02 21.13 16.21 24.96 18.42L28.05 20.2L31.14 21.98C34.97 24.19 34.97 27.81 31.14 30.02L28.05 31.8L24.96 33.58C21.13 35.79 18 33.98 18 29.56V26Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+        </button>
+      </div>
+      <div class="overlay patient gsap-reveal">
+        <div class="patient__avatar">
+          <img src="../assets/img/foreign-patient-1..png" alt="">
+        </div>
+        <div class="patient__body">
+          <div class="title-4 patient__title">ЧЕКОШЕВА КАМИЛЛА</div>
+          <div class="patient__country">Бишкек, Кыргызстан</div>
+          <div class="patient__text">Мне понравилось, что самим не надо никуда ходить Я Вам позвонила и Вы все сделали.
+            Я думала в клинике проблемы будут, но и тут все было четко. Мы обязательно еще приедем. Я буду Вашим
+            "сарафанным радио" в Кырызстане. <br> Спасибо Вам большое!</div>
+          <div class="patient__gallery">
+            <a class="patient__gallery-item" href="@images/foreign/foreign-galler-1.png" data-fancybox="patient-3">
+              <img src="../assets/img/foreign-galler-1..png" alt="">
+            </a>
+            <a class="patient__gallery-item" href="@images/foreign/foreign-galler-1.png" data-fancybox="patient-3">
+              <img src="../assets/img/foreign-galler-1..png" alt="">
+            </a>
+            <a class="patient__gallery-item" href="@images/foreign/foreign-galler-1.png" data-fancybox="patient-3">
+              <img src="../assets/img/foreign-galler-1..png" alt="">
+            </a>
+          </div>
+        </div>
+        <button class="btn patient__play">
+          <svg viewBox="0 0 51 51" fill="none">
+<circle cx="25.5" cy="25.5" r="25.5" fill="#0C97CD"/>
+<path d="M18 26V22.44C18 18.02 21.13 16.21 24.96 18.42L28.05 20.2L31.14 21.98C34.97 24.19 34.97 27.81 31.14 30.02L28.05 31.8L24.96 33.58C21.13 35.79 18 33.98 18 29.56V26Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+        </button>
+      </div>
+      <div class="overlay patient gsap-reveal">
+        <div class="patient__avatar">
+          <img src="../assets/img/foreign-patient-1..png" alt="">
+        </div>
+        <div class="patient__body">
+          <div class="title-4 patient__title">ЧЕКОШЕВА КАМИЛЛА</div>
+          <div class="patient__country">Бишкек, Кыргызстан</div>
+          <div class="patient__text">Мне понравилось, что самим не надо никуда ходить Я Вам позвонила и Вы все сделали.
+            Я думала в клинике проблемы будут, но и тут все было четко. Мы обязательно еще приедем. Я буду Вашим
+            "сарафанным радио" в Кырызстане. <br> Спасибо Вам большое!</div>
+          <div class="patient__gallery">
+            <a class="patient__gallery-item" href="@images/foreign/foreign-galler-1.png" data-fancybox="patient-4">
+              <img src="../assets/img/foreign-galler-1..png" alt="">
+            </a>
+            <a class="patient__gallery-item" href="@images/foreign/foreign-galler-1.png" data-fancybox="patient-4">
+              <img src="../assets/img/foreign-galler-1..png" alt="">
+            </a>
+            <a class="patient__gallery-item" href="@images/foreign/foreign-galler-1.png" data-fancybox="patient-4">
+              <img src="../assets/img/foreign-galler-1..png" alt="">
+            </a>
+          </div>
+        </div>
+        <button class="btn patient__play">
+          <svg viewBox="0 0 51 51" fill="none">
+<circle cx="25.5" cy="25.5" r="25.5" fill="#0C97CD"/>
+<path d="M18 26V22.44C18 18.02 21.13 16.21 24.96 18.42L28.05 20.2L31.14 21.98C34.97 24.19 34.97 27.81 31.14 30.02L28.05 31.8L24.96 33.58C21.13 35.79 18 33.98 18 29.56V26Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+        </button>
+      </div>
+      <div class="overlay patient gsap-reveal">
+        <div class="patient__avatar">
+          <img src="../assets/img/foreign-patient-1..png" alt="">
+        </div>
+        <div class="patient__body">
+          <div class="title-4 patient__title">ЧЕКОШЕВА КАМИЛЛА</div>
+          <div class="patient__country">Бишкек, Кыргызстан</div>
+          <div class="patient__text">Мне понравилось, что самим не надо никуда ходить Я Вам позвонила и Вы все сделали.
+            Я думала в клинике проблемы будут, но и тут все было четко. Мы обязательно еще приедем. Я буду Вашим
+            "сарафанным радио" в Кырызстане. <br> Спасибо Вам большое!</div>
+          <div class="patient__gallery">
+            <a class="patient__gallery-item" href="@images/foreign/foreign-galler-1.png" data-fancybox="patient-5">
+              <img src="../assets/img/foreign-galler-1..png" alt="">
+            </a>
+            <a class="patient__gallery-item" href="@images/foreign/foreign-galler-1.png" data-fancybox="patient-5">
+              <img src="../assets/img/foreign-galler-1..png" alt="">
+            </a>
+            <a class="patient__gallery-item" href="@images/foreign/foreign-galler-1.png" data-fancybox="patient-5">
+              <img src="../assets/img/foreign-galler-1..png" alt="">
+            </a>
+          </div>
+        </div>
+        <button class="btn patient__play">
+          <svg viewBox="0 0 51 51" fill="none">
+<circle cx="25.5" cy="25.5" r="25.5" fill="#0C97CD"/>
+<path d="M18 26V22.44C18 18.02 21.13 16.21 24.96 18.42L28.05 20.2L31.14 21.98C34.97 24.19 34.97 27.81 31.14 30.02L28.05 31.8L24.96 33.58C21.13 35.79 18 33.98 18 29.56V26Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+        </button>
       </div>
     </div>
   </div>
@@ -479,7 +366,7 @@
   <!-- block for specific page scripts -->
   
 <!-- load specific page script -->
-<script src="../assets/js/index.4.31d6cfe0.js"></script>
+<script src="../assets/js/index.1.f50cd91d.js"></script>
 
 </body>
 
