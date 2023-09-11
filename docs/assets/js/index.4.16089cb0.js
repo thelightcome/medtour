@@ -1,2 +1,2 @@
 document.addEventListener("DOMContentLoaded",(()=>{const e=document.querySelectorAll(".doctor .doctor__btn"),t=document.querySelector(".modal"),c=document.querySelector(".modal .modal__close");e.forEach((e=>{e.addEventListener("click",(()=>{t.classList.add("active")}))})),c.addEventListener("click",(()=>{t.classList.remove("active")}))}));
-//# sourceMappingURL=index.3.beb7bac3.js.map
+//# sourceMappingURL=index.4.16089cb0.js.map
