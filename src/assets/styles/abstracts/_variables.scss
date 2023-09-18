@@ -1,0 +1,42 @@
+$color1: #fff;
+$color2: #04061E;
+$color3: #0C97CD;
+$color4: #BA9872;
+$color5: #D3D3D3;
+$color6: #A8A9B1;
+$color7: #10171F;
+$color8: #EAF2F4;
+$color9: #C2C2C2;
+$color10: #C0C1CC;
+$color11: #9A9A9A;
+$color12: #D8D8D8;
+$color13: #92BA72;
+$color14: #BA72AA;
+$color15: #E5C85F;
+$color16: #728FBA;
+$color17: #7FD7EB;
+$color18: #D5E7F3;
+$color19: #EDEDED;
+$color20: #F3F3F3;
+$color21: #35AAD8;
+$color22: #000;
+
+$font-family: 'Montserrat', sans-serif;
+$font-family2: 'TTNormsPro', sans-serif;
+
+$xs: 380px; // sm-phone
+$sm: 560px; // phone
+$smd: 780px; // small-tablet
+$md: 1000px; // tablet
+$slg: 1025px; // wide-tablet
+$lg: 1275px; // small-laptop
+$xlg: 1370px; // laptop
+$xxlg: 1445px; // wide-laptop
+$xxxlg: 1925px; // wide-screen
+
+// @include mixin.laptop { font-size: 5.6rem; }
+// @include mixin.wide-tablet { font-size: 5rem; }
+// @include mixin.tablet { font-size: 4.4rem; }
+// @include mixin.small-tablet { font-size: 3.8rem; }
+// @include mixin.phone { font-size: 3.2rem; }
+// @include mixin.sm-phone { font-size: 2.6rem; }

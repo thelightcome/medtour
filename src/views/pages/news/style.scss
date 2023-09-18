@@ -1,0 +1,115 @@
+@use '@styles/main.scss';
+@use '@styles/abstracts/_variables.scss' as var;
+@use '@styles/base/mixins' as mixin;
+
+.news-page {
+  padding-top: 7rem;
+  padding-bottom: 21.4rem;
+
+  @include mixin.wide-laptop { padding-top: 6.2rem; padding-bottom: 18rem; }
+  @include mixin.laptop { padding-top: 5.4rem; padding-bottom: 15.5rem; }
+  @include mixin.small-laptop { padding-top: 4.6rem; padding-bottom: 13rem; }
+  @include mixin.wide-tablet { padding-top: 3.8rem; padding-bottom: 10.5rem; }
+  @include mixin.tablet { padding-top: 3rem; padding-bottom: 8rem; }
+
+  &__title {
+    margin-bottom: 5rem;
+
+    @include mixin.laptop { margin-bottom: 4rem; }
+    @include mixin.small-laptop { margin-bottom: 3rem; }
+    @include mixin.tablet { margin-bottom: 2rem; }
+  }
+}
+
+.news-list {
+  margin-bottom: 5rem;
+
+  @include mixin.laptop { margin-bottom: 4rem; }
+  @include mixin.small-laptop { margin-bottom: 3rem; }
+  @include mixin.tablet { margin-bottom: 2rem; }
+}
+
+.news {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+  gap: 2.9rem;
+
+  @include mixin.small-laptop { margin-bottom: 2.5rem; gap: 2rem; }
+  @include mixin.tablet { margin-bottom: 2rem; flex-wrap: wrap; gap: 1rem; }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 34.4rem;
+    flex-grow: 1;
+    border-radius: 1rem;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__date {
+    margin-bottom: 1.6rem;
+    font-size: 1.4rem;
+    line-height: 1.7;
+    font-weight: 400;
+    color: var.$color4;
+
+    @include mixin.small-laptop { margin-bottom: 1.3rem; line-height: 1.4; }
+    @include mixin.tablet { margin-bottom: 0.4rem; line-height: 1.2; }
+  }
+
+  &__title {
+    display: block;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var.$color2;
+    margin-bottom: 2rem;
+    transition: 0.3s linear;
+
+    &:hover {
+      color: var.$color3;
+    }
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+}
+
+.pagination {
+  display: flex;
+  gap: 1rem;
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.5rem;
+    height: 3.7rem;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    padding: 1rem;
+    font-size: 1.4rem;
+    transition: 0.3s linear;
+    color: var.$color2;
+    background: var.$color19;
+
+    &:hover,
+    &--active {
+      background: var.$color3;
+      color: var.$color1;
+    }
+  }
+}

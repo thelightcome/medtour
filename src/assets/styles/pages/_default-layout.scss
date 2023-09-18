@@ -1,0 +1,548 @@
+@use '../abstracts/variables' as var;
+@use '../base/mixins' as mixin;
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  transform: translateY(0%);
+  transition: 0.3s linear;
+
+  &.static {
+    position: static;
+  }
+
+  &.hide {
+    transform: translateY(-100%);
+  }
+
+  &.static.hide {
+    transform: translateY(0%);
+  }
+
+  &.white-type {
+    background: var.$color1;
+  }
+
+  &__content {
+    padding-top: 6.4rem;
+    padding-bottom: 6.4rem;
+
+    @include mixin.laptop { padding-top: 5.6rem; padding-bottom: 5.6rem; }
+    @include mixin.wide-tablet { padding-top: 4.8rem; padding-bottom: 4.8rem; }
+    @include mixin.tablet { padding-top: 4rem; padding-bottom: 4rem; }
+    @include mixin.small-tablet { padding-top: 3.2rem; padding-bottom: 3.2rem; }
+    @include mixin.phone { padding-top: 2.4rem; padding-bottom: 2.4rem; }
+    @include mixin.sm-phone { padding-top: 1.6rem; padding-bottom: 1.6rem; }
+  }
+
+  &.white-type &__content {
+    padding-top: 2.7rem;
+    padding-bottom: 2.7rem;
+
+    @include mixin.wide-tablet { padding-top: 2.3rem; padding-bottom: 2.3rem; }
+    @include mixin.small-tablet { padding-top: 1.9rem; padding-bottom: 1.9rem; }
+    @include mixin.sm-phone { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    display: block;
+    cursor: pointer;
+    width: 7.5%;
+    min-width: 60px;
+    margin-right: 7.9rem;
+
+    @include mixin.wide-tablet { margin-right: 7.02rem; }
+    @include mixin.tablet { margin-right: 6.14rem; }
+    @include mixin.small-tablet { margin-right: 5.26rem; }
+    @include mixin.phone { margin-right: 4.38rem; }
+    @include mixin.sm-phone { margin-right: 3.5rem; }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &.white-type &__logo {
+    width: 4.7%;
+    margin-right: 5.2rem;
+
+    @include mixin.laptop { margin-right: 4.7rem; }
+    @include mixin.wide-tablet { margin-right: 4.2rem; }
+    @include mixin.tablet { margin-right: 3.7rem; }
+    @include mixin.small-tablet { margin-right: 3.2rem; }
+    @include mixin.phone { margin-right: 2.7rem; }
+    @include mixin.sm-phone { margin-right: 2.2rem; }
+  }
+
+  &.white-type &__logo-img {
+    display: none;
+  }
+
+  &__logo-img-white  {
+    display: none;
+  }
+
+  &.white-type &__logo-img-white {
+    display: block;
+  }
+
+  &.white-type .navigation__control {
+    background: var.$color1;
+
+    span {
+      background: var.$color2;
+      border-radius: 2px;
+    }
+  }
+
+  &.white-type .header__content > .logotypes {
+    img {
+      &:first-child {
+        display: none;
+      }
+
+      &:last-child {
+        display: block;
+      }
+    }
+  }
+
+  .breadcrumbs {
+    width: 100%;
+    background: var.$color1;
+    border-top: 1px solid var.$color8;
+    padding: 2rem 0;
+    display: none;
+
+    &.active {
+      display: block;
+    }
+
+    &__container {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    &__root {
+      font-family: var.$font-family2;
+      font-size: 1.4rem;
+      line-height: 1;
+      color: var.$color9;
+      font-weight: 500;
+    }
+
+    &__childs {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 2rem;
+
+      a {
+        font-family: var.$font-family2;
+        font-size: 1.4rem;
+        line-height: 1;
+        color: var.$color2;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.navigation {
+  flex-grow: 1;
+
+  &__control {
+    width: 62px;
+    height: 62px;
+    border-radius: 10px;
+    background: var.$color3;
+    box-sizing: border-box;
+    padding: 21.42px 13.75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @include mixin.wide-tablet { width: 55px; height: 55px; padding: 18.5px 11.5px; }
+    @include mixin.small-tablet { width: 48.5px; height: 48.5px; padding: 16px 9.8px; }
+    @include mixin.sm-phone { width: 42px; height: 42px; padding: 13.28px 8.5px; }
+
+    span {
+      width: 100%;
+      height: 1.5px;
+      background: var.$color1;
+      border-radius: 2px;
+
+      &:nth-child(2) {
+        width: 80%;
+      }
+
+      &:nth-child(3) {
+        width: 60%;
+      }
+    }
+  }
+
+  &__body {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding-top: 10rem;
+    padding-bottom: 13.1rem;
+    background-color: var.$color3;
+    background-image: url('@images/nav-bg.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: stretch;
+    transform: translateY(-100%);
+    transition: 0.3s linear;
+
+    @include mixin.laptop { padding-top: 8.5rem; padding-bottom: 11rem; }
+    @include mixin.wide-tablet { padding-top: 7rem; padding-bottom: 9rem; }
+    @include mixin.tablet { padding-top: 5.5rem; padding-bottom: 7rem; }
+    @include mixin.small-tablet { padding-top: 4rem; padding-bottom: 5rem; }
+    @include mixin.phone { padding-top: 2.5rem; padding-bottom: 3rem; }
+    @include mixin.sm-phone { padding-top: 2rem; padding-bottom: 3rem; }
+
+    &.active {
+      transform: translateY(0%);
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: stretch;
+      flex-grow: 1;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 5.3rem;
+    width: 4.8rem;
+
+    img {
+      width: 100%;
+    }
+
+    @include mixin.laptop { top: 4.8rem; }
+    @include mixin.wide-tablet { top: 4.3rem; width: 4.1rem; }
+    @include mixin.tablet { top: 3.8rem; }
+    @include mixin.small-tablet { top: 3.3rem; width: 3.4rem; }
+    @include mixin.phone { top: 2.8rem; width: 3rem; }
+    @include mixin.sm-phone { top: 2.3rem; }
+  }
+
+  &__links {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin-top: 16.9rem;
+
+    @include mixin.laptop { gap: 3.5rem; margin-top: 14.9rem; }
+    @include mixin.wide-tablet { gap: 3.2rem; margin-top: 12.9rem; }
+    @include mixin.tablet { gap: 2.9rem; margin-top: 10.9rem; flex-direction: column; }
+    @include mixin.small-tablet { gap: 2.6rem; margin-top: 8.9rem; }
+    @include mixin.phone { gap: 2.3rem; margin-top: 6.9rem; }
+    @include mixin.sm-phone { gap: 2rem; margin-top: 4.9rem; }
+  }
+
+  .navigation-links {
+    &__title {
+      font-family: var.$font-family2;
+      font-size: 3.2rem;
+      font-weight: 500;
+      line-height: 1;
+      text-transform: uppercase;
+      margin-bottom: 2.2rem;
+      color: var.$color1;
+
+      @include mixin.laptop { font-size: 3rem; margin-bottom: 2rem; }
+      @include mixin.wide-tablet { font-size: 2.8rem; margin-bottom: 1.8rem; }
+      @include mixin.tablet { font-size: 2.6rem; margin-bottom: 1.6rem; }
+      @include mixin.small-tablet { font-size: 2.4rem; margin-bottom: 1.4rem; }
+      @include mixin.phone { font-size: 2.2rem; margin-bottom: 1.2rem; }
+      @include mixin.sm-phone { font-size: 2rem; margin-bottom: 1rem; }
+
+      a {
+        color: inherit;
+      }
+    }
+
+    &__item {
+      margin-bottom: 1rem;
+
+      @include mixin.wide-tablet { margin-bottom: 0.8rem; }
+      @include mixin.small-tablet { margin-bottom: 0.65rem; }
+      @include mixin.sm-phone { margin-bottom: 0.5rem; }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      a {
+        font-family: var.$font-family2;
+        font-size: 2rem;
+        font-weight: 400;
+        color: var.$color1;
+        transition: 0.3s linear;
+
+        @include mixin.laptop { font-size: 1.9rem; }
+        @include mixin.wide-tablet { font-size: 1.84rem; }
+        @include mixin.tablet { font-size: 1.78rem; }
+        @include mixin.small-tablet { font-size: 1.72rem; }
+        @include mixin.phone { font-size: 1.66rem; }
+        @include mixin.sm-phone { font-size: 1.6rem; }
+      }
+    }
+  }
+
+  &__bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__socials {
+    display: flex;
+    gap: 3.5rem;
+
+    a {
+      display: block;
+      width: 2.4rem;
+
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+  
+  .logotypes {
+    width: 22%;
+  }
+}
+
+.logotypes {
+  width: 23.38%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include mixin.tablet { display: none; }
+
+  &__item {
+    display: block;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .visit-astana {
+    width: 30.2%;
+  }
+
+  .dev-center-astana {
+    width: 34.12%;
+  }
+
+  .baiterek-astana {
+    width: 18.5%;
+  }
+
+  .visit-astana-footer,
+  .dev-center-astana-footer,
+  .baiterek-astana-footer {
+    display: none;
+  }
+}
+
+.banner {
+  position: relative;
+  height: 968px;
+  min-height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -2;
+    background-color: #fff;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+.footer {
+  background: #FFF;
+  padding: 6.4rem 0 10.5rem;
+
+  @include mixin.wide-tablet { padding: 5.72rem 0 9rem; }
+  @include mixin.tablet { padding: 5.04rem 0 9rem; }
+  @include mixin.small-tablet { padding: 4.36rem 0 8rem; }
+  @include mixin.phone { padding: 3.68rem 0 7rem; }
+  @include mixin.sm-phone { padding: 4rem 0 6rem; }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    @include mixin.phone { flex-direction: column-reverse; }
+  }
+
+  &__top {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    margin-bottom: 6.8rem;
+
+    @include mixin.wide-tablet { margin-bottom: 6.04rem; }
+    @include mixin.tablet { margin-bottom: 5.28rem; }
+    @include mixin.small-tablet { margin-bottom: 4.52rem; }
+    @include mixin.phone { margin-bottom: 0rem; margin-top: 3.76rem; }
+
+    .logotypes {
+      width: 22.07%;
+    }
+  }
+
+  &__logo {
+    display: block;
+    width: 9.4rem;
+    margin-right: 3.3rem;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  &__author {
+    align-self: center;
+    flex-grow: 1;
+    font-size: 1.2rem;
+    font-weight: 400;
+
+    span {
+      display: block;
+      max-width: 32.5rem;
+      line-height: 1.4;
+    }
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 8.2rem;
+
+    @include mixin.wide-tablet { gap: 7.35rem; }
+    @include mixin.tablet { gap: 6.5rem; }
+    @include mixin.small-tablet { gap: 5rem; }
+    @include mixin.phone { gap: 3.5rem; flex-direction: column; }
+    @include mixin.sm-phone { gap: 2rem; }
+  }
+
+  .links {
+    &__title {
+      font-family: var.$font-family2;
+      font-size: 1.4rem;
+      font-weight: 900;
+      line-height: 1;
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+      color: var.$color2;
+
+      @include mixin.small-tablet { margin-bottom: 1rem; }
+
+      a {
+        color: inherit;
+      }
+    }
+
+    &__item {
+      margin-bottom: 1rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      a {
+        font-family: var.$font-family2;
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: var.$color2;
+        transition: 0.3s linear;
+
+        &:hover {
+          color: var.$color3;
+        }
+      }
+    }
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-grow: 1;
+    gap: 3.5rem;
+    
+    @include mixin.tablet { gap: 2.5rem; }
+    @include mixin.phone { gap: 1.5rem; }
+
+    a {
+      display: block;
+      width: 2.4rem;
+
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+  }
+}

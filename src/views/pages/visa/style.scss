@@ -1,0 +1,146 @@
+@use '@styles/main.scss';
+@use '@styles/abstracts/_variables.scss' as var;
+@use '@styles/base/mixins' as mixin;
+
+.visa {
+  padding-top: 7rem;
+  padding-bottom: 10rem;
+  
+  @include mixin.tablet { padding-top: 6rem; padding-bottom: 8.5rem; }
+  @include mixin.small-tablet { padding-top: 5rem; padding-bottom: 7rem; }
+  @include mixin.phone { padding-top: 4rem; padding-bottom: 6rem; }
+  @include mixin.sm-phone { padding-top: 3rem; padding-bottom: 5rem; }
+
+  &__title {
+    margin-bottom: 4rem;
+  
+    @include mixin.tablet { margin-bottom: 3.5rem; }
+    @include mixin.small-tablet { margin-bottom: 3rem; }
+    @include mixin.phone { margin-bottom: 2.5rem; }
+    @include mixin.sm-phone { margin-bottom: 2rem; }
+  }
+
+  &__content {
+    display: flex;
+    align-items: stretch;
+    gap: 3rem;
+
+    @include mixin.tablet { gap: 2.5rem; }
+    @include mixin.small-tablet { gap: 2rem; }
+    @include mixin.phone { gap: 1.5rem; flex-direction: column; }
+    @include mixin.sm-phone { gap: 1rem; }
+  }
+
+  &__content-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3rem;
+    max-width: 49%;
+
+    @include mixin.tablet { gap: 2.5rem; }
+    @include mixin.small-tablet { gap: 2rem; }
+    @include mixin.phone { gap: 1.5rem; max-width: 100%; }
+    @include mixin.sm-phone { gap: 1rem; }
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+
+    @include mixin.phone { max-height: 30rem; }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+
+.visa-card {
+  flex-grow: 1;
+  box-sizing: border-box;
+  padding: 4rem 3.7rem 5.5rem 3.6rem;
+
+  @include mixin.tablet { padding: 3.25rem 2.9rem 4.5rem 2.9rem; }
+  @include mixin.small-tablet { padding: 2.5rem 2.2rem 3.5rem 2.2rem; }
+  @include mixin.phone { padding: 1.75rem 1.6rem 2.5rem 1.5rem; }
+  @include mixin.sm-phone { padding: 1rem 1rem 1.5rem 1rem; }
+
+  &__title {
+    font-size: 3.6rem;
+    font-weight: 500;
+    line-height: 1;
+    margin-bottom: 4rem;
+    color: var.$color2;
+
+    @include mixin.tablet { font-size: 3.2rem; margin-bottom: 3.4rem; }
+    @include mixin.small-tablet { font-size: 2.8rem; margin-bottom: 2.8rem; }
+    @include mixin.phone { font-size: 2.4rem; margin-bottom: 2.2rem; }
+    @include mixin.sm-phone { font-size: 2rem; margin-bottom: 1.6rem; }
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 3rem 4.5rem;
+
+    @include mixin.small-laptop { gap: 2.4rem 3.2rem; }
+    @include mixin.tablet { gap: 1.8rem 2.85rem; }
+    @include mixin.small-tablet { gap: 1.7rem 2.4rem; }
+    @include mixin.phone { gap: 1.5rem 2.025rem; justify-content: flex-start; }
+    @include mixin.sm-phone { gap: 1rem 1.2rem; }
+  }
+
+  &__item {
+    position: relative;
+    flex-grow: 1;
+    max-width: 8.4rem;
+
+    @include mixin.small-laptop { max-width: 7rem; }
+    @include mixin.tablet { max-width: 5.2rem; }
+    @include mixin.small-tablet { max-width: 3.8rem; }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__label {
+    position: absolute;
+    left: 50%;
+    bottom: 120%;
+    transform: translate(-50%, 1rem);
+    border-radius: 2rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+    color: var.$color1;
+    text-align: center;
+    padding: 0.7rem 4.6rem;
+    background: rgba(var.$color2, 0.53);
+    opacity: 0;
+    transition: 0.3s linear;
+
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 100%;
+      border-top: 0.7rem solid rgba(var.$color2, 0.53);
+      border-right: 1rem solid transparent;
+      border-left: 1rem solid transparent;
+      margin-left: -1rem;
+    }
+  }
+
+  &__item:hover &__label {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+}

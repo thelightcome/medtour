@@ -1,0 +1,74 @@
+{% extends "src/views/layouts/default.html" %}
+
+<!-- set variables used in layout -->
+{% set title="Sanatory" %}
+
+{% block styles %}
+<!-- load specific page style -->
+<link href="@/views/pages/kamt/style.scss" rel="stylesheet">
+{% endblock %}
+
+{% block scripts %}
+<!-- load specific page script -->
+<script src="@/views/pages/kamt/index.js"></script>
+{% endblock %}
+
+{% block content %}
+<section class="kamt-page">
+  <div class="container">
+    <div class="title-1 kamt-page__title gsap-reveal">Камт</div>
+    <div class="kamt-page__banner gsap-reveal" data-gsap-delay="300">
+      <div class="title-2 kamt-page__title-2 gsap-reveal" data-gsap-delay="500">КАЗАХСТАНСКАЯ АССОЦИАЦИЯ МЕДИЦИНСКОГО ТУРИЗМА</div>
+      <div class="kamt-page__text gsap-reveal" data-gsap-delay="650">
+        <p>Основные задачи Казахстанской ассоциации медицинского туризма:</p>
+        <ul>
+          <li>привлечение иностранных медицинских туристов в Республику Казахстан!</li>
+          <li>взаимодействие с государственными органами, международными организациями по решению ключевых проблем
+            медицинского туризма;</li>
+          <li>проведение как самостоятельно, так и совместно с государственными органами, международными организациями и
+            иными организациями семинаров, обучающих мастер-классов, конференций, совещаний;</li>
+          <li>установление и развитие связей с казахстанскими и международными правительственными и неправительственными
+            организациями по вопросам развития медицинского туризма;</li>
+          <li>разработка и публикация информационно-аналитических материалов, издательская деятельность;</li>
+        </ul>
+      </div>
+      <div class="kamt-page__text gsap-reveal" data-gsap-delay="750">Казахстанская ассоциация медицинского туризма (КАМТ) является официальной
+        некоммерческой организацией, деятельность которой направлена на объединение усилий и возможностей для
+        популяризации отечественной медицины и привлечения иностранных медицинских туристов, путем объединения членов
+        ассоциации для решения практических и научных задач, формирования ее конкурентоспособности в медицинских и
+        сервисных сферах.</div>
+    </div>
+
+    <div class="overlay kamt-page__dir gsap-reveal">
+      <div class="kamt-page__dir-img">
+        <img class="gsap-reveal" src="@images/kamt-img-2.png" alt="" data-gsap-delay="300">
+      </div>
+      <div class="kamt-page__info">
+        <div class="title-2 kamt-page__quoto gsap-reveal" data-gsap-delay="500">ОБЪЕДИНЯЕМ ОПЫТ ДЛЯ ЗДОРОВОГО БУДУЩЕГО!</div>
+        <div class="kamt-page__name gsap-reveal" data-gsap-delay="600">Кривец Кристина Сергеевна</div>
+        <div class="kamt-page__major gsap-reveal" data-gsap-delay="700">Президент казахстанской ассоциации медицинского туризма</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="overlay gsap-reveal">
+        <p>Учредители Казахстанской ассоциации медицинского туризма: ТОО «Центр развития Астаны» ТОО «АльфаМедГрупп»</p>
+      </div>
+      <div class="overlay kamt-page__news gsap-reveal" data-gsap-delay="300">
+        <div>Новости о КАМТ:</div>
+        <p>
+          <a href="./">
+            <img src="@images/icons/e-mail.svg" alt="">
+            <span>@kamt.kz</span>
+          </a>
+          <br>
+          <a href="./">
+            <img src="@images/icons/facebook.svg" alt="">
+            <span>www.facebook.com/QAMT22</span>
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

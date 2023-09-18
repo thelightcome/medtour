@@ -1,0 +1,105 @@
+@use '@styles/main.scss';
+@use '@styles/abstracts/_variables.scss' as var;
+@use '@styles/base/mixins' as mixin;
+
+.whyus {
+  &__banner {
+    min-height: unset;
+    height: 750px;
+    &:before {
+      background-image: url('@images/whyus/whyus-banner.jpg');
+    }
+  }
+}
+
+.info {
+  &__content {
+    width: 100%;
+    transform: translateY(-10rem);
+  }
+
+  &__header {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 4.8rem 9.4rem;
+    margin-bottom: 6.9rem;
+
+    @include mixin.laptop { padding: 4.25rem 8rem; margin-bottom: 6.9rem; }
+    @include mixin.wide-tablet { padding: 3.72rem 7rem; margin-bottom: 6.9rem; }
+    @include mixin.tablet { padding: 3.19rem 6rem; margin-bottom: 6.9rem; }
+    @include mixin.small-tablet { padding: 2.66rem 5rem; margin-bottom: 6.9rem; }
+    @include mixin.phone { padding: 2.13rem 4rem; margin-bottom: 6.9rem; }
+    @include mixin.sm-phone { padding: 1.6rem 3rem; margin-bottom: 3rem; }
+  }
+
+  &__title {
+    margin-bottom: 1.5rem;
+
+    @include mixin.tablet { margin-bottom: 1.25rem; }
+    @include mixin.phone { margin-bottom: 1rem; }
+  }
+}
+
+.info-body {
+  display: flex;
+
+  @include mixin.small-tablet { flex-direction: column; }
+
+  &__img {
+    max-width: 40%;
+    object-fit: contain;
+
+    @include mixin.small-tablet { max-width: 100%; }
+  }
+
+  &__content {
+    flex-grow: 1;
+    padding: 14.1rem 6.6rem 14.1rem 9.2rem;
+
+    @include mixin.laptop { padding: 10.5rem 5.4rem 10.5rem 7.1rem; }
+    @include mixin.tablet { padding: 7rem 4.2rem 7rem 5.1rem; }
+    @include mixin.sm-phone { padding: 4rem 3rem 6rem 3rem; }
+  }
+
+  &__text {
+    margin-bottom: 6.9rem;
+
+    @include mixin.laptop { margin-bottom: 5.3rem; }
+    @include mixin.tablet { margin-bottom: 3.9rem; }
+    @include mixin.sm-phone { margin-bottom: 2.5rem; }
+  }
+
+  &__stats {
+    display: flex;
+    gap: 7.4rem;
+
+    @include mixin.laptop { gap: 5.8rem; }
+    @include mixin.tablet { gap: 4.4rem; }
+    @include mixin.sm-phone { gap: 3rem; }
+
+    .stat {
+      &__title {
+        font-family: var.$font-family2;
+        font-size: 4.8rem;
+        font-weight: 800;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+        color: var.$color4;
+
+        @include mixin.laptop { font-size: 3.8rem; }
+        @include mixin.tablet { font-size: 2.9rem; }
+        @include mixin.sm-phone { font-size: 2rem; }
+      }
+
+      &__text {
+        font-family: var.$font-family2;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: var.$color2;
+
+        @include mixin.tablet { font-size: 1.4rem; }
+        @include mixin.sm-phone { font-size: 1.2rem; }
+      }
+    }
+  }
+}

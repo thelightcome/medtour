@@ -1,0 +1,88 @@
+{% extends "src/views/layouts/default.html" %}
+
+<!-- set variables used in layout -->
+{% set title="Visa" %}
+
+{% block styles %}
+<!-- load specific page style -->
+<link href="@/views/pages/info/style.scss" rel="stylesheet">
+{% endblock %}
+
+{% block scripts %}
+<!-- load specific page script -->
+<script src="@/views/pages/info/index.js"></script>
+{% endblock %}
+
+{% block content %}
+
+<section class="info-page">
+  <div class="container">
+    <h1 class="title-1 info-page__title gsap-reveal">Информация для Туриста</h1>
+    <div class="overlay info-page__content">
+      <div class="overlay info-page__center-img">
+        <img class="gsap-reveal" src="@images/info-img-center.png" alt="" data-gsap-delay="800">
+      </div>
+      <div class="info">
+        <div class="info__img gsap-reveal" data-gsap-delay="200">
+          <img src="@images/info-img-1.png" alt="">
+        </div>
+        <div class="info__content">
+          <div><div class="info__title gsap-reveal" data-gsap-delay="250">46 клиник КАМТ</div></div>
+        </div>
+      </div>
+      <div class="info info--right">
+        <div class="info__img gsap-reveal" data-gsap-delay="300">
+          <img src="@images/info-img-1.png" alt="">
+        </div>
+        <div class="info__content">
+          <div><div class="info__title gsap-reveal" data-gsap-delay="350">Валюта тенге</div></div>
+        </div>
+      </div>
+      <div class="info">
+        <div class="info__img gsap-reveal" data-gsap-delay="400">
+          <img src="@images/info-img-1.png" alt="">
+        </div>
+        <div class="info__content info__content--left">
+          <div class="gsap-reveal" data-gsap-delay="450">
+            <div class="info__title">Языки</div>
+            <p>Казахский, русский, <br> английский</p>
+          </div>
+        </div>
+      </div>
+      <div class="info info--right">
+        <div class="info__img gsap-reveal" data-gsap-delay="500">
+          <img src="@images/info-img-1.png" alt="">
+        </div>
+        <div class="info__content info__content--right">
+          <div class="gsap-reveal" data-gsap-delay="550">
+            <div class="info__title">Климат</div>
+            <p>Зимой до -35 <br> Летом до +33</p>
+          </div>
+        </div>
+      </div>
+      <div class="info">
+        <div class="info__img gsap-reveal" data-gsap-delay="600">
+          <img src="@images/info-img-1.png" alt="">
+        </div>
+        <div class="info__content">
+          <div class="gsap-reveal" data-gsap-delay="650">
+            <div class="info__title">Размещение</div>
+            <p>229 гостинец</p>
+          </div>
+        </div>
+      </div>
+      <div class="info info--right">
+        <div class="info__img gsap-reveal" data-gsap-delay="700">
+          <img src="@images/info-img-1.png" alt="">
+        </div>
+        <div class="info__content">
+          <div class="gsap-reveal" data-gsap-delay="750">
+            <div class="info__title">Визовы режим</div>
+            <p>98 стран</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

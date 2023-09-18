@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title>{{ title }}</title>
+
+  <!-- load source favicon via Webpack alias '@images' -->
+  <link href="@images/favicon.png" rel="icon" type="image/png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.5.2/dist/css/bootstrap-grid.min.css">
+  <!-- load global source script via Webpack alias '@scripts' -->
+  <script src="@scripts/common.js" defer="defer"></script>
+
+  <!-- block for specific page styles -->
+  {% block styles %}{% endblock %}
+</head>
+
+<body>
+  <!-- Header -->
+  <header id="header" class="header white-type static">
+    <div class="container header__content">
+      <a class="header__logo" href="./">
+        <img class="header__logo-img" src="@images/logo.png" alt="">
+        <img class="header__logo-img-white" src="@images/logo-white.png" alt="">
+      </a>
+
+      <nav id="navigation" class="navigation">
+        <button id="navigation-control" class="btn navigation__control">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div id="navigation-body" class="navigation__body">
+          <div class="container">
+            <button id="navigation-close" class="btn navigation__close">
+              <img src="@images/icons/close.svg" alt="">
+            </button>
+            <div class="navigation__links">
+              <div class="navigation-links">
+                <div class="navigation-links__title">Почему Астана</div>
+                <ul class="navigation-links__content">
+                  <li class="navigation-links__item"><a href="./whyus">Потенциал</a></li>
+                  <li class="navigation-links__item"><a href="./info">Информация для туристов</a></li>
+                  <li class="navigation-links__item"><a href="./foreign">Отзывы пациентов</a></li>
+                  <li class="navigation-links__item"><a href="./visa">Медицинская виза</a></li>
+                </ul>
+              </div>
+              <div class="navigation-links">
+                <div class="navigation-links__title">Медицинские услуги</div>
+                <ul class="navigation-links__content">
+                  <li class="navigation-links__item"><a href="./clinic">Клиники Астаны</a></li>
+                  <li class="navigation-links__item"><a href="./sanatory">Санатории</a></li>
+                  <li class="navigation-links__item"><a href="./check-up">Check-up</a></li>
+                </ul>
+              </div>
+              <div class="navigation-links">
+                <div class="navigation-links__title">камт</div>
+                <ul class="navigation-links__content">
+                  <li class="navigation-links__item"><a href="./kamt">О КАМТ</a></li>
+                </ul>
+              </div>
+              <div class="navigation-links">
+                <div class="navigation-links__title"><a href="./news">Новости</a></div>
+              </div>
+              <div class="navigation-links">
+                <div class="navigation-links__title">Партнеры</div>
+                <ul class="navigation-links__content">
+                  <li class="navigation-links__item"><a href="./amg">AMG</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="navigation__bottom">
+              <div class="navigation__socials">
+                <a class="instagramm" href="./"><img src="@images/icons/instagramm-white.svg" alt=""></a>
+                <a class="facebook" href="./"><img src="@images/icons/facebook-white.svg" alt=""></a>
+                <a class="youtube" href="./"><img src="@images/icons/youtube-white.svg" alt=""></a>
+              </div>
+
+              <div class="logotypes">
+                <a class="logotypes__item visit-astana" href="https://visitastana.kz"><img src="@images/visit-astana.png" alt=""></a>
+                <a class="logotypes__item dev-center-astana" href="https://visitastana.kz"><img src="@images/dev-center-astana.png"
+                    alt=""></a>
+                <a class="logotypes__item baiterek-astana" href="https://maslihat01.kz"><img src="@images/baiterek-astana.png"
+                    alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      <div class="logotypes">
+        <a class="logotypes__item visit-astana" href="https://visitastana.kz">
+          <img src="@images/visit-astana.png" alt="">
+          <img class="visit-astana-footer" src="@images/visit-astana-footer.png" alt="">
+        </a>
+        <a class="logotypes__item dev-center-astana" href="https://visitastana.kz">
+          <img src="@images/dev-center-astana.png" alt="">
+          <img class="dev-center-astana-footer" src="@images/dev-center-astana-footer.png" alt="">
+        </a>
+        <a class="logotypes__item baiterek-astana" href="https://maslihat01.kz">
+          <img src="@images/baiterek-astana.png" alt="">
+          <img class="baiterek-astana-footer" src="@images/baiterek-astana-footer.png" alt="">
+        </a>
+      </div>
+    </div>
+    <div id="breadcrumbs" class="breadcrumbs active">
+      <div class="container breadcrumbs__container">
+        <a class="breadcrumbs__root" href="./">Главная</a>
+        <div class="breadcrumbs__childs">
+          <a href="./">Почему Астана</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main content -->
+  <main class="main-container">
+    <div class="main-content">
+
+      <!-- block for specific page content -->
+      {% block content %}{% endblock %}
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <a href="./" class="footer__logo">
+          <img src="@images/footer-logo.png" alt="">
+        </a>
+        <p class="footer__author">
+          <span>Авторское право 2023 ⓒ Казахстанская ассоциация медицинского туризма. Все права защищены.</span>
+        </p>
+        <div class="logotypes">
+          <a class="logotypes__item visit-astana" href="https://visitastana.kz"><img src="@images/visit-astana-footer.png"
+              alt=""></a>
+          <a class="logotypes__item dev-center-astana" href="https://visitastana.kz"><img src="@images/dev-center-astana-footer.png"
+              alt=""></a>
+          <a class="logotypes__item baiterek-astana" href="https://maslihat01.kz"><img src="@images/baiterek-astana-footer.png"
+              alt=""></a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__links">
+          <div class="links">
+            <div class="links__title">Почему Астана</div>
+            <ul class="links__content">
+              <li class="links__item"><a href="./whyus">Потенциал</a></li>
+              <li class="links__item"><a href="./info">Информация для туристов</a></li>
+              <li class="links__item"><a href="./foreign">Отзывы пациентов</a></li>
+              <li class="links__item"><a href="./visa">Медицинская виза</a></li>
+            </ul>
+          </div>
+          <div class="links">
+            <div class="links__title">Медицинские услуги</div>
+            <ul class="links__content">
+              <li class="links__item"><a href="./clinic">Клиники Астаны</a></li>
+              <li class="links__item"><a href="./sanatory">Санатории</a></li>
+              <li class="links__item"><a href="./check-up">Check-up</a></li>
+            </ul>
+          </div>
+          <div class="links">
+            <div class="links__title">камт</div>
+            <ul class="links__content">
+              <li class="links__item"><a href="./kamt">Вступить в ассоциацию</a></li>
+            </ul>
+          </div>
+          <div class="links">
+            <div class="links__title"><a href="./news">Новости</a></div>
+          </div>
+          <div class="links">
+            <div class="links__title">Партнеры</div>
+            <ul class="links__content">
+              <li class="links__item"><a href="./amg">AMG</a></li>
+            </ul>
+          </div>
+          <div class="footer__socials">
+            <a class="instagramm" href="https://instagram.com/"><img src="@images/icons/instagramm.svg" alt=""></a>
+            <a class="facebook" href="https://facebook.com/"><img src="@images/icons/facebook.svg" alt=""></a>
+            <a class="youtube" href="https://youtube.com/"><img src="@images/icons/youtube.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- block for specific page scripts -->
+  {% block scripts %}{% endblock %}
+</body>
+
+</html>

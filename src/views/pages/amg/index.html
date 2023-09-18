@@ -1,0 +1,78 @@
+{% extends "src/views/layouts/default.html" %}
+
+<!-- set variables used in layout -->
+{% set title="Sanatory" %}
+
+{% block styles %}
+<!-- load specific page style -->
+<link href="@/views/pages/amg/style.scss" rel="stylesheet">
+{% endblock %}
+
+{% block scripts %}
+<!-- load specific page script -->
+<script src="@/views/pages/amg/index.js"></script>
+{% endblock %}
+
+{% block content %}
+<section class="amg-page">
+  <div class="container">
+    <div class="title-1 amg-page__title gsap-reveal">AMG</div>
+    <div class="overlay amg gsap-reveal" data-gsap-delay="300">
+      <div class="title-2 amg__title gsap-reveal" data-gsap-delay="400">АЛЬФАМЕДГРУПП</div>
+      <div class="amg__body">
+        <div class="amg__content">
+          <p class="gsap-reveal" data-gsap-delay="500">ТОО «АльфаМедГрупп» - это ведущая компания в сфере медицинского туризма. Главной целью которой является
+            обеспечение медицинских организаций страны потоком медицинских туристов и снижение уровня выезда граждан
+            Казахстана на лечение за рубеж.</p>
+          <div class="amg__list gsap-reveal" data-gsap-delay="600">
+            <p>АльфаМедГрупп специализируется на:</p>
+            <ul>
+              <li>организации внутреннего и въездного медицинского туризма на территории Казахстана;</li>
+              <li>организации и проведении разных форм обучения и стажировок для медицинских работников, в том числе за
+                рубежом;</li>
+              <li>оказании консалтинговых услуг отечественным медицинским организациям, в том числе по вопросам
+                прохождения сертификации по международным стандартам.</li>
+            </ul>
+          </div>
+          <div class="overlay amg__address">
+            <p class="gsap-reveal" data-gsap-delay="300">
+              <img src="@images/icons/pin.svg" alt="">
+              <span>Казахстан, г.Алмата, ул. Наурызбай батыра, зд. 8, 6 этаж</span>
+            </p>
+            <p class="gsap-reveal" data-gsap-delay="400">
+              <img src="@images/icons/phone.svg" alt="">
+              <span>+7 (700) 100-30-60</span>
+            </p>
+            <p class="gsap-reveal" data-gsap-delay="500">
+              <img src="@images/icons/e-mail.svg" alt="">
+              <span>info@alpha-med.kz</span>
+            </p>
+          </div>
+        </div>
+        <div class="amg__image">
+          <img class="gsap-reveal" src="@images/amg-1.png" alt="" data-gsap-delay="500">
+        </div>
+      </div>
+    </div>
+
+    <div class="amg-statisitcs">
+      <div class="overlay amg-statisitcs__item gsap-reveal">
+        <div class="amg-statisitcs__count gsap-reveal" data-gsap-delay="350">2</div>
+        <div class="amg-statisitcs__text gsap-reveal" data-gsap-delay="450">Года на <br> рынке</div>
+      </div>
+      <div class="overlay amg-statisitcs__item gsap-reveal" data-gsap-delay="200">
+        <div class="amg-statisitcs__count gsap-reveal" data-gsap-delay="550">2500+</div>
+        <div class="amg-statisitcs__text gsap-reveal" data-gsap-delay="650">Выполнено <br> работа</div>
+      </div>
+      <div class="overlay amg-statisitcs__item gsap-reveal" data-gsap-delay="400">
+        <div class="amg-statisitcs__count gsap-reveal" data-gsap-delay="750">100+</div>
+        <div class="amg-statisitcs__text gsap-reveal" data-gsap-delay="850">Партнеров и клиник в <br> патрфолио</div>
+      </div>
+      <div class="overlay amg-statisitcs__item gsap-reveal" data-gsap-delay="600">
+        <div class="amg-statisitcs__count gsap-reveal" data-gsap-delay="950">350+</div>
+        <div class="amg-statisitcs__text gsap-reveal" data-gsap-delay="1050">Медицинских <br> туристов</div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

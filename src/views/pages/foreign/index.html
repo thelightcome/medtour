@@ -1,0 +1,154 @@
+{% extends "src/views/layouts/default.html" %}
+
+<!-- set variables used in layout -->
+{% set title="Foreigners" %}
+
+{% block styles %}
+<!-- load specific page style -->
+<link href="@/views/pages/foreign/style.scss" rel="stylesheet">
+{% endblock %}
+
+{% block scripts %}
+<!-- load specific page script -->
+<script src="@/views/pages/foreign/index.js"></script>
+{% endblock %}
+
+{% block content %}
+<section class="foreign">
+  <div class="container">
+    <h1 class="title-1 foreign__title gsap-reveal">Пациенты из других стран</h1>
+    <div class="foreign__patients">
+      <div class="overlay patient gsap-reveal" data-gsap-delay="300">
+        <div class="patient__avatar">
+          <img src="@images/foreign/foreign-patient-1.png" alt="">
+        </div>
+        <div class="patient__body">
+          <div class="title-4 patient__title">ЧЕКОШЕВА КАМИЛЛА</div>
+          <div class="patient__country">Бишкек, Кыргызстан</div>
+          <div class="patient__text">Мне понравилось, что самим не надо никуда ходить Я Вам позвонила и Вы все сделали.
+            Я думала в клинике проблемы будут, но и тут все было четко. Мы обязательно еще приедем. Я буду Вашим
+            "сарафанным радио" в Кырызстане. <br> Спасибо Вам большое!</div>
+          <div class="patient__gallery">
+            <a class="patient__gallery-item" href="@images/foreign/foreign-galler-1.png" data-fancybox="patient-1">
+              <img src="@images/foreign/foreign-galler-1.png" alt="">
+            </a>
+            <a class="patient__gallery-item" href="@images/foreign/foreign-galler-1.png" data-fancybox="patient-1">
+              <img src="@images/foreign/foreign-galler-1.png" alt="">
+            </a>
+            <a class="patient__gallery-item" href="@images/foreign/foreign-galler-1.png" data-fancybox="patient-1">
+              <img src="@images/foreign/foreign-galler-1.png" alt="">
+            </a>
+          </div>
+        </div>
+        <button class="btn patient__play">
+          <img src="@images/icons/play.svg" alt="">
+        </button>
+      </div>
+      <div class="overlay patient gsap-reveal">
+        <div class="patient__avatar">
+          <img src="@images/foreign/foreign-patient-1.png" alt="">
+        </div>
+        <div class="patient__body">
+          <div class="title-4 patient__title">ЧЕКОШЕВА КАМИЛЛА</div>
+          <div class="patient__country">Бишкек, Кыргызстан</div>
+          <div class="patient__text">Мне понравилось, что самим не надо никуда ходить Я Вам позвонила и Вы все сделали.
+            Я думала в клинике проблемы будут, но и тут все было четко. Мы обязательно еще приедем. Я буду Вашим
+            "сарафанным радио" в Кырызстане. <br> Спасибо Вам большое!</div>
+          <div class="patient__gallery">
+            <a class="patient__gallery-item" href="@images/foreign/foreign-galler-1.png" data-fancybox="patient-2">
+              <img src="@images/foreign/foreign-galler-1.png" alt="">
+            </a>
+            <a class="patient__gallery-item" href="@images/foreign/foreign-galler-1.png" data-fancybox="patient-2">
+              <img src="@images/foreign/foreign-galler-1.png" alt="">
+            </a>
+            <a class="patient__gallery-item" href="@images/foreign/foreign-galler-1.png" data-fancybox="patient-2">
+              <img src="@images/foreign/foreign-galler-1.png" alt="">
+            </a>
+          </div>
+        </div>
+        <button class="btn patient__play">
+          <img src="@images/icons/play.svg" alt="">
+        </button>
+      </div>
+      <div class="overlay patient gsap-reveal">
+        <div class="patient__avatar">
+          <img src="@images/foreign/foreign-patient-1.png" alt="">
+        </div>
+        <div class="patient__body">
+          <div class="title-4 patient__title">ЧЕКОШЕВА КАМИЛЛА</div>
+          <div class="patient__country">Бишкек, Кыргызстан</div>
+          <div class="patient__text">Мне понравилось, что самим не надо никуда ходить Я Вам позвонила и Вы все сделали.
+            Я думала в клинике проблемы будут, но и тут все было четко. Мы обязательно еще приедем. Я буду Вашим
+            "сарафанным радио" в Кырызстане. <br> Спасибо Вам большое!</div>
+          <div class="patient__gallery">
+            <a class="patient__gallery-item" href="@images/foreign/foreign-galler-1.png" data-fancybox="patient-3">
+              <img src="@images/foreign/foreign-galler-1.png" alt="">
+            </a>
+            <a class="patient__gallery-item" href="@images/foreign/foreign-galler-1.png" data-fancybox="patient-3">
+              <img src="@images/foreign/foreign-galler-1.png" alt="">
+            </a>
+            <a class="patient__gallery-item" href="@images/foreign/foreign-galler-1.png" data-fancybox="patient-3">
+              <img src="@images/foreign/foreign-galler-1.png" alt="">
+            </a>
+          </div>
+        </div>
+        <button class="btn patient__play">
+          <img src="@images/icons/play.svg" alt="">
+        </button>
+      </div>
+      <div class="overlay patient gsap-reveal">
+        <div class="patient__avatar">
+          <img src="@images/foreign/foreign-patient-1.png" alt="">
+        </div>
+        <div class="patient__body">
+          <div class="title-4 patient__title">ЧЕКОШЕВА КАМИЛЛА</div>
+          <div class="patient__country">Бишкек, Кыргызстан</div>
+          <div class="patient__text">Мне понравилось, что самим не надо никуда ходить Я Вам позвонила и Вы все сделали.
+            Я думала в клинике проблемы будут, но и тут все было четко. Мы обязательно еще приедем. Я буду Вашим
+            "сарафанным радио" в Кырызстане. <br> Спасибо Вам большое!</div>
+          <div class="patient__gallery">
+            <a class="patient__gallery-item" href="@images/foreign/foreign-galler-1.png" data-fancybox="patient-4">
+              <img src="@images/foreign/foreign-galler-1.png" alt="">
+            </a>
+            <a class="patient__gallery-item" href="@images/foreign/foreign-galler-1.png" data-fancybox="patient-4">
+              <img src="@images/foreign/foreign-galler-1.png" alt="">
+            </a>
+            <a class="patient__gallery-item" href="@images/foreign/foreign-galler-1.png" data-fancybox="patient-4">
+              <img src="@images/foreign/foreign-galler-1.png" alt="">
+            </a>
+          </div>
+        </div>
+        <button class="btn patient__play">
+          <img src="@images/icons/play.svg" alt="">
+        </button>
+      </div>
+      <div class="overlay patient gsap-reveal">
+        <div class="patient__avatar">
+          <img src="@images/foreign/foreign-patient-1.png" alt="">
+        </div>
+        <div class="patient__body">
+          <div class="title-4 patient__title">ЧЕКОШЕВА КАМИЛЛА</div>
+          <div class="patient__country">Бишкек, Кыргызстан</div>
+          <div class="patient__text">Мне понравилось, что самим не надо никуда ходить Я Вам позвонила и Вы все сделали.
+            Я думала в клинике проблемы будут, но и тут все было четко. Мы обязательно еще приедем. Я буду Вашим
+            "сарафанным радио" в Кырызстане. <br> Спасибо Вам большое!</div>
+          <div class="patient__gallery">
+            <a class="patient__gallery-item" href="@images/foreign/foreign-galler-1.png" data-fancybox="patient-5">
+              <img src="@images/foreign/foreign-galler-1.png" alt="">
+            </a>
+            <a class="patient__gallery-item" href="@images/foreign/foreign-galler-1.png" data-fancybox="patient-5">
+              <img src="@images/foreign/foreign-galler-1.png" alt="">
+            </a>
+            <a class="patient__gallery-item" href="@images/foreign/foreign-galler-1.png" data-fancybox="patient-5">
+              <img src="@images/foreign/foreign-galler-1.png" alt="">
+            </a>
+          </div>
+        </div>
+        <button class="btn patient__play">
+          <img src="@images/icons/play.svg" alt="">
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

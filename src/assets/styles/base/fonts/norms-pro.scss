@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'TTNormsPro';
+  src: local(TTNormsPro Regular),
+    url('@fonts/TTNormsPro/TTNormsPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'TTNormsPro';
+  src: local(TTNormsPro Regular),
+    url('@fonts/TTNormsPro/TTNormsPro-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TTNormsPro';
+  src: local(TTNormsPro Medium),
+    url('@fonts/TTNormsPro/TTNormsPro-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'TTNormsPro';
+  src: local(TTNormsPro Medium),
+    url('@fonts/TTNormsPro/TTNormsPro-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TTNormsPro';
+  src: local(TTNormsPro Bold),
+    url('@fonts/TTNormsPro/TTNormsPro-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'TTNormsPro';
+  src: local(TTNormsPro Bold),
+    url('@fonts/TTNormsPro/TTNormsPro-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TTNormsPro';
+  src: local(TTNormsPro ExtraBold),
+    url('@fonts/TTNormsPro/TTNormsPro-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: 'TTNormsPro';
+  src: local(TTNormsPro ExtraBold),
+    url('@fonts/TTNormsPro/TTNormsPro-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'TTNormsPro';
+  src: local(TTNormsPro Black),
+    url('@fonts/TTNormsPro/TTNormsPro-Black.ttf') format('truetype');
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: 'TTNormsPro';
+  src: local(TTNormsPro Black),
+    url('@fonts/TTNormsPro/TTNormsPro-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+// module export
+$font-family: 'TTNormsPro', sans-serif;

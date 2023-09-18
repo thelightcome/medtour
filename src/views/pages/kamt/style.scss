@@ -1,0 +1,184 @@
+@use '@styles/main.scss';
+@use '@styles/abstracts/_variables.scss' as var;
+@use '@styles/base/mixins' as mixin;
+
+.kamt-page {
+  padding-top: 7rem;
+  padding-bottom: 10rem;
+
+  @include mixin.wide-laptop { padding-top: 6.2rem; padding-bottom: 9rem; }
+  @include mixin.laptop { padding-top: 5.4rem; padding-bottom: 8rem; }
+  @include mixin.small-laptop { padding-top: 4.6rem; padding-bottom: 7rem; }
+  @include mixin.wide-tablet { padding-top: 3.8rem; padding-bottom: 6rem; }
+  @include mixin.tablet { padding-top: 3rem; padding-bottom: 5rem; }
+
+  &__title {
+    margin-bottom: 5rem;
+
+    @include mixin.wide-laptop { margin-bottom: 4.4rem; }
+    @include mixin.laptop { margin-bottom: 3.8rem; }
+    @include mixin.small-laptop { margin-bottom: 3.2rem; }
+    @include mixin.wide-tablet { margin-bottom: 2.6rem; }
+    @include mixin.tablet { margin-bottom: 2rem; }
+  }
+
+  &__banner {
+    padding: 4.4rem 4.9rem 8.1rem 5rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    background: url('@images/kamt-img-1.png');
+    background-size: cover;
+    margin-bottom: 5rem;
+
+    @include mixin.wide-laptop { margin-bottom: 4.4rem; padding: 3.82rem 4.2rem 6.2rem 4.2rem; }
+    @include mixin.laptop { margin-bottom: 3.8rem; padding: 3.34rem 3.6rem 5.5rem 3.5rem; }
+    @include mixin.small-laptop { margin-bottom: 3.2rem; padding: 2.96rem 3.2rem 5rem 3rem; }
+    @include mixin.wide-tablet { margin-bottom: 2.6rem; padding: 2.48rem 2.8rem 4.5rem 2.5rem; }
+    @include mixin.tablet { margin-bottom: 2rem; padding: 2rem 2.4rem 4rem 2rem; }
+  }
+
+  &__title-2 {
+    color: var.$color1;
+    margin-bottom: 3.9rem;
+    
+    @include mixin.wide-laptop { margin-bottom: 3.6rem; }
+    @include mixin.laptop { margin-bottom: 3.2rem; }
+    @include mixin.small-laptop { margin-bottom: 2.8rem; }
+    @include mixin.wide-tablet { margin-bottom: 2.4rem; }
+    @include mixin.tablet { margin-bottom: 2rem; }
+  }
+
+  &__text {
+    padding: 3.9rem 5rem 4rem;
+    border-radius: 1rem;
+    background: var.$color21;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    color: var.$color1;
+    line-height: 1.6;
+
+    @include mixin.laptop { padding: 3rem 4rem 3rem; font-size: 1.7rem; line-height: 1.4; }
+    @include mixin.tablet { padding: 1.5rem 2.5rem 1.5rem; font-size: 1.4rem; }
+
+    ul {
+      list-style: disc;
+      margin-left: 2.5rem;
+      font-size: 2rem;
+      font-weight: 400;
+      
+      @include mixin.laptop { font-size: 1.7rem; line-height: 1.4; }
+      @include mixin.tablet { font-size: 1.4rem; margin-left: 1.5rem; }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__dir {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 8.5rem;
+    padding: 4.9rem 2.1rem 4.8rem 5rem;
+    margin-bottom: 3.9rem;
+    
+    @include mixin.laptop { gap: 6.6rem; padding: 3.8rem 1.6rem 3.8rem 4.2rem; margin-bottom: 3rem; }
+    @include mixin.wide-tablet { gap: 4.8rem; padding: 2.9rem 1.3rem 2.9rem 3.4rem; margin-bottom: 2.2rem; }
+    @include mixin.tablet { gap: 3rem; padding: 2rem 1rem 2rem 2.5rem; margin-bottom: 1.4rem; flex-wrap: wrap; }
+  }
+
+  &__dir-img {
+    flex-grow: 1;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include mixin.tablet { width: 100% }
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  &__quoto {
+    margin-bottom: 5.5rem;
+
+    @include mixin.laptop { margin-bottom: 4.2rem; }
+    @include mixin.wide-tablet { margin-bottom: 3.1rem; }
+    @include mixin.tablet { margin-bottom: 2rem; }
+  }
+
+  &__name {
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: var.$color22;
+    margin-bottom: 1.2rem;
+
+    @include mixin.laptop { font-size: 2.7rem; margin-bottom: 1rem; }
+    @include mixin.wide-tablet { font-size: 2.2rem; margin-bottom: 0.85rem; }
+    @include mixin.tablet { font-size: 1.8rem; margin-bottom: 0.7rem; }
+  }
+
+  &__major {
+    font-size: 2.4rem;
+    font-weight: 400;
+    color: var.$color4;
+    max-width: 58.4rem;
+
+    @include mixin.laptop { font-size: 2.2rem; }
+    @include mixin.wide-tablet { font-size: 2rem; }
+    @include mixin.tablet { font-size: 1.8rem; }
+  }
+
+  .row {
+    gap: 3rem;
+
+    @include mixin.tablet { flex-wrap: wrap; }
+
+    .overlay {
+      padding: 3.5rem 4.8rem;
+      width: 49%;
+      line-height: 1.4;
+
+      @include mixin.laptop { padding: 2.7rem 4rem; }
+      @include mixin.wide-tablet { padding: 2rem 3.2rem; }
+      @include mixin.tablet { width: 100%; padding: 1rem 2.2rem; }
+    }
+  }
+
+  &__news {
+    & > div {
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.4;
+      color: var.$color2;
+      margin-bottom: 1.2rem;
+      
+      @include mixin.laptop { font-size: 1.8rem; margin-bottom: 1rem; }
+      @include mixin.wide-tablet { font-size: 1.6rem; margin-bottom: 0.8rem; }
+      @include mixin.tablet { font-size: 1.4rem; margin-bottom: 0.6rem; }
+    }
+
+    a {
+      display: inline-flex;
+      align-items: center;
+      gap: 1rem;
+      color: var.$color2;
+      font-size: 2rem;
+
+      @include mixin.laptop { font-size: 1.8rem; }
+      @include mixin.wide-tablet { font-size: 1.6rem; }
+      @include mixin.tablet { font-size: 1.4rem; }
+
+      &:first-child {
+        margin-right: 3rem;
+
+        @include mixin.laptop { margin-right: 2.3rem; }
+        @include mixin.wide-tablet { margin-right: 1.6rem; }
+        @include mixin.tablet { margin-right: 1rem; }
+      }
+    }
+  }
+}

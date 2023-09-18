@@ -1,0 +1,110 @@
+@use '@styles/main.scss';
+@use '@styles/abstracts/_variables.scss' as var;
+@use '@styles/base/mixins' as mixin;
+
+.check-up {
+  &__banner {
+    min-height: unset;
+    max-height: 750px;
+
+    &:before {
+      background-image: url('@images/check-up-banner.png');
+    }
+  }
+}
+
+.check-up-page {
+  &__content {
+    width: 100%;
+    transform: translateY(-10rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 5rem;
+
+    @include mixin.wide-laptop { gap: 4.2rem; }
+    @include mixin.laptop { gap: 3.4rem; transform: translateY(-7rem); }
+    @include mixin.small-laptop { gap: 2.6rem; }
+    @include mixin.wide-tablet { gap: 1.8rem; transform: translateY(-4rem); }
+    @include mixin.tablet { gap: 1rem; }
+  }
+
+  &__item {
+    display: flex;
+    
+    @include mixin.small-tablet { flex-wrap: wrap; }
+
+    &--reverse {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &__item-img {
+    flex-grow: 1;
+    flex-shrink: 0;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include mixin.small-tablet { max-width: unset; width: 100%; }
+
+    img {
+      display: block;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__item-content {
+    padding: 9.7rem 6.3rem 9.8rem 9.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    @include mixin.laptop { padding: 6.8rem 4.2rem 6.8rem 6.8rem; }
+    @include mixin.tablet { padding: 4.3rem 2.8rem 4.3rem 4.3rem; }
+    @include mixin.phone { padding: 2rem 1.8rem 2rem 2rem; }
+
+    p {
+      &:first-child {
+        margin-bottom: 3rem;
+
+        @include mixin.wide-laptop { margin-bottom: 2.6rem; }
+        @include mixin.laptop { margin-bottom: 2.2rem; }
+        @include mixin.wide-tablet { margin-bottom: 1.8rem; }
+        @include mixin.tablet { margin-bottom: 1.4rem; }
+      }
+    }
+
+    ul {
+      list-style: disc;
+      margin-left: 2.5rem;
+
+      li {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 1;
+        color: var.$color2;
+
+        @include mixin.laptop { font-size: 1.4rem; }
+        @include mixin.wide-tablet { font-size: 1.2rem; }
+      }
+    }
+  }
+
+  &__item-title {
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var.$color2;
+    margin-bottom: 0.7rem;
+
+    @include mixin.wide-laptop { font-size: 3.2rem; }
+    @include mixin.laptop { font-size: 2.8rem; }
+    @include mixin.wide-tablet { font-size: 2.4rem; }
+    @include mixin.tablet { font-size: 2rem; }
+  }
+}

@@ -1,0 +1,130 @@
+@use '../abstracts/variables' as var;
+@use '../base/mixins' as mixin;
+
+$font-family: Helvetica, sans-serif !default;
+$font-family2: Helvetica, sans-serif !default;
+$font-size: 10px !default;
+
+html {
+  font-family: $font-family2;
+  font-size: $font-size;
+}
+
+body {
+  font-family: $font-family2;
+  font-size: $font-size;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  font-family: $font-family2;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 1.3;
+  margin: 0;
+
+  @include mixin.laptop { font-size: 1.9rem; }
+  @include mixin.wide-tablet { font-size: 1.8rem; }
+  @include mixin.tablet { font-size: 1.75rem; }
+  @include mixin.small-tablet { font-size: 1.7rem; }
+  @include mixin.phone { font-size: 1.65rem; }
+  @include mixin.sm-phone { font-size: 1.6rem; }
+}
+
+.banner-title {
+  font-family: var.$font-family2;
+  font-size: 10rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var.$color1;
+  text-transform: uppercase;
+
+  @include mixin.laptop { font-size: 9rem; }
+  @include mixin.wide-tablet { font-size: 8rem; }
+  @include mixin.tablet { font-size: 6.4rem; }
+  @include mixin.small-tablet { font-size: 5.4rem; }
+  @include mixin.phone { font-size: 4.4rem; }
+  @include mixin.sm-phone { font-size: 3.4rem; }
+}
+
+.banner-subtitle {
+  font-family: var.$font-family2;
+  font-size: 6.4rem;
+  font-weight: 400;
+  line-height: 1.22;
+  color: var.$color1;
+
+  @include mixin.laptop { font-size: 5.6rem; }
+  @include mixin.wide-tablet { font-size: 5rem; }
+  @include mixin.tablet { font-size: 4.4rem; }
+  @include mixin.small-tablet { font-size: 3.8rem; }
+  @include mixin.phone { font-size: 3.2rem; }
+  @include mixin.sm-phone { font-size: 2.6rem; }
+}
+
+.title-1 {
+  font-family: $font-family2;
+  font-size: 6.4rem;
+  font-weight: 800;
+  line-height: 1.22;
+  color: var.$color2;
+  text-transform: uppercase;
+
+  &--thin {
+    font-weight: 400;
+  }
+
+  @include mixin.laptop { font-size: 5.6rem; }
+  @include mixin.wide-tablet { font-size: 5rem; }
+  @include mixin.tablet { font-size: 4.4rem; }
+  @include mixin.small-tablet { font-size: 3.8rem; }
+  @include mixin.phone { font-size: 3.2rem; }
+  @include mixin.sm-phone { font-size: 2.6rem; }
+}
+
+.title-2 {
+  font-family: $font-family2;
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+
+  @include mixin.laptop { font-size: 4.4rem; }
+  @include mixin.wide-tablet { font-size: 4rem; }
+  @include mixin.tablet { font-size: 3.4rem; }
+  @include mixin.small-tablet { font-size: 3.2rem; }
+  @include mixin.phone { font-size: 2.8rem; }
+  @include mixin.sm-phone { font-size: 2.4rem; }
+}
+
+.title-3 {
+  font-family: $font-family2;
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 1.4;
+
+  @include mixin.laptop { font-size: 3rem; }
+  @include mixin.wide-tablet { font-size: 2.8rem; }
+  @include mixin.tablet { font-size: 2.6rem; }
+  @include mixin.small-tablet { font-size: 2.4rem; }
+  @include mixin.phone { font-size: 2.2rem; }
+  @include mixin.sm-phone { font-size: 2rem; }
+}
+
+.title-4 {
+  font-family: $font-family;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+
+  @include mixin.wide-tablet { font-size: 2.2rem; }
+  @include mixin.small-tablet { font-size: 2rem; }
+  @include mixin.sm-phone { font-size: 1.8rem; }
+}

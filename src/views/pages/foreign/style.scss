@@ -1,0 +1,156 @@
+@use '@styles/main.scss';
+@use '@styles/abstracts/_variables.scss' as var;
+@use '@styles/base/mixins' as mixin;
+
+.foreign {
+  padding-top: 7rem;
+  padding-bottom: 10rem;
+
+  @include mixin.laptop { padding-top: 6rem; padding-bottom: 8.75rem; }
+  @include mixin.tablet { padding-top: 5rem; padding-bottom: 7.5rem; }
+  @include mixin.small-tablet { padding-top: 4rem; padding-bottom: 6.25rem; }
+  @include mixin.sm-phone { padding-top: 3rem; padding-bottom: 5rem; }
+
+  &__title {
+    max-width: 83.9rem;
+    margin-bottom: 7rem;
+
+    @include mixin.laptop { margin-bottom: 5.75rem; }
+    @include mixin.tablet { margin-bottom: 4.5rem; }
+    @include mixin.small-tablet { margin-bottom: 3.25rem; }
+    @include mixin.sm-phone { margin-bottom: 2rem; }
+  }
+}
+
+.patient {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  @include mixin.small-tablet { flex-wrap: wrap; }
+
+  &__avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6.2rem 3.1rem 6.2rem 4rem;
+
+    @include mixin.laptop { padding: 5.4rem 2.82rem 5.4rem 3.6rem; }
+    @include mixin.tablet { padding: 4.4rem 2.54rem 4.4rem 3.2rem; }
+    @include mixin.small-tablet { padding: 3.4rem 2.27rem 3.4rem 2.7rem; }
+    @include mixin.sm-phone { padding: 2.4rem 2rem 2.4rem 2.2rem; }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__body {
+    max-width: 74%;
+    box-sizing: border-box;
+    padding: 4.2rem 9.8rem 4.2rem 3.1rem;
+
+    @include mixin.laptop { padding: 3.65rem 8.55rem 3.65rem 2.825rem; }
+    @include mixin.tablet { padding: 3.1rem 7.3rem 3.1rem 2.55rem; }
+    @include mixin.small-tablet { max-width: 100%; padding: 2.55rem 6.05rem 2.55rem 2.275rem; }
+    @include mixin.sm-phone { padding: 2rem 4.8rem 2rem 2rem; }
+  }
+
+  &__title {
+    margin-bottom: 0.5rem;
+  }
+
+  &__country {
+    font-family: var.$font-family;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var.$color10;
+    margin-bottom: 2.6rem;
+
+    @include mixin.tablet { margin-bottom: 2rem; }
+    @include mixin.sm-phone { margin-bottom: 1.4rem; }
+  }
+
+  &__text {
+    font-family: var.$font-family;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: var.$color2;
+    margin-bottom: 6.5rem;
+
+    @include mixin.tablet { margin-bottom: 4rem; }
+    @include mixin.sm-phone { margin-bottom: 2rem; }
+  }
+
+  &__gallery {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__gallery-item {
+    position: relative;
+    width: 8.7rem;
+    height: 7.7rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      background: rgba(var.$color3, 0.72);
+      transition: 0.3s linear;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 2;
+      width: 2.4rem;
+      height: 2.4rem;
+      background: url('@images/icons/hover-plus.svg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: 0.3s linear;
+      pointer-events: none;
+    }
+
+    &:hover {
+      &::before,
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__play {
+    position: absolute;
+    width: 5.1rem;
+    top: 4.3rem;
+    right: 4rem;
+
+    svg {
+      width: 100%;
+    }
+    
+    @include mixin.laptop { width: 4.5rem; top: 4rem; right: 3.5rem; }
+    @include mixin.tablet { width: 4rem; top: 3.5rem; right: 3rem; }
+    @include mixin.small-tablet { width: 2.5rem; top: 3rem; right: 2.5rem; }
+    @include mixin.sm-phone { width: 3rem; top: 2rem; right: 2rem; }
+  }
+}
