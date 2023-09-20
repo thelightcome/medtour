@@ -2,7 +2,6 @@
 .idea
 
 # don't commit package-lock.json
-package.json
 
 # local directory
 _ignored
