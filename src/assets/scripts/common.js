@@ -78,7 +78,7 @@ function breadCrumbsInit() {
 }
 
 function backgroundInit() {
-  const container = document.querySelector('.main-container')
+  const container = document.querySelector('.bg-container')
   const getBlock = document.querySelector('[data-bg-id]')
 
   const urls = [img1, img2, img1, img2, img1, img1, img2, img1, img2, img2]

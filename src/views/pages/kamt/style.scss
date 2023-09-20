@@ -75,6 +75,29 @@
     }
   }
 
+  &__btn {
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    background: var.$color4;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: var.$color1;
+    font-weight: 500;
+    font-family: var.$font-family;
+    gap: 1rem;
+    font-size: 2rem;
+    line-height: 2.25;
+    vertical-align: middle;
+    padding: 1.5rem 3rem;
+    cursor: pointer;
+    
+    @include mixin.wide-tablet { padding: 1.1rem 2.5rem; font-size: 1.26rem; }
+    @include mixin.small-tablet { padding: 0.8rem 2rem; font-size: 1.13rem; }
+    @include mixin.sm-phone { padding: 0.5rem 1.5rem; font-size: 1rem; }
+  }
+
   &__dir {
     display: flex;
     justify-content: flex-start;

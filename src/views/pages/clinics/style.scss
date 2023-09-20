@@ -1,0 +1,139 @@
+@use '@styles/main.scss';
+@use '@styles/abstracts/_variables.scss' as var;
+@use '@styles/base/mixins' as mixin;
+
+.clinics-page {
+  padding-top: 7rem;
+  padding-bottom: 14.9rem;
+
+  &__title {
+    margin-bottom: 5rem;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin-bottom: 6rem;
+    gap: 29px 30px;
+  }
+
+  &__btn {
+    display: block;
+    border-radius: 1rem;
+    padding: 1.5rem 3rem;
+    background: var.$color3;
+    font-family: var.$font-family2;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.25;
+    color: var.$color1;
+    margin: 0 auto;
+
+    @include mixin.wide-tablet {
+      font-size: 1.8rem;
+      padding: 1.2rem 2.5rem;
+    }
+
+    @include mixin.small-tablet {
+      font-size: 1.6rem;
+      padding: 1rem 2rem;
+    }
+  }
+}
+
+.clinics {
+  flex-grow: 1;
+  max-width: 23%;
+  height: 35.1rem;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  padding: 3rem 5.5rem 3rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @include mixin.laptop {
+    height: 33rem;
+    padding: 2.5rem 4rem 2.5rem;
+  }
+
+  @include mixin.small-laptop {
+    max-width: 30%;
+  }
+
+  @include mixin.wide-tablet {
+    height: 30rem;
+    padding: 2rem 3.5rem 2rem;
+  }
+
+  @include mixin.tablet {
+    height: 27rem;
+    padding: 1.8rem 3.2rem 1.8rem;
+  }
+
+  @include mixin.small-tablet {
+    max-width: 45%;
+    height: 33rem;
+  }
+
+  @include mixin.sm-phone {
+    max-width: 100%;
+    height: 33rem;
+    padding: 1.5rem 2.5rem 1.5rem;
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(#000000, 0), rgba(#000000, 0.69));
+    z-index: -1;
+    transition: 0.3s linear;
+  }
+
+  &:hover:after {
+    background: linear-gradient(to bottom, rgba(#0C97CD, 0), rgba(#0C97CD, 1));
+  }
+
+  &__image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  &__title {
+    font-size: 2.4rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: var.$color1;
+
+    @include mixin.laptop {
+      font-size: 2.2rem;
+    }
+
+    @include mixin.wide-tablet {
+      font-size: 2rem;
+    }
+
+    @include mixin.tablet {
+      font-size: 1.9rem;
+    }
+
+    @include mixin.small-tablet {
+      font-size: 1.8rem;
+    }
+  }
+}

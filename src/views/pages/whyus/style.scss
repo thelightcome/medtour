@@ -47,18 +47,31 @@
 
   &__img {
     max-width: 40%;
-    object-fit: contain;
+    box-sizing: border-box;
+    padding: 24px;
+    text-align: center;
 
     @include mixin.small-tablet { max-width: 100%; }
+
+    img {
+      width: 100%;
+      max-width: 518px;
+      object-fit: contain;
+    }
   }
 
   &__content {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     flex-grow: 1;
-    padding: 14.1rem 6.6rem 14.1rem 9.2rem;
+    padding: 4rem 6.6rem 4rem 9.2rem;
 
-    @include mixin.laptop { padding: 10.5rem 5.4rem 10.5rem 7.1rem; }
-    @include mixin.tablet { padding: 7rem 4.2rem 7rem 5.1rem; }
-    @include mixin.sm-phone { padding: 4rem 3rem 6rem 3rem; }
+    @include mixin.laptop { padding: 3rem 5.4rem 3rem 7.1rem; }
+    @include mixin.tablet { padding: 3rem 4.2rem 3rem 5.1rem; }
+    @include mixin.small-tablet { max-width: 100%; }
+    @include mixin.sm-phone { padding: 2rem 3rem 2rem 3rem; }
   }
 
   &__text {

@@ -1,5 +1,6 @@
 const path = require('path');
 const HtmlBundlerPlugin = require('html-bundler-webpack-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
 //const Nunjucks = require('nunjucks'); // used when the preprocessor is a function
 
 const isProd = !process.argv.find((str) => str.includes('development'));
@@ -44,6 +45,7 @@ module.exports = {
         'amg/index': 'src/views/pages/amg/index.html', // => dist/amg.html
         'kamt/index': 'src/views/pages/kamt/index.html', // => dist/kamt.html
         'check-up/index': 'src/views/pages/check-up/index.html', // => dist/kamt.html
+        'clinics/index': 'src/views/pages/clinics/index.html', // => dist/clinics.html
       },
 
       js: {
@@ -62,6 +64,11 @@ module.exports = {
       preprocessor: 'nunjucks',
       // or you can use any template engine as a function like the following:
       //preprocessor: (content, { data }) => Nunjucks.renderString(content, data),
+    }),
+    new CopyPlugin({
+      patterns: [
+        { from: "public", to: "./" }
+      ],
     }),
   ],
 

@@ -1,0 +1,65 @@
+{% extends "src/views/layouts/default.html" %}
+
+<!-- set variables used in layout -->
+{% set title="Sanatory" %}
+
+{% block styles %}
+<!-- load specific page style -->
+<link href="@/views/pages/clinics/style.scss" rel="stylesheet">
+{% endblock %}
+
+{% block scripts %}
+<!-- load specific page script -->
+<script src="@/views/pages/clinics/index.js"></script>
+{% endblock %}
+
+{% block content %}
+<section class="clinics-page">
+  <div class="container">
+    <h1 class="title-1 clinics-page__title gsap-reveal">Клиники Астаны</h1>
+    <div class="clinics-page__content">
+      <a href="/clinic" class="clinics gsap-reveal" data-gsap-delay="100">
+        <img class="clinics__image" src="@images/home/clinic-1.png" alt="">
+        <img class="clinics__arrow" src="@images/icons/arrow-line-white.svg" alt="">
+        <div class="clinics__title">Национальный центр кардиохирургии</div>
+      </a>
+      <a href="/clinic" class="clinics gsap-reveal" data-gsap-delay="200">
+        <img class="clinics__image" src="@images/home/clinic-2.png" alt="">
+        <img class="clinics__arrow" src="@images/icons/arrow-line-white.svg" alt="">
+        <div class="clinics__title">Национальный научный медицинский центр</div>
+      </a>
+      <a href="/clinic" class="clinics gsap-reveal" data-gsap-delay="300">
+        <img class="clinics__image" src="@images/home/clinic-3.png" alt="">
+        <img class="clinics__arrow" src="@images/icons/arrow-line-white.svg" alt="">
+        <div class="clinics__title">Республиканский диагностический центр</div>
+      </a>
+      <a href="/clinic" class="clinics gsap-reveal" data-gsap-delay="400">
+        <img class="clinics__image" src="@images/home/clinic-1.png" alt="">
+        <img class="clinics__arrow" src="@images/icons/arrow-line-white.svg" alt="">
+        <div class="clinics__title">Национальный центр кардиохирургии</div>
+      </a>
+      <a href="/clinic" class="clinics gsap-reveal" data-gsap-delay="100">
+        <img class="clinics__image" src="@images/home/clinic-2.png" alt="">
+        <img class="clinics__arrow" src="@images/icons/arrow-line-white.svg" alt="">
+        <div class="clinics__title">Национальный научный медицинский центр</div>
+      </a>
+      <a href="/clinic" class="clinics gsap-reveal" data-gsap-delay="200">
+        <img class="clinics__image" src="@images/home/clinic-3.png" alt="">
+        <img class="clinics__arrow" src="@images/icons/arrow-line-white.svg" alt="">
+        <div class="clinics__title">Республиканский диагностический центр</div>
+      </a>
+      <a href="/clinic" class="clinics gsap-reveal" data-gsap-delay="300">
+        <img class="clinics__image" src="@images/home/clinic-2.png" alt="">
+        <img class="clinics__arrow" src="@images/icons/arrow-line-white.svg" alt="">
+        <div class="clinics__title">Национальный научный медицинский центр</div>
+      </a>
+      <a href="/clinic" class="clinics gsap-reveal" data-gsap-delay="400">
+        <img class="clinics__image" src="@images/home/clinic-3.png" alt="">
+        <img class="clinics__arrow" src="@images/icons/arrow-line-white.svg" alt="">
+        <div class="clinics__title">Республиканский диагностический центр</div>
+      </a>
+    </div>
+    <button class="btn clinics-page__btn gsap-reveal" data-gsap-delay="100">Показать еще...</button>
+  </div>
+</section>
+{% endblock %}
