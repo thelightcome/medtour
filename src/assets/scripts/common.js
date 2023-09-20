@@ -78,6 +78,7 @@ function breadCrumbsInit() {
 }
 
 function backgroundInit() {
+  const container = document.querySelector('.main-container')
   const getBlock = document.querySelector('[data-bg-id]')
 
   const urls = [img1, img2, img1, img2, img1, img1, img2, img1, img2, img2]
@@ -122,7 +123,7 @@ function backgroundInit() {
       bgBlock.style.top = opt.top
       bgBlock.style.left = opt.left
       bgBlock.style.zIndex = opt.zIndex
-      document.body.appendChild(bgBlock)
+      container.appendChild(bgBlock)
     })
   } else {
     const count = getRandom(2, 5)

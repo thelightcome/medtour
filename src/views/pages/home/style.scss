@@ -61,7 +61,11 @@
     max-width: 33.124rem;
     height: auto;
     margin-bottom: 5.8rem;
-    aspect-ratio: 1.48;
+
+    svg {
+      width: 100%;
+      aspect-ratio: 1.48;
+    }
 
     path:not(.icon) {
       fill: var.$color3;
@@ -80,7 +84,6 @@
     }
 
     @include mixin.tablet {
-      width: 80%;
       margin-bottom: 3.52rem;
     }
 
@@ -89,7 +92,6 @@
     }
 
     @include mixin.sm-phone {
-      width: 70%;
       margin-bottom: 2rem;
     }
   }
@@ -242,6 +244,11 @@
     span {
       color: var.$color2;
     }
+  }
+
+  .clinics-swiper {
+    width: 100%;
+    overflow: hidden;
   }
 
   .clinic {
