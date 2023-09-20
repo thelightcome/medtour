@@ -836,7 +836,10 @@
 
   &__map {
     width: 100%;
-    aspect-ratio: 2.6;
+
+    iframe {
+      width: 100%;
+    }
 
     @include mixin.wide-tablet {
       aspect-ratio: 1.5;
