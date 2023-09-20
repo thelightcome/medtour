@@ -60,7 +60,7 @@ Add source files of styles, scripts, images directly in HTML:
 <html>
 <head>
   <!-- load source styles here -->
-  <link href="./style.scss" rel="stylesheet">
+  <link href="/style.scss" rel="stylesheet">
   <!-- load source scripts here and/or in body -->
   <script src="./main.js" defer="defer"></script>
 </head>
