@@ -39,6 +39,12 @@ module.exports = {
         'info/index': 'src/views/pages/info/index.html', // => dist/info.html
         'sanatory/index': 'src/views/pages/sanatory/index.html', // => dist/sanatory.html
         'clinic/index': 'src/views/pages/clinic/index.html', // => dist/clinic.html
+        'maternal/index': 'src/views/pages/maternal/index.html', // => dist/maternal.html
+        'diagnostic/index': 'src/views/pages/diagnostic/index.html', // => dist/diagnostic.html
+        'children-reabilitation/index': 'src/views/pages/children-reabilitation/index.html', // => dist/children-reabilitation.html
+        'neurosurgery/index': 'src/views/pages/neurosurgery/index.html', // => dist/neurosurgery.html
+        'president/index': 'src/views/pages/president/index.html', // => dist/president.html
+        'umit/index': 'src/views/pages/umit/index.html', // => dist/umit.html
         'news/index': 'src/views/pages/news/index.html', // => dist/news.html
         'news-id/index': 'src/views/pages/news-id/index.html', // => dist/news-id.html
         'amg/index': 'src/views/pages/amg/index.html', // => dist/amg.html
@@ -131,9 +137,7 @@ module.exports = {
 
     // rewrite rules
     historyApiFallback: {
-      rewrites: [
-        { from: /^\/$/, to: '/index.html' },
-      ],
+      rewrites: [{ from: /^\/$/, to: '/index.html' }],
     },
   },
 };
