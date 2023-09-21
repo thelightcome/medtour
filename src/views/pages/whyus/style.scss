@@ -84,24 +84,45 @@
 
   &__stats {
     display: flex;
-    gap: 7.4rem;
+    gap: 6.5rem;
 
     @include mixin.laptop { gap: 5.8rem; }
     @include mixin.tablet { gap: 4.4rem; }
     @include mixin.sm-phone { gap: 3rem; }
 
     .stat {
+      max-width: 45%;
+
       &__title {
+        display: flex;
+        align-items: center;
+        gap: 20px;
         font-family: var.$font-family2;
         font-size: 4.8rem;
         font-weight: 800;
         line-height: 1.2;
         margin-bottom: 1rem;
         color: var.$color4;
+        white-space: nowrap;
 
-        @include mixin.laptop { font-size: 3.8rem; }
-        @include mixin.tablet { font-size: 2.9rem; }
+        @include mixin.laptop { font-size: 3.8rem; flex-wrap: wrap; }
+        @include mixin.tablet { font-size: 2.9rem; flex-wrap: wrap; }
         @include mixin.sm-phone { font-size: 2rem; }
+
+        .clinic-img-3 {
+          max-width: 13.6rem;
+
+          @include mixin.laptop { max-width: 11rem; }
+          @include mixin.tablet { max-width: 9rem; }
+          @include mixin.sm-phone { max-width: 7rem; }
+        }
+
+        .clinic-img-2 {
+          max-width: 5.4rem;
+
+          @include mixin.laptop { max-width: 4.4rem; }
+          @include mixin.tablet { max-width: 3.4rem; }
+        }
       }
 
       &__text {

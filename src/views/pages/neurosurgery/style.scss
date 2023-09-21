@@ -30,6 +30,7 @@
 
     &:before {
       background-image: url('@images/clinic/neurosurgery.png');
+      background-size: contain;
     }
   }
 }

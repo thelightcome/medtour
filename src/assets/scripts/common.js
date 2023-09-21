@@ -190,10 +190,73 @@ function gsapAnim() {
   })
 }
 
+const paths = {
+  '/whyus': {
+    name: 'Почему Астана',
+    src: '/whyus'
+  },
+  '/info': {
+    name: 'Информация для туристов',
+    src: '/info'
+  },
+  '/foreign': {
+    name: 'Отзывы пациентов',
+    src: '/foreign'
+  },
+  '/visa': {
+    name: 'Медицинская виза',
+    src: '/visa'
+  },
+  '/clinics': {
+    name: 'Клиники Астаны',
+    src: '/clinics'
+  },
+  '/sanatory': {
+    name: 'Санатории',
+    src: '/sanatory'
+  },
+  '/check-up': {
+    name: 'Check-up',
+    src: '/check-up'
+  },
+  '/kamt': {
+    name: 'О КАМТ',
+    src: '/kamt'
+  },
+  '/news': {
+    name: 'Новости',
+    src: '/news'
+  },
+  '/news-id': {
+    name: 'Новости',
+    src: '/news'
+  },
+  '/amg': {
+    name: 'AMG',
+    src: '/amg'
+  },
+}
+
+function breadcrumbs() {
+  const breadcrumbs = document.getElementById('breaddcrumbs')
+
+  if (!breadcrumbs) return
+
+  const path = paths[window.location.pathname]
+
+  if (path) {
+    breadcrumbs.href = path.src
+    breadcrumbs.textContent = path.name
+  } else {
+    breadcrumbs.style.display = 'none'
+  }
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   navigation()
   scrollBody()
   breadCrumbsInit()
   backgroundInit()
   gsapAnim()
+  breadcrumbs()
 })
