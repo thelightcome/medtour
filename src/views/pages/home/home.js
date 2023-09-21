@@ -29,18 +29,36 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 
-  let map;
+  let iframe
 
-  async function initMap() {
-    const position = { lat: -25.344, lng: 131.031 };
-    const { Map } = await google.maps.importLibrary('maps');
-
-    map = new Map(document.getElementById('google-map'), {
-      zoom: 4,
-      center: position,
-      mapId: 'DEMO_MAP_ID',
-    });
+  function getFrame() {
+    setTimeout(() => {
+      iframe = document.querySelector(".location__map iframe")
+      if (!iframe) getFrame()
+      else {
+        iframe.style.filter = 'grayscale(1)'
+        iframe?.addEventListener("load", function() {})
+      }
+    }, 500)
   }
+  getFrame()
+
+  // myiFrame?.addEventListener("load", function() {
+  //   myiFrame.contentWindow.document.body.style.backgroundColor = "lightblue"
+  //   console.dir( myiFrame.contentWindow.document.body)
+  // })
+  // let map;
+
+  // async function initMap() {
+  //   const position = { lat: -25.344, lng: 131.031 };
+  //   const { Map } = await google.maps.importLibrary('maps');
+
+  //   map = new Map(document.getElementById('google-map'), {
+  //     zoom: 4,
+  //     center: position,
+  //     mapId: 'DEMO_MAP_ID',
+  //   });
+  // }
 
   // initMap()
 });

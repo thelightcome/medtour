@@ -854,5 +854,9 @@
     @include mixin.small-tablet {
       aspect-ratio: 1;
     }
+
+    .ymaps3x0--main-engine-container {
+      filter: grayscale(1);
+    }
   }
 }
