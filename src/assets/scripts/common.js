@@ -137,8 +137,8 @@ function backgroundInit() {
       bgBlock.classList.add('bg-block')
       bgBlock.classList.add(animInd)
       bgBlock.style.width = `${getRandom(10, 40)}%`
-      bgBlock.style.top = `${getRandom(-5, 85)}%`
-      bgBlock.style.left = `${getRandom(-5, 85)}%`
+      bgBlock.style.top = `${getRandom(-5, 60)}%`
+      bgBlock.style.left = `${getRandom(-5, 60)}%`
       bgBlock.style.zIndex = `-${getRandom(10, 40)}`
       document.body.appendChild(bgBlock)
     }
@@ -256,7 +256,7 @@ document.addEventListener('DOMContentLoaded', function () {
   navigation()
   scrollBody()
   breadCrumbsInit()
-  backgroundInit()
   gsapAnim()
   breadcrumbs()
+  backgroundInit()
 })
