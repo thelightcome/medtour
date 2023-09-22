@@ -90,6 +90,10 @@
       fill: var.$color3;
     }
 
+    .d-svg-g {
+      cursor: pointer;
+    }
+
     .d-svg-g:hover path:not(.icon) {
       fill: var.$color4;
     }

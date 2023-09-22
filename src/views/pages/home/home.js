@@ -43,6 +43,22 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   getFrame()
 
+  function setRouteClinics() {
+    const svgs = document.querySelectorAll('.d-svg-g')
+    svgs.forEach((e) => {
+      e.addEventListener('click', () => {
+        const route = e?.dataset?.route
+
+        if (route) {
+          console.log(route)
+
+          window.location.pathname = route
+        }
+      })
+    })
+  }
+  setRouteClinics()
+
   // myiFrame?.addEventListener("load", function() {
   //   myiFrame.contentWindow.document.body.style.backgroundColor = "lightblue"
   //   console.dir( myiFrame.contentWindow.document.body)
