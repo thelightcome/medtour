@@ -348,7 +348,7 @@
 .lang {
   position: relative;
   margin-right: 61px;
-  
+
   @include mixin.tablet { margin-right: 0; }
 
   &__current {
@@ -361,7 +361,11 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 1.2;
-    color: var.$color22;
+    color: var.$color1;
+  }
+
+  path {
+    stroke: var.$color1;
   }
 
   &__list {
@@ -408,6 +412,16 @@
           color: var.$color3;
         }
       }
+    }
+  }
+}
+
+.white-type .lang {
+  &__current {
+    color: var.$color22;
+
+    path {
+      stroke: var.$color4;
     }
   }
 }
