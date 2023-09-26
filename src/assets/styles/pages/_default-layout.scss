@@ -345,6 +345,73 @@
   }
 }
 
+.lang {
+  position: relative;
+  margin-right: 61px;
+  
+  @include mixin.tablet { margin-right: 0; }
+
+  &__current {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 2px;
+    text-transform: uppercase;
+    font-family: var.$font-family2;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    color: var.$color22;
+  }
+
+  &__list {
+    position: absolute;
+    top: 100%;
+    border-radius: 10px;
+    background: var.$color1;
+    padding: 7px 11px;
+    box-shadow: 0 8px 51px 0 rgba(var.$color22, 0.15);
+    display: none;
+  }
+
+  &.active &__list {
+    display: block;
+  }
+
+  &__item {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    transition: 0.3s linear;
+    cursor: pointer;
+    margin-bottom: 4px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: var.$color22;
+
+      &:visited {
+        color: var.$color22;
+      }
+    }
+
+    &--active {
+      a {
+        color: var.$color3;
+
+        &:visited {
+          color: var.$color3;
+        }
+      }
+    }
+  }
+}
+
 .logotypes {
   width: 23.38%;
   display: flex;
