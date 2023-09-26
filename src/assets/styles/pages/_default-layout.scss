@@ -397,8 +397,8 @@
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: -2;
-    background-color: #fff;
+    z-index: -1;
+    background-color: rgba(var.$color2, 0.5);
   }
 
   &:before {
@@ -408,7 +408,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: -1;
+    z-index: -2;
     background-size: cover;
     background-position: center;
   }

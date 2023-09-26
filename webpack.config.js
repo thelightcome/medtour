@@ -52,6 +52,7 @@ module.exports = {
         'kamt/index': 'src/views/pages/kamt/index.html', // => dist/kamt.html
         'check-up/index': 'src/views/pages/check-up/index.html', // => dist/kamt.html
         'clinics/index': 'src/views/pages/clinics/index.html', // => dist/clinics.html
+        'sanatories/index': 'src/views/pages/sanatories/index.html', // => dist/sanatories.html
       },
 
       js: {

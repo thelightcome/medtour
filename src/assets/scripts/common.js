@@ -191,47 +191,47 @@ function gsapAnim() {
 }
 
 const paths = {
-  '/whyus/': {
+  '/whyus': {
     name: 'Почему Астана',
     src: '/whyus'
   },
-  '/info/': {
+  '/info': {
     name: 'Информация для туристов',
     src: '/info'
   },
-  '/foreign/': {
+  '/foreign': {
     name: 'Отзывы пациентов',
     src: '/foreign'
   },
-  '/visa/': {
-    name: 'Медицинская виза',
+  '/visa': {
+    name: 'Визовый режим',
     src: '/visa'
   },
-  '/clinics/': {
+  '/clinics': {
     name: 'Клиники Астаны',
     src: '/clinics'
   },
-  '/sanatory/': {
+  '/sanatories': {
     name: 'Санатории',
     src: '/sanatory'
   },
-  '/check-up/': {
+  '/check-up': {
     name: 'Check-up',
     src: '/check-up'
   },
-  '/kamt/': {
+  '/kamt': {
     name: 'О КАМТ',
     src: '/kamt'
   },
-  '/news/': {
+  '/news': {
     name: 'Новости',
     src: '/news'
   },
-  '/news-id/': {
+  '/news-id': {
     name: 'Новости',
     src: '/news'
   },
-  '/amg/': {
+  '/amg': {
     name: 'AMG',
     src: '/amg'
   },
@@ -242,8 +242,7 @@ function breadcrumbs() {
 
   if (!breadcrumbs) return
 
-  const path = paths[window.location.pathname]
-
+  const path = paths[window.location.pathname] || paths[window.location.pathname + '/']
   if (path) {
     breadcrumbs.href = path.src
     breadcrumbs.textContent = path.name

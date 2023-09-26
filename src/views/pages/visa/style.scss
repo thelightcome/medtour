@@ -11,6 +11,17 @@
   @include mixin.phone { padding-top: 4rem; padding-bottom: 6rem; }
   @include mixin.sm-phone { padding-top: 3rem; padding-bottom: 5rem; }
 
+  &__link-text {
+    padding: 35px;
+    background: rgba(var.$color21, 0.5);
+    margin-bottom: 35px;
+
+    a {
+      font-weight: 500;
+      color: var.$color4;
+    }
+  }
+
   &__title {
     margin-bottom: 4rem;
   
