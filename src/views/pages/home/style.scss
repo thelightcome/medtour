@@ -20,6 +20,12 @@
     }
   }
 
+  &__banner {
+    &:after {
+      background-color: rgba(var.$color2, 0.2);
+    }
+  }
+
   &__content {
     position: absolute;
     margin-top: 30px;
