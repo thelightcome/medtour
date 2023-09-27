@@ -6,9 +6,16 @@
   padding-top: 10rem;
   padding-bottom: 18.4rem;
 
-  
-  @include mixin.laptop { padding-top: 8rem; padding-bottom: 12rem; }
-  @include mixin.tablet { padding-top: 6rem; padding-bottom: 10rem; }
+
+  @include mixin.laptop {
+    padding-top: 8rem;
+    padding-bottom: 12rem;
+  }
+
+  @include mixin.tablet {
+    padding-top: 6rem;
+    padding-bottom: 10rem;
+  }
 
   &__content {
     display: flex;
@@ -17,9 +24,9 @@
     align-items: center;
     gap: 40px;
 
-
     img {
       max-width: 60%;
+      max-height: 50vh;
     }
 
     p {
@@ -29,6 +36,29 @@
       color: var.$color4;
       text-transform: uppercase;
       text-align: center;
+    }
+  }
+
+  &__btn {
+    display: block;
+    border-radius: 1rem;
+    padding: 1.5rem 3rem;
+    background: var.$color3;
+    font-family: var.$font-family2;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.25;
+    color: var.$color1;
+    margin: 0 auto;
+
+    @include mixin.wide-tablet {
+      font-size: 1.8rem;
+      padding: 1.2rem 2.5rem;
+    }
+
+    @include mixin.small-tablet {
+      font-size: 1.6rem;
+      padding: 1rem 2rem;
     }
   }
 }

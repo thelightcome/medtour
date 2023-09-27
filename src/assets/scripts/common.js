@@ -238,16 +238,22 @@ const paths = {
 }
 
 function breadcrumbs() {
-  const breadcrumbs = document.getElementById('breaddcrumbs')
+  const breadcrumbs = document.getElementById('breadcrumbs')
+  const breadcrumbsItem = document.getElementById('breadcrumbs-item')
 
-  if (!breadcrumbs) return
+  if (!breadcrumbsItem || !breadcrumbs) return
+
+  if (window.location.pathname.includes('404')) {
+    breadcrumbs.style.display = 'none'
+    return
+  }
 
   const path = paths[window.location.pathname] || paths[window.location.pathname + '/']
   if (path) {
-    breadcrumbs.href = path.src
-    breadcrumbs.textContent = path.name
+    breadcrumbsItem.href = path.src
+    breadcrumbsItem.textContent = path.name
   } else {
-    breadcrumbs.style.display = 'none'
+    breadcrumbsItem.style.display = 'none'
   }
 }
 
