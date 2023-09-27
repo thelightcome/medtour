@@ -22,7 +22,7 @@
 
   &__banner {
     &:after {
-      background-color: rgba(var.$color2, 0.2);
+      background-color: unset;
     }
   }
 
@@ -30,6 +30,12 @@
     position: absolute;
     margin-top: 30px;
     width: 100%;
+
+    span {
+      display: inline-block;
+      background: rgba(var.$color22, 0.15);
+      padding: 0 25px;
+    }
   }
 }
 
