@@ -50,6 +50,12 @@
     line-height: 2.25;
     color: var.$color1;
     margin: 0 auto;
+    text-decoration: none;
+
+    &:visited,
+    &:hover {
+      color: var.$color1;
+    }
 
     @include mixin.wide-tablet {
       font-size: 1.8rem;
