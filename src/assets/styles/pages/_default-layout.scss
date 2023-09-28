@@ -154,8 +154,12 @@
         font-family: var.$font-family2;
         font-size: 1.4rem;
         line-height: 1;
-        color: var.$color2;
+        color: var.$color9;
         font-weight: 500;
+
+        &:last-child {
+          color: var.$color2;
+        }
       }
     }
   }

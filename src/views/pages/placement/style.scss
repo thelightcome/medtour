@@ -1,0 +1,77 @@
+@use '@styles/main.scss';
+@use '@styles/abstracts/_variables.scss' as var;
+@use '@styles/base/mixins' as mixin;
+
+.placement {
+  padding-top: 7rem;
+  padding-bottom: 15.8rem;
+  
+  @include mixin.tablet { padding-top: 6rem; padding-bottom: 8.5rem; }
+  @include mixin.small-tablet { padding-top: 5rem; padding-bottom: 12rem; }
+  @include mixin.phone { padding-top: 4rem; padding-bottom: 9rem; }
+  @include mixin.sm-phone { padding-top: 3rem; padding-bottom: 7rem; }
+
+  &__title {
+    margin-bottom: 4rem;
+  
+    @include mixin.tablet { margin-bottom: 3.5rem; }
+    @include mixin.small-tablet { margin-bottom: 3rem; }
+    @include mixin.phone { margin-bottom: 2.5rem; }
+    @include mixin.sm-phone { margin-bottom: 2rem; }
+  }
+
+  &__content {
+    padding: 4rem 4.5rem;
+
+    @include mixin.small-tablet { padding: 3rem 3.5rem; }
+    @include mixin.phone { padding: 2rem 2.5rem; }
+    @include mixin.sm-phone { padding: 1.2rem 1.7rem; }
+  }
+
+  &__content-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+
+    img {
+      width: 2.879rem;
+      height: 2.292rem;
+    }
+  }
+
+  .place-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.8rem 3rem;
+
+    @include mixin.tablet { gap: 2.5rem 2.2rem; }
+    @include mixin.small-tablet { gap: 2rem 1.9rem; }
+    @include mixin.phone { gap: 1.5rem 1.3rem; flex-direction: column; }
+    @include mixin.sm-phone { gap: 1.2rem 1.7rem; }
+
+    &__item {
+      width: 23%;
+      border-radius: 1rem;
+      box-shadow: 0 0 6rem 0 rgba(var.$color22, 0.05);
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      padding-right: 2rem;
+      font-family: var.$font-family;
+      font-size: 1.6rem;
+      font-weight: 500;
+      color: var.$color2;
+      line-height: 1.21;
+      overflow: hidden;
+
+      @include mixin.small-laptop { width: 31%; gap: 3rem; }
+      @include mixin.tablet { width: 46%; gap: 3rem; }
+      @include mixin.phone { width: 100%; gap: 3rem; }
+    }
+
+    &__img {
+      border-radius: 1rem;
+    }
+  }
+}

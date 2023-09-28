@@ -191,57 +191,67 @@ function gsapAnim() {
 }
 
 const paths = {
-  '/whyus': {
+  '/whyus': [{
     name: 'Почему Астана',
     src: '/whyus'
-  },
-  '/info': {
+  }],
+  '/info': [{
     name: 'Информация для туристов',
     src: '/info'
-  },
-  '/foreign': {
+  }],
+  '/foreign': [{
     name: 'Отзывы пациентов',
     src: '/foreign'
-  },
-  '/visa': {
+  }],
+  '/visa': [{
     name: 'Визовый режим',
     src: '/visa'
-  },
-  '/clinics': {
+  }],
+  '/clinics': [{
     name: 'Клиники Астаны',
     src: '/clinics'
-  },
-  '/sanatories': {
+  }],
+  '/sanatories': [{
     name: 'Санатории',
     src: '/sanatory'
-  },
-  '/check-up': {
+  }],
+  '/check-up': [{
     name: 'Check-up',
     src: '/check-up'
-  },
-  '/kamt': {
+  }],
+  '/kamt': [{
     name: 'О КАМТ',
     src: '/kamt'
-  },
-  '/news': {
+  }],
+  '/news': [{
     name: 'Новости',
     src: '/news'
-  },
-  '/news-id': {
+  }],
+  '/news-id': [{
     name: 'Новости',
     src: '/news'
-  },
-  '/amg': {
+  }],
+  '/amg': [{
     name: 'AMG',
     src: '/amg'
-  },
+  }],
+  '/placement': [{
+    name: 'Информация для туристов',
+    src: '/info'
+  }, {
+    name: 'Размещение',
+    src: '/placement'
+  }],
 }
 
 function breadcrumbs() {
   const breadcrumbs = document.getElementById('breadcrumbs')
-  const breadcrumbsItem = document.getElementById('breadcrumbs-item')
+  const breadcrumbsContainer = document.querySelector('.breadcrumbs__container')
+  
+  const breadcrumbsWrap = document.createElement('div')
+  breadcrumbsWrap.classList.add('breadcrumbs__childs')
 
-  if (!breadcrumbsItem || !breadcrumbs) return
+  if (!breadcrumbsWrap || !breadcrumbs) return
 
   if (window.location.pathname.includes('404')) {
     breadcrumbs.style.display = 'none'
@@ -249,11 +259,16 @@ function breadcrumbs() {
   }
 
   const path = paths[window.location.pathname] || paths[window.location.pathname + '/']
-  if (path) {
-    breadcrumbsItem.href = path.src
-    breadcrumbsItem.textContent = path.name
+  if (path && path.length) {
+    for (let i = 0; i < path.length; i += 1) {
+      const a = document.createElement('a')
+      a.href = path[i].src
+      a.textContent = path[i].name
+      breadcrumbsWrap.append(a)
+    }
+    breadcrumbsContainer.append(breadcrumbsWrap)
   } else {
-    breadcrumbsItem.style.display = 'none'
+    breadcrumbsWrap.style.display = 'none'
   }
 }
 

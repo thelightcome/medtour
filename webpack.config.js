@@ -53,9 +53,10 @@ module.exports = {
         'check-up/index': 'src/views/pages/check-up/index.html', // => dist/kamt.html
         'clinics/index': 'src/views/pages/clinics/index.html', // => dist/clinics.html
         'sanatories/index': 'src/views/pages/sanatories/index.html', // => dist/sanatories.html
+        'placement/index': 'src/views/pages/placement/index.html', // => dist/placement.html
         'error-404/index': 'src/views/pages/error-404/index.html', // => dist/error-404.html
       },
-
+      
       js: {
         // output filename of extracted JS from source script loaded in HTML via `<script>` tag
         filename: 'assets/js/[name].[contenthash:8].js',
