@@ -48,6 +48,7 @@ module.exports = {
         'umit/index': 'src/views/pages/umit/index.html', // => dist/umit.html
         'news/index': 'src/views/pages/news/index.html', // => dist/news.html
         'news-id/index': 'src/views/pages/news-id/index.html', // => dist/news-id.html
+        'news-2/index': 'src/views/pages/news-2/index.html', // => dist/news-2.html
         'amg/index': 'src/views/pages/amg/index.html', // => dist/amg.html
         'kamt/index': 'src/views/pages/kamt/index.html', // => dist/kamt.html
         'check-up/index': 'src/views/pages/check-up/index.html', // => dist/kamt.html
