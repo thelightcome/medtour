@@ -18,6 +18,13 @@
     @include mixin.small-tablet { margin-bottom: 3rem; }
     @include mixin.phone { margin-bottom: 2.5rem; }
     @include mixin.sm-phone { margin-bottom: 2rem; }
+
+    img {
+      width: 4.4rem;
+      height: 4.4rem;
+      
+      @include mixin.phone { display: none; }
+    }
   }
 
   &__content {
@@ -26,18 +33,6 @@
     @include mixin.small-tablet { padding: 3rem 3.5rem; }
     @include mixin.phone { padding: 2rem 2.5rem; }
     @include mixin.sm-phone { padding: 1.2rem 1.7rem; }
-  }
-
-  &__content-title {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 30px;
-
-    img {
-      width: 2.879rem;
-      height: 2.292rem;
-    }
   }
 
   .place-list {
