@@ -227,21 +227,21 @@ const paths = {
     name: 'Новости',
     src: '/news'
   }],
-  '/news-id/': [{
-    name: 'Новости',
-    src: '/news'
-  }],
+  // '/news-id/': [{
+  //   name: 'Новости',
+  //   src: '/news'
+  // }],
   '/amg/': [{
     name: 'AMG',
     src: '/amg'
   }],
-  '/placement/': [{
-    name: 'Информация для туристов',
-    src: '/info'
-  }, {
-    name: 'Прямые авиарейсы Астаны по 30 направлениям',
-    src: '/placement'
-  }],
+  // '/placement/': [{
+  //   name: 'Информация для туристов',
+  //   src: '/info'
+  // }, {
+  //   name: 'Прямые авиарейсы Астаны по 30 направлениям',
+  //   src: '/placement'
+  // }],
 }
 
 function breadcrumbs() {
