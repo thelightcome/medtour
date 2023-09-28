@@ -41,23 +41,24 @@ module.exports = {
         'sanatory/index': 'src/views/pages/sanatory/index.html', // => dist/sanatory.html
         'okjetpes/index': 'src/views/pages/okjetpes/index.html', // => dist/okjetpes.html
         'grand_prix_burabay/index': 'src/views/pages/grand_prix_burabay/index.html', // => dist/grand_prix_burabay.html
-        'clinic/index': 'src/views/pages/clinic/index.html', // => dist/clinic.html
-        'maternal/index': 'src/views/pages/maternal/index.html', // => dist/maternal.html
-        'diagnostic/index': 'src/views/pages/diagnostic/index.html', // => dist/diagnostic.html
-        'children-reabilitation/index': 'src/views/pages/children-reabilitation/index.html', // => dist/children-reabilitation.html
-        'neurosurgery/index': 'src/views/pages/neurosurgery/index.html', // => dist/neurosurgery.html
-        'president/index': 'src/views/pages/president/index.html', // => dist/president.html
-        'umit/index': 'src/views/pages/umit/index.html', // => dist/umit.html
         'news/index': 'src/views/pages/news/index.html', // => dist/news.html
         'news-id/index': 'src/views/pages/news-id/index.html', // => dist/news-id.html
         'news-2/index': 'src/views/pages/news-2/index.html', // => dist/news-2.html
         'amg/index': 'src/views/pages/amg/index.html', // => dist/amg.html
         'kamt/index': 'src/views/pages/kamt/index.html', // => dist/kamt.html
         'check-up/index': 'src/views/pages/check-up/index.html', // => dist/kamt.html
-        'clinics/index': 'src/views/pages/clinics/index.html', // => dist/clinics.html
         'sanatories/index': 'src/views/pages/sanatories/index.html', // => dist/sanatories.html
         'placement/index': 'src/views/pages/placement/index.html', // => dist/placement.html
         'error-404/index': 'src/views/pages/error-404/index.html', // => dist/error-404.html
+
+        'clinics/index': 'src/views/pages/clinics/index.html', // => dist/clinics.html
+        'clinics/clinic': 'src/views/pages/clinics/clinic/index.html', // => dist/clinics/clinic.html
+        'clinics/umit': 'src/views/pages/clinics/umit/index.html', // => dist/clinics/umit.html
+        'clinics/children-reabilitation': 'src/views/pages/clinics/children-reabilitation/index.html', // => dist/clinics/children-reabilitation.html
+        'clinics/maternal': 'src/views/pages/clinics/maternal/index.html', // => dist/clinics/maternal.html
+        'clinics/diagnostic': 'src/views/pages/clinics/diagnostic/index.html', // => dist/clinics/diagnostic.html
+        'clinics/neurosurgery': 'src/views/pages/clinics/neurosurgery/index.html', // => dist/clinics/neurosurgery.html
+        'clinics/president': 'src/views/pages/clinics/president/index.html', // => dist/clinics/president.html
       },
       
       js: {
