@@ -191,51 +191,51 @@ function gsapAnim() {
 }
 
 const paths = {
-  '/whyus': [{
+  '/whyus/': [{
     name: 'Почему Астана',
     src: '/whyus'
   }],
-  '/info': [{
+  '/info/': [{
     name: 'Информация для туристов',
     src: '/info'
   }],
-  '/foreign': [{
+  '/foreign/': [{
     name: 'Отзывы пациентов',
     src: '/foreign'
   }],
-  '/visa': [{
+  '/visa/': [{
     name: 'Визовый режим',
     src: '/visa'
   }],
-  '/clinics': [{
+  '/clinics/': [{
     name: 'Клиники Астаны',
     src: '/clinics'
   }],
-  '/sanatories': [{
+  '/sanatories/': [{
     name: 'Санатории',
     src: '/sanatory'
   }],
-  '/check-up': [{
+  '/check-up/': [{
     name: 'Check-up',
     src: '/check-up'
   }],
-  '/kamt': [{
+  '/kamt/': [{
     name: 'О КАМТ',
     src: '/kamt'
   }],
-  '/news': [{
+  '/news/': [{
     name: 'Новости',
     src: '/news'
   }],
-  '/news-id': [{
+  '/news-id/': [{
     name: 'Новости',
     src: '/news'
   }],
-  '/amg': [{
+  '/amg/': [{
     name: 'AMG',
     src: '/amg'
   }],
-  '/placement': [{
+  '/placement/': [{
     name: 'Информация для туристов',
     src: '/info'
   }, {
