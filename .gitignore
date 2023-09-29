@@ -2,5 +2,5 @@
 .idea
 _ignored
 /dist
-/docs
 node_modules
+docs.zip

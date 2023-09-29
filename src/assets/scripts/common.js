@@ -137,10 +137,10 @@ function backgroundInit() {
       bgBlock.classList.add('bg-block')
       bgBlock.classList.add(animInd)
       bgBlock.style.width = `${getRandom(10, 40)}%`
-      bgBlock.style.top = `${getRandom(-5, 60)}%`
-      bgBlock.style.left = `${getRandom(-5, 60)}%`
+      bgBlock.style.top = `${getRandom(-5, 95)}%`
+      bgBlock.style.left = `${getRandom(-5, 95)}%`
       bgBlock.style.zIndex = `-${getRandom(10, 40)}`
-      document.body.appendChild(bgBlock)
+      container.appendChild(bgBlock)
     }
   }
 }
@@ -227,21 +227,21 @@ const paths = {
     name: 'Новости',
     src: '/news'
   }],
-  // '/news-id/': [{
-  //   name: 'Новости',
-  //   src: '/news'
-  // }],
+  '/news-id/': [{
+    name: 'Новости',
+    src: '/news'
+  }],
   '/amg/': [{
     name: 'AMG',
     src: '/amg'
   }],
-  // '/placement/': [{
-  //   name: 'Информация для туристов',
-  //   src: '/info'
-  // }, {
-  //   name: 'Прямые авиарейсы Астаны по 30 направлениям',
-  //   src: '/placement'
-  // }],
+  '/placement/': [{
+    name: 'Информация для туристов',
+    src: '/info'
+  }, {
+    name: 'Прямые авиарейсы Астаны по 30 направлениям',
+    src: '/placement'
+  }],
 }
 
 function breadcrumbs() {

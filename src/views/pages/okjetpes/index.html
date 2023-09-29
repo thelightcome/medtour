@@ -1,144 +1,73 @@
 {% extends "src/views/layouts/default.html" %}
 
 <!-- set variables used in layout -->
-{% set title="Санатории" %}
+{% set title="«Окжетпес»" %}
 
 {% block styles %}
 <!-- load specific page style -->
-<link href="@/views/pages/sanatory/style.scss" rel="stylesheet">
+<link href="@/views/pages/okjetpes/style.scss" rel="stylesheet">
 {% endblock %}
 
 {% block scripts %}
 <!-- load specific page script -->
-<script src="@/views/pages/sanatory/index.js"></script>
+<script src="@/views/pages/okjetpes/index.js"></script>
 {% endblock %}
 
 {% block content %}
 <section class="banner sanatory__banner">
   <div class="container">
-    <h1 class="banner-title gsap-reveal">Боровое</h1>
+    <h1 class="banner-title gsap-reveal">Окжетпес</h1>
   </div>
 </section>
 <section class="sanatory-page">
   <div class="container">
     <div class="sanatory-page__content">
       <div class="overlay gsap-reveal float-text-block">
-        <div class="img">
-          <img class="gsap-reveal" src="@images/sanatory/sanatory-img-1.png" alt="" data-gsap-delay="300">
-        </div><p class="title-2 row__title gsap-reveal" data-gsap-delay="500">Лечебно-оздоровительный комплекс «Окжетпес» Медицинского центра Управления Делами Президента Республики Казахстан.</p>
-        <p class="gsap-reveal" data-gsap-delay="700">Главным преимуществом для ЛОК «Окжетпес», является расположение его в самом сердце жемчужины Казахстана – Бурабай, на берегу красивей­шего из озер Щучинско-Бурабайской курортной зоны. Побли­зости находятся уникальные природные достопримечатель­ности, визитные карточки Бурабая – сказочные скалы Ок­жетпес и Жумбактас. В трех минутах прогулки по густому сосно­вому бору расположена легендарная поляна Абылай-хана.</p>
+        <br><br>
+        <p class="title-4 row__title gsap-reveal" data-gsap-delay="500">Лечебно-оздоровительный комплекс «Окжетпес»
+          Медицинского центра Управления Делами Президента Республики Казахстан.</p>
+        <p class="title-4 row__title gsap-reveal" data-gsap-delay="600">Наш лечебно-оздоровительный комплекс существует
+          более 55 лет.</p>
       </div>
       <div class="overlay row row--reverse gsap-reveal">
-        <img class="gsap-reveal" src="@images/sanatory/sanatory-img-2.png" alt="" data-gsap-delay="300">
-
         <div class="row__content">
           <div>
-            <div class="title-2 row__title gsap-reveal" data-gsap-delay="500">Месторасположение</div>
-            <p class="gsap-reveal" data-gsap-delay="700">ЛОК «Окжетпес» является климатобальнеологическим комплексом круглогодичного действия. Уникальные природные факторы: экологически чистый воздух соснового бора, лечебные грязи озера Балпаш-сор и минеральная вода «Май Балык», пантолечение, радонотерапия, кумысолечение, минеральная вода «Кулагер — Арасан» дополняемые современной лечебно-диагностической базой позволяют исцелять и реабилитировать широкий спектр заболеваний сердечно-сосудистой системы, органов дыхания, опорно-двигательного аппарата, пищеварения, кровообращения, эндокринной и нервной системы, урологических и гинекологических заболеваний.</p>
+            <p class="gsap-reveal" data-gsap-delay="700">Главным преимуществом для ЛОК «Окжетпес», является расположение
+              его в самом сердце жемчужины Казахстана – Бурабай, на берегу красивей­шего из озер Щучинско-Бурабайской
+              курортной зоны. Побли­зости находятся уникальные природные достопримечатель­ности, визитные карточки
+              Бурабая
+              – сказочные скалы Ок­жетпес и Жумбактас. В трех минутах прогулки по густому сосно­вому бору расположена
+              легендарная поляна Абылай-хана.</p>
+            <div class="okjetpes-list">
+              <img class="okjetpes-1" src="@images/sanatory/okjetpes-1.png" alt="">
+              <img class="okjetpes-2" src="@images/sanatory/okjetpes-2.png" alt="">
+              <img class="okjetpes-3" src="@images/sanatory/okjetpes-3.png" alt="">
+            </div>
+            <p class="gsap-reveal" data-gsap-delay="700">ЛОК «Окжетпес» является климатобальнеологическим комплексом
+              круглогодичного действия. Уникальные природные факторы: экологически чистый воздух соснового бора,
+              лечебные
+              грязи озера Балпаш-сор и минеральная вода «Май Балык», пантолечение, радонотерапия, кумысолечение,
+              минеральная вода «Кулагер — Арасан» дополняемые современной лечебно-диагностической базой позволяют
+              исцелять
+              и реабилитировать широкий спектр заболеваний сердечно-сосудистой системы, органов дыхания,
+              опорно-двигательного аппарата, пищеварения, кровообращения, эндокринной и нервной системы, урологических и
+              гинекологических заболеваний.</p>
           </div>
         </div>
       </div>
-      <div class="overlay row gsap-reveal">
-        <img class="gsap-reveal" src="@images/sanatory/sanatory-img-3.png" alt="" data-gsap-delay="300">
-
+      <div class="overlay row row--reverse gsap-reveal">
         <div class="row__content">
           <div>
-            <p class="gsap-reveal" data-gsap-delay="700">В ЛОК внедрена и успешно функционирует система менеджмента качества в соответствии с международными стандартами ISO 9001:2015, сертификация проведена немецкой компанией ТЮФ СЕРТ.</p>
+            <p class="gsap-reveal" data-gsap-delay="700">В ЛОК внедрена и успешно функционирует система менеджмента
+              качества в соответствии с международными стандартами ISO 9001:2015, сертификация проведена немецкой
+              компанией ТЮФ СЕРТ.</p>
           </div>
         </div>
       </div>
-      <div class="sanatory-way overlay">
-        <div class="title-2 sanatory-way__title gsap-reveal">Как добраться до Борового?</div>
-        <div class="sanatory-way__body">
-          <div class="sanatory-option">
-            <div class="sanatory-option__icon gsap-reveal" data-gsap-delay="200">
-              <img src="@images/icons/train.svg" alt="">
-            </div>
-            <div class="sanatory-option__title gsap-reveal" data-gsap-delay="450">На ж/д <br> транспорте</div>
-          </div>
-          <div class="sanatory-option">
-            <div class="sanatory-option__icon gsap-reveal" data-gsap-delay="400">
-              <img src="@images/icons/bus.svg" alt="">
-            </div>
-            <div class="sanatory-option__title gsap-reveal" data-gsap-delay="550">На автобусе или частном такси</div>
-          </div>
-          <div class="sanatory-option">
-            <div class="sanatory-option__icon gsap-reveal" data-gsap-delay="800">
-              <img src="@images/icons/taxi.svg" alt="">
-            </div>
-            <div class="sanatory-option__title gsap-reveal" data-gsap-delay="750">На автомобиле</div>
-          </div>
-        </div>
-      </div>
-      <div class="sanatory-slide">
-        <div class="title-2 sanatory-slide__title gsap-reveal">Достопримечательности</div>
-        <p class="sanatory-slide__text gsap-reveal">
-          Курорт Боровое привлекает не только любителей пляжного отдыха, но и настоящих ценителей уникальных природных
-          достопримечательностей. В окрестностях озера расположено немало интересных объектов, история которых овеяна
-          мифами и легендами. Вот лишь несколько из них
-        </p>
-        <div class="sanatory-slide__body sanatory-swiper gsap-reveal">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="sanatory-slide__item">
-                <img class="sanatory-slide__img" src="@images/sanatory/sanatory-slide-1.jpg" alt="">
-                <p class="sanatory-slide__label">Поляна Абылай-хана – находится на въезде в курорт, представляет собой
-                  небольшое поле с особой энергетикой и лечебным микроклиматом.</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="sanatory-slide__item">
-                <img class="sanatory-slide__img" src="@images/sanatory/sanatory-slide-2.png" alt="">
-                <p class="sanatory-slide__label">Поляна Абылай-хана – находится на въезде в курорт, представляет собой
-                  небольшое поле с особой энергетикой и лечебным микроклиматом.</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="sanatory-slide__item">
-                <img class="sanatory-slide__img" src="@images/sanatory/sanatory-slide-3.jpg" alt="">
-                <p class="sanatory-slide__label">Поляна Абылай-хана – находится на въезде в курорт, представляет собой
-                  небольшое поле с особой энергетикой и лечебным микроклиматом.</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="sanatory-slide__item">
-                <img class="sanatory-slide__img" src="@images/sanatory/sanatory-slide-4.jpg" alt="">
-                <p class="sanatory-slide__label">Поляна Абылай-хана – находится на въезде в курорт, представляет собой
-                  небольшое поле с особой энергетикой и лечебным микроклиматом.</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="sanatory-slide__item">
-                <img class="sanatory-slide__img" src="@images/sanatory/sanatory-slide-5.jpg" alt="">
-                <p class="sanatory-slide__label">Поляна Абылай-хана – находится на въезде в курорт, представляет собой
-                  небольшое поле с особой энергетикой и лечебным микроклиматом.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="sanatory-slide__swiper-control">
-          <div class="sanatory-slide__swiper-button-prev">
-            <svg viewBox="0 0 92 92" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M55.3147 69.2683L78.583 46L55.3147 22.7316M13.4163 46L77.9313 46" stroke="#0C97CD"
-                stroke-width="10" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-          </div>
-          <div class="sanatory-slide__swiper-button-next">
-            <svg viewBox="0 0 92 92" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M55.3147 69.2683L78.583 46L55.3147 22.7316M13.4163 46L77.9313 46" stroke="#0C97CD"
-                stroke-width="10" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-            </svg>
-          </div>
-        </div>
-
-        <div class="sanatory-slide__pagination">
-          <div class="sanatory-slide__counter">
-            <span class="sanatory-slide__current-slide">1</span>/<span class="sanatory-slide__count">12</span>
-          </div>
-          <div class="sanatory-slide__border"></div>
-        </div>
-      </div>
+      <br><br>
+      <br><br>
+      <br><br>
+      <br><br>
     </div>
   </div>
 </section>

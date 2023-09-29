@@ -5,26 +5,45 @@
 .sanatory {
   padding-bottom: 83rem;
 
-  @include mixin.laptop { padding-bottom: 70rem; }
-  @include mixin.wide-tablet { padding-bottom: 58rem; }
-  @include mixin.tablet { padding-bottom: 46rem; }
-  @include mixin.small-tablet { padding-bottom: 34rem; }
-  @include mixin.phone { padding-bottom: 22rem; }
-  @include mixin.sm-phone { padding-bottom: 10rem; }
+  @include mixin.laptop {
+    padding-bottom: 70rem;
+  }
+
+  @include mixin.wide-tablet {
+    padding-bottom: 58rem;
+  }
+
+  @include mixin.tablet {
+    padding-bottom: 46rem;
+  }
+
+  @include mixin.small-tablet {
+    padding-bottom: 34rem;
+  }
+
+  @include mixin.phone {
+    padding-bottom: 22rem;
+  }
+
+  @include mixin.sm-phone {
+    padding-bottom: 10rem;
+  }
 
   &__banner {
     min-height: unset;
     max-height: 750px;
 
     &:before {
-      background-image: url('@images/sanatory/sanatory-banner.png');
+      background-image: url('@images/sanatory/okjetpes-banner.jpg');
     }
   }
 }
 
 .sanatory-page {
   .row {
-    @include mixin.small-tablet { flex-wrap: wrap; }
+    @include mixin.small-tablet {
+      flex-wrap: wrap;
+    }
   }
 
   &__content {
@@ -36,18 +55,45 @@
     align-items: stretch;
     gap: 7rem;
 
-    @include mixin.laptop { margin-top: -9rem; gap: 6.2rem; }
-    @include mixin.wide-tablet { margin-top: -8.2rem; gap: 5.6rem; }
-    @include mixin.tablet { margin-top: -7.4rem; gap: 5rem; }
-    @include mixin.small-tablet { margin-top: -6.6rem; gap: 4.4rem; }
-    @include mixin.phone { margin-top: -5.8rem; gap: 3.6rem; }
-    @include mixin.sm-phone { margin-top: -5rem; gap: 3rem; }
+    @include mixin.laptop {
+      margin-top: -9rem;
+      gap: 6.2rem;
+    }
+
+    @include mixin.wide-tablet {
+      margin-top: -8.2rem;
+      gap: 5.6rem;
+    }
+
+    @include mixin.tablet {
+      margin-top: -7.4rem;
+      gap: 5rem;
+    }
+
+    @include mixin.small-tablet {
+      margin-top: -6.6rem;
+      gap: 4.4rem;
+    }
+
+    @include mixin.phone {
+      margin-top: -5.8rem;
+      gap: 3.6rem;
+    }
+
+    @include mixin.sm-phone {
+      margin-top: -5rem;
+      gap: 3rem;
+    }
 
     .overlay img {
       max-width: 50%;
       margin: 0 auto;
 
-      @include mixin.small-tablet { max-width: 100%; max-height: 40rem; object-fit: contain; }
+      @include mixin.small-tablet {
+        max-width: 100%;
+        max-height: 40rem;
+        object-fit: contain;
+      }
     }
 
     .float-text-block {
@@ -61,9 +107,18 @@
         border-bottom-right-radius: 15px;
         overflow: hidden;
 
-        @include mixin.wide-tablet { width: 45%; }
-        @include mixin.tablet { width: 50%; }
-        @include mixin.phone { width: 100%; margin-right: 0; }
+        @include mixin.wide-tablet {
+          width: 45%;
+        }
+
+        @include mixin.tablet {
+          width: 50%;
+        }
+
+        @include mixin.phone {
+          width: 100%;
+          margin-right: 0;
+        }
 
         img {
           max-width: 100% !important;
@@ -85,22 +140,56 @@
 .sanatory-way {
   padding: 9.5rem;
 
-  @include mixin.laptop { padding: 8rem; }
-  @include mixin.wide-tablet { padding: 7rem; }
-  @include mixin.tablet { padding: 6rem; }
-  @include mixin.small-tablet { padding: 5rem; }
-  @include mixin.phone { padding: 4rem; }
-  @include mixin.sm-phone { padding: 3rem; }
+  @include mixin.laptop {
+    padding: 8rem;
+  }
+
+  @include mixin.wide-tablet {
+    padding: 7rem;
+  }
+
+  @include mixin.tablet {
+    padding: 6rem;
+  }
+
+  @include mixin.small-tablet {
+    padding: 5rem;
+  }
+
+  @include mixin.phone {
+    padding: 4rem;
+  }
+
+  @include mixin.sm-phone {
+    padding: 3rem;
+  }
 
   &__title {
     margin-bottom: 5rem;
 
-    @include mixin.laptop { margin-bottom: 4.3rem; }
-    @include mixin.wide-tablet { margin-bottom: 3.8rem; }
-    @include mixin.tablet { margin-bottom: 3.3rem; }
-    @include mixin.small-tablet { margin-bottom: 2.8rem; }
-    @include mixin.phone { margin-bottom: 2.3rem; }
-    @include mixin.sm-phone { margin-bottom: 1.8rem; }
+    @include mixin.laptop {
+      margin-bottom: 4.3rem;
+    }
+
+    @include mixin.wide-tablet {
+      margin-bottom: 3.8rem;
+    }
+
+    @include mixin.tablet {
+      margin-bottom: 3.3rem;
+    }
+
+    @include mixin.small-tablet {
+      margin-bottom: 2.8rem;
+    }
+
+    @include mixin.phone {
+      margin-bottom: 2.3rem;
+    }
+
+    @include mixin.sm-phone {
+      margin-bottom: 1.8rem;
+    }
   }
 
   &__body {
@@ -111,12 +200,30 @@
     align-items: flex-start;
     gap: 6.9rem;
 
-    @include mixin.laptop { gap: 8rem; }
-    @include mixin.wide-tablet { gap: 7rem; }
-    @include mixin.tablet { gap: 6rem; }
-    @include mixin.small-tablet { gap: 5rem; flex-wrap: wrap; }
-    @include mixin.phone { gap: 4rem; }
-    @include mixin.sm-phone { gap: 3rem; }
+    @include mixin.laptop {
+      gap: 8rem;
+    }
+
+    @include mixin.wide-tablet {
+      gap: 7rem;
+    }
+
+    @include mixin.tablet {
+      gap: 6rem;
+    }
+
+    @include mixin.small-tablet {
+      gap: 5rem;
+      flex-wrap: wrap;
+    }
+
+    @include mixin.phone {
+      gap: 4rem;
+    }
+
+    @include mixin.sm-phone {
+      gap: 3rem;
+    }
   }
 
   .sanatory-option {
@@ -126,8 +233,13 @@
     justify-content: flex-start;
     align-items: center;
 
-    @include mixin.small-tablet { width: 40%; }
-    @include mixin.phone { width: 60%; }
+    @include mixin.small-tablet {
+      width: 40%;
+    }
+
+    @include mixin.phone {
+      width: 60%;
+    }
 
     &__icon {
       width: 10.2rem;
@@ -143,12 +255,38 @@
         max-width: 70%;
       }
 
-      @include mixin.laptop { width: 9rem; height: 9rem; }
-      @include mixin.wide-tablet { width: 8.2rem; height: 8.2rem; }
-      @include mixin.tablet { width: 7.4rem; height: 7.4rem; margin-bottom: 2rem; }
-      @include mixin.small-tablet { width: 6.6rem; height: 6.6rem; }
-      @include mixin.phone { width: 5.8rem; height: 5.8rem; margin-bottom: 1.5rem; }
-      @include mixin.sm-phone { width: 5rem; height: 5rem; margin-bottom: 1rem; }
+      @include mixin.laptop {
+        width: 9rem;
+        height: 9rem;
+      }
+
+      @include mixin.wide-tablet {
+        width: 8.2rem;
+        height: 8.2rem;
+      }
+
+      @include mixin.tablet {
+        width: 7.4rem;
+        height: 7.4rem;
+        margin-bottom: 2rem;
+      }
+
+      @include mixin.small-tablet {
+        width: 6.6rem;
+        height: 6.6rem;
+      }
+
+      @include mixin.phone {
+        width: 5.8rem;
+        height: 5.8rem;
+        margin-bottom: 1.5rem;
+      }
+
+      @include mixin.sm-phone {
+        width: 5rem;
+        height: 5rem;
+        margin-bottom: 1rem;
+      }
     }
 
     &__title {
@@ -158,12 +296,29 @@
       color: var.$color2;
       font-family: var.$font-family2;
 
-      @include mixin.laptop { font-size: 2.2rem; }
-      @include mixin.wide-tablet { font-size: 2rem; }
-      @include mixin.tablet { font-size: 1.8rem; }
-      @include mixin.small-tablet { font-size: 1.6rem; }
-      @include mixin.phone { font-size: 1.4rem; }
-      @include mixin.sm-phone { font-size: 1.2rem; }
+      @include mixin.laptop {
+        font-size: 2.2rem;
+      }
+
+      @include mixin.wide-tablet {
+        font-size: 2rem;
+      }
+
+      @include mixin.tablet {
+        font-size: 1.8rem;
+      }
+
+      @include mixin.small-tablet {
+        font-size: 1.6rem;
+      }
+
+      @include mixin.phone {
+        font-size: 1.4rem;
+      }
+
+      @include mixin.sm-phone {
+        font-size: 1.2rem;
+      }
     }
   }
 }
@@ -172,12 +327,29 @@
   position: relative;
   margin-bottom: 18.3rem;
 
-  @include mixin.laptop { margin-bottom: 15rem; }
-  @include mixin.wide-tablet { margin-bottom: 13rem; }
-  @include mixin.tablet { margin-bottom: 11rem; }
-  @include mixin.small-tablet { margin-bottom: 9rem; }
-  @include mixin.phone { margin-bottom: 7rem; }
-  @include mixin.sm-phone { margin-bottom: 5rem; }
+  @include mixin.laptop {
+    margin-bottom: 15rem;
+  }
+
+  @include mixin.wide-tablet {
+    margin-bottom: 13rem;
+  }
+
+  @include mixin.tablet {
+    margin-bottom: 11rem;
+  }
+
+  @include mixin.small-tablet {
+    margin-bottom: 9rem;
+  }
+
+  @include mixin.phone {
+    margin-bottom: 7rem;
+  }
+
+  @include mixin.sm-phone {
+    margin-bottom: 5rem;
+  }
 
   &__title {
     margin-bottom: 1.5rem;
@@ -186,8 +358,13 @@
   &__text {
     margin-bottom: 3rem;
 
-    @include mixin.small-tablet { width: 40%; }
-    @include mixin.phone { width: 60%; }
+    @include mixin.small-tablet {
+      width: 40%;
+    }
+
+    @include mixin.phone {
+      width: 60%;
+    }
   }
 
   &__item {
@@ -211,7 +388,9 @@
   }
 
   &__swiper-control {
-    @include mixin.tablet { display: none; }
+    @include mixin.tablet {
+      display: none;
+    }
 
     div {
       width: 6%;
@@ -235,13 +414,17 @@
     transform-origin: center;
     transform: rotateZ(180deg);
 
-    @include mixin.laptop { left: 5%; }
+    @include mixin.laptop {
+      left: 5%;
+    }
   }
 
   &__swiper-button-next {
     right: -10%;
 
-    @include mixin.laptop { right: 5%; }
+    @include mixin.laptop {
+      right: 5%;
+    }
   }
 
   &__pagination {
@@ -271,4 +454,25 @@
     background: var.$color3;
     transition: 0.3s linear;
   }
+}
+
+.okjetpes-list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 15px;
+  padding: 35px 15px;
+}
+
+.okjetpes-1 {
+  width: 150px;
+}
+
+.okjetpes-2 {
+  width: 100px;
+}
+
+.okjetpes-3 {
+  width: 100px;
 }
