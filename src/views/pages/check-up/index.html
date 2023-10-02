@@ -14,43 +14,115 @@
 {% endblock %}
 
 {% block content %}
-<section class="banner check-up__banner">
-  <div class="container">
-    <h1 class="banner-title gsap-reveal">Check up</h1>
-    <h1 class="banner-subtitle gsap-reveal" data-gsap-delay="300">Полное комплексное <br> обследование организма</h1>
-  </div>
-</section>
-<section class="check-up-page">
-  <div class="container">
-    <div class="check-up-page__content">
-      <div class="overlay check-up-page__item gsap-reveal">
-        <div class="check-up-page__item-img">
-          <!-- <img class="gsap-reveal" src="@images/check-up-img-1.png" alt="" data-gsap-delay="300"> -->
-        </div>
-        <div class="check-up-page__item-content">
-          <!-- <p class="gsap-reveal" data-gsap-delay="600">Обезопасьте себя, Ваших детей и родителей от тяжелых заболеваний, выявив возможные отклонения на комплексном обследовании check up по доступным ценам</p>
-          <div class="check-up-page__item-title gsap-reveal" data-gsap-delay="800">Типы</div>
-          <ul class="gsap-reveal" data-gsap-delay="1000">
-            <li>Для мужчин и женщин</li>
-            <li>Готовлюсь стать мамой и папой</li>
-            <li>Онкологический</li>
-            <li>Кардиологический</li>
-            <li>Гастроэнтерологический</li>
-            <li>Для родителей</li>
-            <li>Для курящих</li>
-            <li>Стоматологический</li>
-          </ul> -->
-        </div>
-      </div>
-      <div class="overlay check-up-page__item check-up-page__item--reverse gsap-reveal">
-        <div class="check-up-page__item-img">
-          <!-- <img class="gsap-reveal" src="@images/check-up-img-2.png" alt="" data-gsap-delay="300"> -->
-        </div>
-        <div class="check-up-page__item-content">
-          <!-- <p class="gsap-reveal" data-gsap-delay="600">20% серьезных диагнозов выявляются благодаря check up. Это мотивирует людей оперативно принимать меры и своевременно проходить курс лечения.</p>
-          <p class="gsap-reveal" data-gsap-delay="900">Самый быстрый check up занимает всего 3 часа. Возможно, именно столько времени нужно Вам, чтобы не допустить серьезных проблем со здоровьем в будущем.</p> -->
-        </div>
-      </div>
+<section class="check-up">
+  <img src="@images/check-up/check-up-1.png" alt="">
+  <img src="@images/check-up/check-up-2.png" alt="">
+  <div class="container check-up__container">
+    <div class="title-1 check-up__title">Check up</div>
+    <div class="check-up__subtitle">Полное комплексное обследование организма для женщин и мужчин</div>
+    <div class="check-up__body">
+      <img src="@images/check-up/check-up-man.png" alt="">
+      <ul class="check-up__list">
+        <li class="check-up__item">
+          <img src="@images/check-up/check-up-point.png" alt="">
+          <div class="check-up__line">
+            <svg viewBox="0 0 174 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 1.00002L173.5 1" stroke="#FFF4BB" stroke-dasharray="2 2" />
+            </svg>
+          </div>
+          <div class="check-up__text check-up__text--left">Неврологический</div>
+        </li>
+        <li class="check-up__item check-up__item--right">
+          <img src="@images/check-up/check-up-point.png" alt="">
+          <div class="check-up__line">
+            <svg viewBox="0 0 174 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 1.00002L173.5 1" stroke="#FFF4BB" stroke-dasharray="2 2" />
+            </svg>
+          </div>
+          <div class="check-up__text check-up__text--right">Офтальмологический</div>
+        </li>
+        <li class="check-up__item">
+          <img src="@images/check-up/check-up-point.png" alt="">
+          <div class="check-up__line">
+            <svg viewBox="0 0 174 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 1.00002L173.5 1" stroke="#FFF4BB" stroke-dasharray="2 2" />
+            </svg>
+          </div>
+          <div class="check-up__text check-up__text--left">Отоларингологический</div>
+        </li>
+        <li class="check-up__item">
+          <img src="@images/check-up/check-up-point.png" alt="">
+          <div class="check-up__line">
+            <svg viewBox="0 0 174 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 1.00002L173.5 1" stroke="#FFF4BB" stroke-dasharray="2 2" />
+            </svg>
+          </div>
+          <div class="check-up__text check-up__text--left">Стоматологический</div>
+        </li>
+        <li class="check-up__item check-up__item--right">
+          <img src="@images/check-up/check-up-point.png" alt="">
+          <div class="check-up__line">
+            <svg viewBox="0 0 174 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 1.00002L173.5 1" stroke="#FFF4BB" stroke-dasharray="2 2" />
+            </svg>
+          </div>
+          <div class="check-up__text check-up__text--right">Онкологический</div>
+        </li>
+        <li class="check-up__item">
+          <img src="@images/check-up/check-up-point.png" alt="">
+          <div class="check-up__line">
+            <svg viewBox="0 0 174 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 1.00002L173.5 1" stroke="#FFF4BB" stroke-dasharray="2 2" />
+            </svg>
+          </div>
+          <div class="check-up__text check-up__text--left">Кардиологический</div>
+        </li>
+        <li class="check-up__item check-up__item--right">
+          <img src="@images/check-up/check-up-point.png" alt="">
+          <div class="check-up__line">
+            <svg viewBox="0 0 174 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 1.00002L173.5 1" stroke="#FFF4BB" stroke-dasharray="2 2" />
+            </svg>
+          </div>
+          <div class="check-up__text check-up__text--right">Для курящих</div>
+        </li>
+        <li class="check-up__item">
+          <img src="@images/check-up/check-up-point.png" alt="">
+          <div class="check-up__line">
+            <svg viewBox="0 0 174 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 1.00002L173.5 1" stroke="#FFF4BB" stroke-dasharray="2 2" />
+            </svg>
+          </div>
+          <div class="check-up__text check-up__text--left">Эндокринологический</div>
+        </li>
+        <li class="check-up__item check-up__item--right">
+          <img src="@images/check-up/check-up-point.png" alt="">
+          <div class="check-up__line">
+            <svg viewBox="0 0 174 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 1.00002L173.5 1" stroke="#FFF4BB" stroke-dasharray="2 2" />
+            </svg>
+          </div>
+          <div class="check-up__text check-up__text--right">Для родителей</div>
+        </li>
+        <li class="check-up__item">
+          <img src="@images/check-up/check-up-point.png" alt="">
+          <div class="check-up__line">
+            <svg viewBox="0 0 174 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 1.00002L173.5 1" stroke="#FFF4BB" stroke-dasharray="2 2" />
+            </svg>
+          </div>
+          <div class="check-up__text check-up__text--left">Гастроэнтерологический</div>
+        </li>
+        <li class="check-up__item check-up__item--right">
+          <img src="@images/check-up/check-up-point.png" alt="">
+          <div class="check-up__line">
+            <svg viewBox="0 0 174 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 1.00002L173.5 1" stroke="#FFF4BB" stroke-dasharray="2 2" />
+            </svg>
+          </div>
+          <div class="check-up__text check-up__text--right">Готовлюсь стать <br> мамой и папой</div>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
