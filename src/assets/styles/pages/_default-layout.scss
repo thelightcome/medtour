@@ -486,16 +486,20 @@
     background-color: rgba(var.$color2, 0.5);
   }
 
-  &:before {
-    content: '';
+  .img {
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     z-index: -2;
-    background-size: cover;
-    background-position: center;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 }
 

@@ -52,13 +52,13 @@ module.exports = {
         'error-404/index': 'src/views/pages/error-404/index.html', // => dist/error-404.html
 
         'clinics/index': 'src/views/pages/clinics/index.html', // => dist/clinics.html
-        'clinics/clinic': 'src/views/pages/clinics/clinic/index.html', // => dist/clinics/clinic.html
-        'clinics/umit': 'src/views/pages/clinics/umit/index.html', // => dist/clinics/umit.html
-        'clinics/children-reabilitation': 'src/views/pages/clinics/children-reabilitation/index.html', // => dist/clinics/children-reabilitation.html
-        'clinics/maternal': 'src/views/pages/clinics/maternal/index.html', // => dist/clinics/maternal.html
-        'clinics/diagnostic': 'src/views/pages/clinics/diagnostic/index.html', // => dist/clinics/diagnostic.html
-        'clinics/neurosurgery': 'src/views/pages/clinics/neurosurgery/index.html', // => dist/clinics/neurosurgery.html
-        'clinics/president': 'src/views/pages/clinics/president/index.html', // => dist/clinics/president.html
+        'clinics/clinic/index': 'src/views/pages/clinics/clinic/index.html', // => dist/clinics/clinic.html
+        'clinics/umit/index': 'src/views/pages/clinics/umit/index.html', // => dist/clinics/umit.html
+        'clinics/children-reabilitation/index': 'src/views/pages/clinics/children-reabilitation/index.html', // => dist/clinics/children-reabilitation.html
+        'clinics/maternal/index': 'src/views/pages/clinics/maternal/index.html', // => dist/clinics/maternal.html
+        'clinics/diagnostic/index': 'src/views/pages/clinics/diagnostic/index.html', // => dist/clinics/diagnostic.html
+        'clinics/neurosurgery/index': 'src/views/pages/clinics/neurosurgery/index.html', // => dist/clinics/neurosurgery.html
+        'clinics/president/index': 'src/views/pages/clinics/president/index.html', // => dist/clinics/president.html
       },
       
       js: {
