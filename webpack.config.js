@@ -42,6 +42,7 @@ module.exports = {
         'okjetpes/index': 'src/views/pages/okjetpes/index.html', // => dist/okjetpes.html
         'grand_prix_burabay/index': 'src/views/pages/grand_prix_burabay/index.html', // => dist/grand_prix_burabay.html
         'clinic/index': 'src/views/pages/clinic/index.html', // => dist/clinic.html
+        'nroc/index': 'src/views/pages/nroc/index.html', // => dist/nroc.html
         'maternal/index': 'src/views/pages/maternal/index.html', // => dist/maternal.html
         'diagnostic/index': 'src/views/pages/diagnostic/index.html', // => dist/diagnostic.html
         'children-reabilitation/index': 'src/views/pages/children-reabilitation/index.html', // => dist/children-reabilitation.html
