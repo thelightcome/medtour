@@ -426,7 +426,16 @@
 
   &--2 {
     margin-bottom: 6.5rem;
-    flex-direction: row-reverse;
+
+    .nroc-img {
+      flex-grow: 1;
+
+      img {
+        max-width: 100%;
+        max-height: 420px;
+        object-fit: contain;
+      }
+    }
 
     @include mixin.wide-laptop {
       margin-bottom: 5.7rem;
@@ -449,6 +458,10 @@
     @include mixin.sm-phone {
       margin-bottom: 1.5rem;
     }
+  }
+
+  &--2 &__content {
+    max-width: unset !important;
   }
 
   &--3 {
