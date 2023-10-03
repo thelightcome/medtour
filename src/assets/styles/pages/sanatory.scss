@@ -34,7 +34,7 @@
     max-height: 750px;
 
     &:before {
-      background-image: url('@images/sanatory/okjetpes-banner.jpg');
+      background-image: url('@images/sanatory/grand_prix_burabay-banner.jpg');
     }
   }
 }
@@ -122,6 +122,7 @@
 
         img {
           max-width: 100% !important;
+          width: 100%;
         }
       }
 

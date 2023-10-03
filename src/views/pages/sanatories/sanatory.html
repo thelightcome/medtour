@@ -5,17 +5,20 @@
 
 {% block styles %}
 <!-- load specific page style -->
-<link href="@/views/pages/okjetpes/style.scss" rel="stylesheet">
+<link href="@styles/pages/sanatory.scss" rel="stylesheet">
 {% endblock %}
 
 {% block scripts %}
 <!-- load specific page script -->
-<script src="@/views/pages/okjetpes/index.js"></script>
+<script src="@scripts/sanatories.js"></script>
 {% endblock %}
 
 {% block content %}
 <section class="banner sanatory__banner">
   <div class="container">
+    <div class="banner__img">
+      <img src="@images/sanatory/sanatory-banner.png" alt="">
+    </div>
     <h1 class="banner-title gsap-reveal">Боровое</h1>
   </div>
 </section>
