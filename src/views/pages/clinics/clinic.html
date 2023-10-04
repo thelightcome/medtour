@@ -10,12 +10,14 @@
 
 {% block scripts %}
 <!-- load specific page script -->
-<script src="@scripts/clinic.js"></script>
 {% endblock %}
 
 {% block content %}
 <section class="banner clinic__banner">
   <div class="container">
+    <div class="banner__img">
+      <img src="@images/clinic/clinic.png" alt="">
+    </div>
     <h1 class="banner-title gsap-reveal">Национальный научный кардиохирургический центр</h1>
   </div>
 </section>
@@ -141,96 +143,6 @@
         </div>
         <div class="clinic-block__img">
           <img src="@images/clinic/clinic-image-3.png" alt="">
-        </div>
-      </div>
-
-      <!-- <div class="doctors">
-        <div class="title-2 doctors__title gsap-reveal">Врачи</div>
-        <div class="doctors__list">
-          <div class="overlay doctor gsap-reveal" data-gsap-delay="300">
-            <div class="doctor__img">
-              <img src="@images/clinic/doctor-1.png" alt="">
-            </div>
-            <div class="doctor__title">Дарибаев Жолтай Рахимбекович</div>
-            <div class="doctor__text">Невролог высшей категории к.м.н., доцент, PhD, MBA</div>
-            <button class="doctor__btn">Подробнее <img src="@images/icons/small-white-icon.svg" alt=""></button>
-          </div>
-          <div class="overlay doctor gsap-reveal" data-gsap-delay="500">
-            <div class="doctor__img">
-              <img src="@images/clinic/doctor-1.png" alt="">
-            </div>
-            <div class="doctor__title">Дарибаев Жолтай Рахимбекович</div>
-            <div class="doctor__text">Невролог высшей категории к.м.н., доцент, PhD, MBA</div>
-            <button class="doctor__btn">Подробнее <img src="@images/icons/small-white-icon.svg" alt=""></button>
-          </div>
-          <div class="overlay doctor gsap-reveal" data-gsap-delay="700">
-            <div class="doctor__img">
-              <img src="@images/clinic/doctor-1.png" alt="">
-            </div>
-            <div class="doctor__title">Дарибаев Жолтай Рахимбекович</div>
-            <div class="doctor__text">Невролог высшей категории к.м.н., доцент, PhD, MBA</div>
-            <button class="doctor__btn">Подробнее <img src="@images/icons/small-white-icon.svg" alt=""></button>
-          </div>
-          <div class="overlay doctor gsap-reveal" data-gsap-delay="900">
-            <div class="doctor__img">
-              <img src="@images/clinic/doctor-1.png" alt="">
-            </div>
-            <div class="doctor__title">Дарибаев Жолтай Рахимбекович</div>
-            <div class="doctor__text">Невролог высшей категории к.м.н., доцент, PhD, MBA</div>
-            <button class="doctor__btn">Подробнее <img src="@images/icons/small-white-icon.svg" alt=""></button>
-          </div>
-        </div>
-      </div> -->
-    </div>
-  </div>
-
-  <div class="modal">
-    <div class="modal__overlay">
-      <div class="overlay modal__content doctor-info">
-        <button class="btn modal__close">
-          <img src="@images/icons/close-modal.svg" alt="">
-        </button>
-        <div class="doctor-info__header">
-          <div class="doctor-info__img">
-            <img src="@images/clinic/doctor-1.png" alt="">
-          </div>
-          <div class="doctor-info__data">
-            <div class="doctor-info__name">Дарибаев Жолтай Рахимбекович</div>
-            <div class="doctor-info__text">Невролог высшей категории к.м.н., доцент, PhD, MBA</div>
-            <div class="doctor-info__exps">
-              <div class="overlay doctor-info__exp">
-                <div class="doctor-info__exp-title">34 года</div>
-                <div class="doctor-info__exp-text">опыт работы</div>
-              </div>
-              <div class="overlay doctor-info__exp">
-                <div class="doctor-info__exp-title">2</div>
-                <div class="doctor-info__exp-text">патента</div>
-              </div>
-              <div class="overlay doctor-info__exp">
-                <div class="doctor-info__exp-title">1</div>
-                <div class="doctor-info__exp-text">внедренная технология</div>
-              </div>
-              <div class="overlay doctor-info__exp">
-                <div class="doctor-info__exp-title">170</div>
-                <div class="doctor-info__exp-text">научных публикаций</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="doctor-info__body">
-          <p>Непрерывно повышает свою квалификацию, проходил обучение в России, США, Германии, Австрии. Швейцарии,
-            Франции, Чехии, Китае. Занимается диагностикой, лечением и реабилитацией при:</p>
-          <ul>
-            <li>сосудистых заболеваниях головного и спинного мозга;</li>
-            <li>заболеваниях позвоночника (остеохондрозы, патология дисков) и периферической нервной системы;</li>
-            <li>демиелинизирующих заболеваниях нервной системы;</li>
-            <li>судорожных и пароксизмальных состояниях в неврологии;</li>
-            <li>головных болях и головокружениях;</li>
-            <li>болях в спине;</li>
-            <li>нарушениях памяти;</li>
-            <li>при поражений нервной системы и опорно-двигательного аппарата и когнитивных функций.</li>
-          </ul>
-          <p>Внедрил в Казахстане технологию ранней диагностики сосудистых нарушений мозгового кровообращения.</p>
         </div>
       </div>
     </div>

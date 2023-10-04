@@ -5,7 +5,7 @@
 
 {% block styles %}
 <!-- load specific page style -->
-<link href="@/views/pages/clinics/children-reabilitation/style.scss" rel="stylesheet">
+<link href="@styles/pages/clinic.scss" rel="stylesheet">
 {% endblock %}
 
 {% block scripts %}
@@ -15,6 +15,9 @@
 {% block content %}
 <section class="banner clinic__banner">
   <div class="container">
+    <div class="banner__img">
+      <img src="@images/clinic/children.png" alt="">
+    </div>
     <h1 class="banner-title gsap-reveal">Национальный центр детской реабилитации</h1>
   </div>
 </section>

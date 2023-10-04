@@ -10,12 +10,15 @@
 
 {% block scripts %}
 <!-- load specific page script -->
-<script src="@/views/pages/clinics/neurosurgery/index.js"></script>
+<script src="@scripts/clinic.js"></script>
 {% endblock %}
 
 {% block content %}
 <section class="banner clinic__banner">
   <div class="container">
+    <div class="banner__img">
+      <img src="@images/clinic/clinic.png" alt="">
+    </div>
     <h1 class="banner-title gsap-reveal">НАЦИОНАЛЬНЫЙ ЦЕНТР НЕЙРОХИРУРГИИ</h1>
   </div>
 </section>
