@@ -1,0 +1,96 @@
+{% extends "src/views/layouts/default.html" %}
+
+<!-- set variables used in layout -->
+{% set title="KAMT на 'OTDYH LEISURE 2023'е" %}
+
+{% block styles %}
+<!-- load specific page style -->
+<link href="@/views/pages/news-10-04/style.scss" rel="stylesheet">
+{% endblock %}
+
+{% block scripts %}
+<!-- load specific page script -->
+<script src="@/views/pages/news-10-04/index.js"></script>
+{% endblock %}
+
+{% block content %}
+<section class="news-id-page">
+  <div class="container">
+    <div class="title-3 news-id-page__title gsap-reveal">Медицинский туризм развивают в Казахстане</div>
+    <div class="news-id-page__date gsap-reveal" data-gsap-delay="150">7 июля</div>
+    <div class="news-id-page__banner">
+      <img class="gsap-reveal" src="@images/news/news-07-04-1.jpg" alt="" data-gsap-delay="300" style="object-fit: contain;width: auto;">
+    </div>
+    <div class="news-id-page__body">
+      <div class="news-id-page__share-block share-block gsap-reveal" data-gsap-delay="500">
+        <div class="share-block__title">Поделиться</div>
+        <ul class="share-block__links">
+          <li class="share-block__link"><a href="/"><img src="@images/icons/twitter.svg" alt=""></a></li>
+          <li class="share-block__link"><a href="/"><img src="@images/icons/facebook.svg" alt=""></a></li>
+          <li class="share-block__link"><a href="/"><img src="@images/icons/instagram.svg" alt=""></a></li>
+        </ul>
+      </div>
+      <div class="news-id-page__content">
+        <div class="news-id-page__text">
+          <p class="gsap-reveal" data-gsap-delay="200">В Казахстане развивается медицинский туризм. С начала года лечиться в республику приехали три тысячи человек. Это вдвое больше, чем годом ранее. Какие направления интересны иностранным пациентам, рассказал корреспондент «МИР 24» Алена Грачева..</p>
+          <p class="gsap-reveal" data-gsap-delay="200">Научный кардиохирургический центр – медицинская достопримечательность Казахстана. Ради операции в нем туристы со всего мира преодолевают тысячи километров.</p>
+          <p class="gsap-reveal" data-gsap-delay="200">«Оборудование у нас каждые десять лет обновляется, и это позволяет нам проводить такие операции на высоком уровне. Мы проводили мастер-классы для специалистов уже из дальнего зарубежья. Это была западная Европа, Скандинавия и даже США», – рассказал директор департамента кардиологии в национальном научном кардиохирургическом центре Мурат Мукаров.</p>
+          <p class="gsap-reveal" data-gsap-delay="200">Одна из процедур – имплантация левого желудочка сердца с беспроводной поддержкой. Операция сложная. Замена желудочка на искусственный позволит органу функционировать полноценно. Более того, пациентам не придется ждать донорское сердце.</p>
+          <p class="gsap-reveal" data-gsap-delay="200">Чтобы сделать операцию в Казахстане, иностранцы покупают специальные медпутевки. В них входят выбор клиники и врача, онлайн-консультация по анализам, трансфер и оформление в гостинице. Если операция несложная, пациенту проведут экскурсии по городу и познакомят с местными традициями.</p>
+          <p class="gsap-reveal" data-gsap-delay="200">Посмотреть Казахстан и получить квалифицированную медпомощь едут пациенты из Узбекистана, Кыргызстана, Германии, Турции и Ирана. Большую часть путевок покупают граждане России.</p>
+          <p class="gsap-reveal" data-gsap-delay="200">Самые популярные направления медицинского туризма – нейро- и кардиохирургия, перинатальная медицина, нейрология и стоматология.</p>
+          <p class="gsap-reveal" data-gsap-delay="200">Лечатся за рубежом и казахстанцы. Чаще всего выбирают Россию. Едут в Москву и Новосибирск.</p>
+        </div>
+        <div class="news-id-page__hashtags gsap-reveal" data-gsap-delay="200">
+          <span>#Здравоохранение</span>
+          <span>#Общество</span>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="title-1 news-id-page__title news-id-page__title--big gsap-reveal" data-gsap-delay="200">Другие новости</div> -->
+    <!-- <div class="news-recomendations">
+      <div class="news-recomendations__list">
+        <div class="news-recomendations__item gsap-reveal" data-gsap-delay="400">
+          <div class="news-recomendations__img">
+            <img src="@images/news/news-img-1.png" alt="">
+          </div>
+          <div class="news-recomendations__date">26 июля</div>
+          <div class="news-recomendations__title">Какие медуслуги наиболее популярны у иностранцев в Казахстане</div>
+          <a href="/news-id" class="news-recomendations__more">
+            <img src="@images/icons/arrow-blue-small.svg" alt="">
+          </a>
+        </div>
+        <div class="news-recomendations__item gsap-reveal" data-gsap-delay="500">
+          <div class="news-recomendations__img">
+            <img src="@images/news/news-img-1.png" alt="">
+          </div>
+          <div class="news-recomendations__date">26 июля</div>
+          <div class="news-recomendations__title">Какие медуслуги наиболее популярны у иностранцев в Казахстане</div>
+          <a href="/news-id" class="news-recomendations__more">
+            <img src="@images/icons/arrow-blue-small.svg" alt="">
+          </a>
+        </div>
+        <div class="news-recomendations__item gsap-reveal" data-gsap-delay="600">
+          <div class="news-recomendations__img">
+            <img src="@images/news/news-img-1.png" alt="">
+          </div>
+          <div class="news-recomendations__date">26 июля</div>
+          <div class="news-recomendations__title">Какие медуслуги наиболее популярны у иностранцев в Казахстане</div>
+          <a href="/news-id" class="news-recomendations__more">
+            <img src="@images/icons/arrow-blue-small.svg" alt="">
+          </a>
+        </div>
+        <div class="news-recomendations__item gsap-reveal" data-gsap-delay="700">
+          <div class="news-recomendations__img">
+            <img src="@images/news/news-img-1.png" alt="">
+          </div>
+          <div class="news-recomendations__date">26 июля</div>
+          <div class="news-recomendations__title">Какие медуслуги наиболее популярны у иностранцев в Казахстане</div>
+          <a href="/news-id" class="news-recomendations__more">
+            <img src="@images/icons/arrow-blue-small.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div> -->
+</section>
+{% endblock %}

@@ -1,0 +1,93 @@
+{% extends "src/views/layouts/default.html" %}
+
+<!-- set variables used in layout -->
+{% set title="KAMT на 'OTDYH LEISURE 2023'е" %}
+
+{% block styles %}
+<!-- load specific page style -->
+<link href="@/views/pages/news-10-04/style.scss" rel="stylesheet">
+{% endblock %}
+
+{% block scripts %}
+<!-- load specific page script -->
+<script src="@/views/pages/news-10-04/index.js"></script>
+{% endblock %}
+
+{% block content %}
+<section class="news-id-page">
+  <div class="container">
+    <div class="title-3 news-id-page__title gsap-reveal">Названы популярные направления медицинского туризма в Астане</div>
+    <div class="news-id-page__date gsap-reveal" data-gsap-delay="150">4 июля</div>
+    <div class="news-id-page__banner">
+      <img class="gsap-reveal" src="@images/news/news-07-04-2.webp" alt="" data-gsap-delay="300" style="object-fit: contain;width: auto; max-width: 800px;">
+    </div>
+    <div class="news-id-page__body">
+      <div class="news-id-page__share-block share-block gsap-reveal" data-gsap-delay="500">
+        <div class="share-block__title">Поделиться</div>
+        <ul class="share-block__links">
+          <li class="share-block__link"><a href="/"><img src="@images/icons/twitter.svg" alt=""></a></li>
+          <li class="share-block__link"><a href="/"><img src="@images/icons/facebook.svg" alt=""></a></li>
+          <li class="share-block__link"><a href="/"><img src="@images/icons/instagram.svg" alt=""></a></li>
+        </ul>
+      </div>
+      <div class="news-id-page__content">
+        <div class="news-id-page__text">
+          <p class="gsap-reveal" data-gsap-delay="200">С какими проблемами со здоровьем иностранцы чаще всего обращаются к cтоличным врачам? На этот вопрос в рамках форума мэров городов-побратимов “25-летие Астаны: Астана – город будущего” ответила президент Казахстанской ассоциации медицинского туризма Кристина Кривец.</p>
+          <p class="gsap-reveal" data-gsap-delay="200">«Сегодня почти все иностранные спикеры отметили, что для их соотечественников наша страна занимает прочное место на карте медицинского туризма. Если говорить про Астану, то это кластер кардиохирургии, нейрохирургии, детской реабилитации, репродуктивной медицины и ортопедии. Как мы знаем, это сильнейшие направления. Кроме того, в список можно добавить услуги, не относящиеся к государственному сектору – стоматологию и пластическую хирургию», - рассказала Кристина Кривец на панельной сессии «Медицинский туризм».</p>
+          <p class="gsap-reveal" data-gsap-delay="200">По ее словам, если раньше за медицинскими услугами в Казахстан приезжали в основном из Узбекистана и Кыргызстана, то сегодня увеличился поток пациентов из России. </p>
+          <p class="gsap-reveal" data-gsap-delay="200">«Жителей соседней страны привлекает качество услуг, доступные цены и отсутствие языкового барьера. Кроме туристов из СНГ Астану посещают граждане Швейцарии, США, Австралии, ОАЭ и африканских стран. Их интересуют услуги казахстанских стоматологий и центров репродуктивной медицины», - добавила эксперт.</p>
+          <p class="gsap-reveal" data-gsap-delay="200">С докладами на панельной сессии также выступили представители Китая, Турции, Азербайджана, России, Узбекистана, Кыргызстана и Израиля. По общему мнению спикеров, казахстанские клиники привлекают иностранцев документально подтвержденным соответствием международным стандартам при доступных ценах на услуги.</p>
+        </div>
+        <div class="news-id-page__hashtags gsap-reveal" data-gsap-delay="200">
+          <span>#Здравоохранение</span>
+          <span>#Общество</span>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="title-1 news-id-page__title news-id-page__title--big gsap-reveal" data-gsap-delay="200">Другие новости</div> -->
+    <!-- <div class="news-recomendations">
+      <div class="news-recomendations__list">
+        <div class="news-recomendations__item gsap-reveal" data-gsap-delay="400">
+          <div class="news-recomendations__img">
+            <img src="@images/news/news-img-1.png" alt="">
+          </div>
+          <div class="news-recomendations__date">26 июля</div>
+          <div class="news-recomendations__title">Какие медуслуги наиболее популярны у иностранцев в Казахстане</div>
+          <a href="/news-id" class="news-recomendations__more">
+            <img src="@images/icons/arrow-blue-small.svg" alt="">
+          </a>
+        </div>
+        <div class="news-recomendations__item gsap-reveal" data-gsap-delay="500">
+          <div class="news-recomendations__img">
+            <img src="@images/news/news-img-1.png" alt="">
+          </div>
+          <div class="news-recomendations__date">26 июля</div>
+          <div class="news-recomendations__title">Какие медуслуги наиболее популярны у иностранцев в Казахстане</div>
+          <a href="/news-id" class="news-recomendations__more">
+            <img src="@images/icons/arrow-blue-small.svg" alt="">
+          </a>
+        </div>
+        <div class="news-recomendations__item gsap-reveal" data-gsap-delay="600">
+          <div class="news-recomendations__img">
+            <img src="@images/news/news-img-1.png" alt="">
+          </div>
+          <div class="news-recomendations__date">26 июля</div>
+          <div class="news-recomendations__title">Какие медуслуги наиболее популярны у иностранцев в Казахстане</div>
+          <a href="/news-id" class="news-recomendations__more">
+            <img src="@images/icons/arrow-blue-small.svg" alt="">
+          </a>
+        </div>
+        <div class="news-recomendations__item gsap-reveal" data-gsap-delay="700">
+          <div class="news-recomendations__img">
+            <img src="@images/news/news-img-1.png" alt="">
+          </div>
+          <div class="news-recomendations__date">26 июля</div>
+          <div class="news-recomendations__title">Какие медуслуги наиболее популярны у иностранцев в Казахстане</div>
+          <a href="/news-id" class="news-recomendations__more">
+            <img src="@images/icons/arrow-blue-small.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div> -->
+</section>
+{% endblock %}

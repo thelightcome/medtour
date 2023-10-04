@@ -22,7 +22,7 @@
 
   &__banner {
     &:after {
-      background-color: unset;
+      background-color: rgba(var.$color22, 0.4);
     }
   }
 
@@ -33,7 +33,7 @@
 
     span {
       display: inline-block;
-      background: rgba(var.$color22, 0.15);
+      // background: rgba(var.$color22, 0.15);
       padding: 0 25px;
     }
   }
@@ -295,7 +295,7 @@
     padding: 5.5rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: flex-start;
     border-radius: 10px;
     overflow: hidden;
@@ -464,7 +464,7 @@
     max-width: 591px;
 
     &__title {
-      font-size: 3.2rem;
+      font-size: 2.8rem;
       line-height: 1.41;
       font-weight: 400;
       margin-bottom: 5rem;

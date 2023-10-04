@@ -198,6 +198,10 @@
     position: relative;
     min-width: 122px;
     white-space: nowrap;
+    
+    a {
+      color: var.$color1;
+    }
 
     &::before {
       content: '';

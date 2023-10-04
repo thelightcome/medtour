@@ -1,0 +1,95 @@
+{% extends "src/views/layouts/default.html" %}
+
+<!-- set variables used in layout -->
+{% set title="KAMT на 'OTDYH LEISURE 2023'е" %}
+
+{% block styles %}
+<!-- load specific page style -->
+<link href="@/views/pages/news-10-04/style.scss" rel="stylesheet">
+{% endblock %}
+
+{% block scripts %}
+<!-- load specific page script -->
+<script src="@/views/pages/news-10-04/index.js"></script>
+{% endblock %}
+
+{% block content %}
+<section class="news-id-page">
+  <div class="container">
+    <div class="title-3 news-id-page__title gsap-reveal">В Астану прибывают лечиться из Швейцарии, США и Австралии
+    </div>
+    <div class="news-id-page__date gsap-reveal" data-gsap-delay="150">4 июля</div>
+    <div class="news-id-page__banner">
+      <img class="gsap-reveal" src="@images/news/news-07-04-3.jpeg" alt="" data-gsap-delay="300" style="object-fit: contain;width: auto;">
+    </div>
+    <div class="news-id-page__body">
+      <div class="news-id-page__share-block share-block gsap-reveal" data-gsap-delay="500">
+        <div class="share-block__title">Поделиться</div>
+        <ul class="share-block__links">
+          <li class="share-block__link"><a href="/"><img src="@images/icons/twitter.svg" alt=""></a></li>
+          <li class="share-block__link"><a href="/"><img src="@images/icons/facebook.svg" alt=""></a></li>
+          <li class="share-block__link"><a href="/"><img src="@images/icons/instagram.svg" alt=""></a></li>
+        </ul>
+      </div>
+      <div class="news-id-page__content">
+        <div class="news-id-page__text">
+          <p class="gsap-reveal" data-gsap-delay="200">Президент Ассоциации медицинского туризма РК Кристина Кривец рассказала о том, какие направления медицины развиты в Астане и из каких стран пациенты предпочитают лечиться в столице, передает Zakon.kz.</p>
+          <p class="gsap-reveal" data-gsap-delay="200">Президент Ассоциации медицинского туризма Кристина Кривец 4 июля на панельной сессии Форума мэров городов-побратимов отметила, что в Астане создан кластер медицинского туризма в рамках Корпоративного фонда "University Medical Center" (UMC). В него вошли клиники, которые прошли аккредитацию JCI (Joint Commission International) – разработанному в США стандарту, подтверждающему высший уровень качества здравоохранения.</p>
+          <p class="gsap-reveal" data-gsap-delay="200">"Сейчас довольно сильно поменялась картина медицинского туризма в Астану. Если раньше к нам в основном приезжали из Кыргызстана и Узбекистана, то сейчас стало больше пациентов из России. Из дальнего зарубежья в основном прибывают пациенты, желающие получить услуги репродуктивной медицины и стоматологии. Страны, из которых прибывают пациенты – это Швейцария, США, Арабские Эмираты, Австралия, Африканские страны". - Кристина Кривец</p>
+          <p class="gsap-reveal" data-gsap-delay="200">По ее словам, аккредитация по JCI – это достаточно дорогостоящая процедура. У клиники должен быть большой бюджет, чтобы привести все условия в соответствие с международными стандартами.</p>
+          <p class="gsap-reveal" data-gsap-delay="200">"Иностранные пациенты едут не только за лечением, но и за комфортом и хорошим сервисом. Они выбирают государственные и частные клиники, которые соответствуют стандартам безопасности и качества, где им могут оказать услуги в том числе и на английском языке". - Кристина Кривец</p>
+          <p class="gsap-reveal" data-gsap-delay="200">Она отметила, что в медицинском кластере Астаны развиты такие направления, как кардиохирургия, нейрохирургия, репродуктивная медицина, детская реабилитация. А также направления, которые не относятся к государственному сектору – стоматология и пластическая хирургия.</p>
+        </div>
+        <div class="news-id-page__hashtags gsap-reveal" data-gsap-delay="200">
+          <span>#Здравоохранение</span>
+          <span>#Общество</span>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="title-1 news-id-page__title news-id-page__title--big gsap-reveal" data-gsap-delay="200">Другие новости</div> -->
+    <!-- <div class="news-recomendations">
+      <div class="news-recomendations__list">
+        <div class="news-recomendations__item gsap-reveal" data-gsap-delay="400">
+          <div class="news-recomendations__img">
+            <img src="@images/news/news-img-1.png" alt="">
+          </div>
+          <div class="news-recomendations__date">26 июля</div>
+          <div class="news-recomendations__title">Какие медуслуги наиболее популярны у иностранцев в Казахстане</div>
+          <a href="/news-id" class="news-recomendations__more">
+            <img src="@images/icons/arrow-blue-small.svg" alt="">
+          </a>
+        </div>
+        <div class="news-recomendations__item gsap-reveal" data-gsap-delay="500">
+          <div class="news-recomendations__img">
+            <img src="@images/news/news-img-1.png" alt="">
+          </div>
+          <div class="news-recomendations__date">26 июля</div>
+          <div class="news-recomendations__title">Какие медуслуги наиболее популярны у иностранцев в Казахстане</div>
+          <a href="/news-id" class="news-recomendations__more">
+            <img src="@images/icons/arrow-blue-small.svg" alt="">
+          </a>
+        </div>
+        <div class="news-recomendations__item gsap-reveal" data-gsap-delay="600">
+          <div class="news-recomendations__img">
+            <img src="@images/news/news-img-1.png" alt="">
+          </div>
+          <div class="news-recomendations__date">26 июля</div>
+          <div class="news-recomendations__title">Какие медуслуги наиболее популярны у иностранцев в Казахстане</div>
+          <a href="/news-id" class="news-recomendations__more">
+            <img src="@images/icons/arrow-blue-small.svg" alt="">
+          </a>
+        </div>
+        <div class="news-recomendations__item gsap-reveal" data-gsap-delay="700">
+          <div class="news-recomendations__img">
+            <img src="@images/news/news-img-1.png" alt="">
+          </div>
+          <div class="news-recomendations__date">26 июля</div>
+          <div class="news-recomendations__title">Какие медуслуги наиболее популярны у иностранцев в Казахстане</div>
+          <a href="/news-id" class="news-recomendations__more">
+            <img src="@images/icons/arrow-blue-small.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div> -->
+</section>
+{% endblock %}

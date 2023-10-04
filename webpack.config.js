@@ -40,6 +40,7 @@ module.exports = {
         'info/index': 'src/views/pages/info/index.html', // => dist/info.html
         'sanatory/index': 'src/views/pages/sanatory/index.html', // => dist/sanatory.html
         'okjetpes/index': 'src/views/pages/okjetpes/index.html', // => dist/okjetpes.html
+        'sanatory-table/index': 'src/views/pages/sanatory-table/index.html', // => dist/sanatory-table.html
         'grand_prix_burabay/index': 'src/views/pages/grand_prix_burabay/index.html', // => dist/grand_prix_burabay.html
         'clinic/index': 'src/views/pages/clinic/index.html', // => dist/clinic.html
         'nroc/index': 'src/views/pages/nroc/index.html', // => dist/nroc.html
@@ -51,10 +52,17 @@ module.exports = {
         'umit/index': 'src/views/pages/umit/index.html', // => dist/umit.html
         'news/index': 'src/views/pages/news/index.html', // => dist/news.html
         'news-id/index': 'src/views/pages/news-id/index.html', // => dist/news-id.html
+        'news-10-04/index': 'src/views/pages/news-10-04/index.html', // => dist/news-10-04.html
+        'news-07-04-1/index': 'src/views/pages/news-07-04-1/index.html',
+        'news-07-04-2/index': 'src/views/pages/news-07-04-2/index.html',
+        'news-07-04-3/index': 'src/views/pages/news-07-04-3/index.html',
+        'news-07-04-4/index': 'src/views/pages/news-07-04-4/index.html',
+        'news-07-04-5/index': 'src/views/pages/news-07-04-5/index.html',
         'news-2/index': 'src/views/pages/news-2/index.html', // => dist/news-2.html
         'amg/index': 'src/views/pages/amg/index.html', // => dist/amg.html
         'kamt/index': 'src/views/pages/kamt/index.html', // => dist/kamt.html
         'check-up/index': 'src/views/pages/check-up/index.html', // => dist/kamt.html
+        'check-up-list/index': 'src/views/pages/check-up-list/index.html', // => dist/check-up-list.html
         'clinics/index': 'src/views/pages/clinics/index.html', // => dist/clinics.html
         'sanatories/index': 'src/views/pages/sanatories/index.html', // => dist/sanatories.html
         'placement/index': 'src/views/pages/placement/index.html', // => dist/placement.html
