@@ -437,6 +437,18 @@
       }
     }
 
+    .nroc-imgs {
+      margin: 3rem 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
     @include mixin.wide-laptop {
       margin-bottom: 5.7rem;
     }
@@ -465,8 +477,33 @@
   }
 
   &--3 {
+    padding: 6.5rem 3.5rem;
+    flex-wrap: wrap;
     margin-bottom: 7rem;
     flex-direction: row-reverse;
+
+    .nroc-imgs {
+      width: 22%;
+      font-size: 1.6rem;
+      text-align: center;
+    
+      @include mixin.wide-tablet {
+        width: 31%;
+      }
+      @include mixin.small-tablet {
+        width: 48%;
+      }
+      @include mixin.phone {
+        width: 100%;
+      }
+
+      img {
+        width: 100%;
+        height: 20rem;
+        object-fit: contain;
+        margin-bottom: 1rem;
+      }
+    }
 
     @include mixin.wide-laptop {
       margin-bottom: 5.7rem;
@@ -648,6 +685,11 @@
     &__img {
       margin: 0 auto;
       margin-bottom: 3rem;
+      width: 100%;
+      max-width: 232px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      overflow: hidden;
 
       @include mixin.wide-tablet {
         margin-bottom: 2rem;
@@ -658,7 +700,8 @@
 
       img {
         width: 100%;
-        max-width: 232px;
+        height: 100%;
+        object-fit: contain;
       }
     }
 

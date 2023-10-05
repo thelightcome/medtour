@@ -449,6 +449,7 @@
 
   &__title {
     margin-bottom: 3.8rem;
+    text-transform: unset;
 
     @include mixin.tablet {
       margin-bottom: 2.9rem;
