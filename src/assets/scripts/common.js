@@ -116,7 +116,7 @@ function backgroundInit() {
     const name = getBlock.dataset.bgId
     pageOptions[name]?.forEach((opt) => {
       const bgBlock = document.createElement('img')
-      bgBlock.src = opt.src
+      bgBlock.src = `/${opt.src}`
       bgBlock.classList.add('bg-block')
       bgBlock.classList.add(opt.anim)
       bgBlock.style.width = opt.width
@@ -133,7 +133,7 @@ function backgroundInit() {
       const animInd = classes[getRandom(0, classes.length - 1)]
 
       const bgBlock = document.createElement('img')
-      bgBlock.src = url
+      bgBlock.src = `/${url}`
       bgBlock.classList.add('bg-block')
       bgBlock.classList.add(animInd)
       bgBlock.style.width = `${getRandom(10, 40)}%`

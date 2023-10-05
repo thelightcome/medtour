@@ -34,34 +34,35 @@ module.exports = {
       entry: {
         // define HTML templates here
         index: 'src/views/pages/home.html', // => dist/index.html
-        whyus: 'src/views/pages/whyus.html', // => dist/whyus.html
-        visa: 'src/views/pages/visa.html', // => dist/visa.html
-        kamt: 'src/views/pages/kamt.html', // => dist/kamt.html
-        foreign: 'src/views/pages/foreign.html', // => dist/foreign.html
-        'error-404': 'src/views/pages/error-404.html', // => dist/error-404.html
-        'check-up': 'src/views/pages/check-up.html', // => dist/check-up.html
-        amg: 'src/views/pages/amg.html', // => dist/amg.html
+        'whyus/index': 'src/views/pages/whyus.html', // => dist/whyus.html
+        'visa/index': 'src/views/pages/visa.html', // => dist/visa.html
+        'kamt/index': 'src/views/pages/kamt.html', // => dist/kamt.html
+        'foreign/index': 'src/views/pages/foreign.html', // => dist/foreign.html
+        'amg/index': 'src/views/pages/amg.html', // => dist/amg.html
+        'check-up/index': 'src/views/pages/check-up.html', // => dist/check-up.html
 
         'sanatories/index': 'src/views/pages/sanatories/index.html', // => dist/sanatories/index.html
-        'sanatories/sanatory': 'src/views/pages/sanatories/sanatory.html', // => dist/sanatories/sanatory.html
-        'sanatories/okjetpes': 'src/views/pages/sanatories/okjetpes.html', // => dist/sanatories/okjetpes.html
-        'sanatories/grand_prix_burabay': 'src/views/pages/sanatories/grand_prix_burabay.html', // => dist/sanatories/grand_prix_burabay.html
+        'sanatories/sanatory/index': 'src/views/pages/sanatories/sanatory.html', // => dist/sanatories/sanatory.html
+        'sanatories/okjetpes/index': 'src/views/pages/sanatories/okjetpes.html', // => dist/sanatories/okjetpes.html
+        'sanatories/grand_prix_burabay/index': 'src/views/pages/sanatories/grand_prix_burabay.html', // => dist/sanatories/grand_prix_burabay.html
 
         'news/index': 'src/views/pages/news/index.html', // => dist/news/index.html
-        'news/news-2': 'src/views/pages/news/news-2.html', // => dist/news/news-2.html
-        'news/news-id': 'src/views/pages/news/news-id.html', // => dist/news/news-id.html
+        'news/news-2/index': 'src/views/pages/news/news-2.html', // => dist/news/news-2.html
+        'news/news-id/index': 'src/views/pages/news/news-id.html', // => dist/news/news-id.html
 
         'info/index': 'src/views/pages/info/index.html', // => dist/info/index.html
-        'info/placement': 'src/views/pages/info/placement.html', // => dist/info/placement.html
+        'info/placement/index': 'src/views/pages/info/placement.html', // => dist/info/placement.html
 
         'clinics/index': 'src/views/pages/clinics/index.html', // => dist/clinics/index.html
-        'clinics/clinic': 'src/views/pages/clinics/clinic.html', // => dist/clinics/clinic.html
-        'clinics/umit': 'src/views/pages/clinics/umit.html', // => dist/clinics/umit.html
-        'clinics/children-reabilitation': 'src/views/pages/clinics/children-reabilitation.html', // => dist/clinics/children-reabilitation.html
-        'clinics/maternal': 'src/views/pages/clinics/maternal.html', // => dist/clinics/maternal.html
-        'clinics/diagnostic': 'src/views/pages/clinics/diagnostic.html', // => dist/clinics/diagnostic.html
-        'clinics/neurosurgery': 'src/views/pages/clinics/neurosurgery.html', // => dist/clinics/neurosurgery.html
-        'clinics/president': 'src/views/pages/clinics/president.html', // => dist/clinics/president.html
+        'clinics/clinic/index': 'src/views/pages/clinics/clinic.html', // => dist/clinics/clinic.html
+        'clinics/umit/index': 'src/views/pages/clinics/umit.html', // => dist/clinics/umit.html
+        'clinics/children-reabilitation/index': 'src/views/pages/clinics/children-reabilitation.html', // => dist/clinics/children-reabilitation.html
+        'clinics/maternal/index': 'src/views/pages/clinics/maternal.html', // => dist/clinics/maternal.html
+        'clinics/diagnostic/index': 'src/views/pages/clinics/diagnostic.html', // => dist/clinics/diagnostic.html
+        'clinics/neurosurgery/index': 'src/views/pages/clinics/neurosurgery.html', // => dist/clinics/neurosurgery.html
+        'clinics/president/index': 'src/views/pages/clinics/president.html', // => dist/clinics/president.html
+        
+        'error-404': 'src/views/pages/error-404.html', // => dist/error-404.html
       },
       
       js: {
@@ -155,19 +156,8 @@ module.exports = {
     // rewrite rules
     historyApiFallback: {
       rewrites: [
-        { 
-          from: /^\/$/, 
-          to: context => {
-            return `/${path.basename(context.parsedUrl.pathname)}.html`
-          }
-        },
-        { from: /^\/amg/, to: '/amg.html' },
-        { from: /^\/check-up/, to: '/check-up.html' },
-        { from: /^\/foreign/, to: '/foreign.html' },
-        { from: /^\/kamt/, to: '/kamt.html' },
-        { from: /^\/visa/, to: '/visa.html' },
-        { from: /^\/whyus/, to: '/whyus.html' },
-        { from: /(.*)/, to: '/error-404.html' },
+        { from: /^\/$/, to: `index.html` },
+        { from: /./, to: `/error-404.html` },
       ],
     },
   },
