@@ -154,7 +154,21 @@ module.exports = {
 
     // rewrite rules
     historyApiFallback: {
-      rewrites: [{ from: /^\/$/, to: '/index.html' }],
+      rewrites: [
+        { 
+          from: /^\/$/, 
+          to: context => {
+            return `/${path.basename(context.parsedUrl.pathname)}.html`
+          }
+        },
+        { from: /^\/amg/, to: '/amg.html' },
+        { from: /^\/check-up/, to: '/check-up.html' },
+        { from: /^\/foreign/, to: '/foreign.html' },
+        { from: /^\/kamt/, to: '/kamt.html' },
+        { from: /^\/visa/, to: '/visa.html' },
+        { from: /^\/whyus/, to: '/whyus.html' },
+        { from: /(.*)/, to: '/error-404.html' },
+      ],
     },
   },
 };
