@@ -276,7 +276,6 @@ function langControllerInit() {
   const langWrap = document.querySelector('.lang')
   const langBtn = langWrap.querySelector('.lang__current')
 
-
   document.addEventListener('click', (e) => {
     const target = e.target
 
@@ -292,5 +291,5 @@ document.addEventListener('DOMContentLoaded', function () {
   gsapAnim()
   breadcrumbs()
   backgroundInit()
-  langControllerInit()
+  // langControllerInit()
 })

@@ -50,6 +50,7 @@ module.exports = {
         'neurosurgery/index': 'src/views/pages/neurosurgery/index.html', // => dist/neurosurgery.html
         'president/index': 'src/views/pages/president/index.html', // => dist/president.html
         'umit/index': 'src/views/pages/umit/index.html', // => dist/umit.html
+        'stomatology/index': 'src/views/pages/stomatology/index.html', // => dist/stomatology.html
         'news/index': 'src/views/pages/news/index.html', // => dist/news.html
         'news-id/index': 'src/views/pages/news-id/index.html', // => dist/news-id.html
         'news-10-04/index': 'src/views/pages/news-10-04/index.html', // => dist/news-10-04.html
