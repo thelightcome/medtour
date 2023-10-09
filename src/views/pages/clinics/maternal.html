@@ -10,6 +10,7 @@
 
 {% block scripts %}
 <!-- load specific page script -->
+<!-- <script src="@/views/pages/clinic/index.js"></script> -->
 {% endblock %}
 
 {% block content %}
@@ -47,7 +48,7 @@
             </div>
             <div class="about-clinic__address-item gsap-reveal" data-gsap-delay="1000">
               <div><img src="@images/icons/globe.svg" alt=""></div>
-              <div>www.umc.org.kz</div>
+              <div><a href="https://umc.org.kz/">www.umc.org.kz</a></div>
             </div>
           </div>
         </div>
@@ -56,26 +57,36 @@
       <div class="clinic-statistics">
         <div class="clinic-statistics__col">
           <div class="overlay clinic-statistics__item gsap-reveal">
-            <div class="clinic-statistics__text">Работает с <br> Since</div>
-            <div class="clinic-statistics__num c1">2007</div>
+            <div class="clinic-statistics__text">Всего</div>
+            <div class="clinic-statistics__num c1">186</div>
+            <div class="clinic-statistics__text">врачей</div>
           </div>
-          <div class="overlay clinic-statistics__item clinic-statistics__item--reverse gsap-reveal">
-            <div class="clinic-statistics__text">Процедур ЭКО <br> в год</div>
-            <div class="clinic-statistics__num c3">200</div>
+          <div class="overlay clinic-statistics__item gsap-reveal">
+            <div class="clinic-statistics__num c3">4</div>
+            <div class="clinic-statistics__text">доктора медицинских наук</div>
           </div>
-          <div class="overlay clinic-statistics__item clinic-statistics__item--reverse gsap-reveal">
-            <div class="clinic-statistics__text">пациентов в год</div>
-            <div class="clinic-statistics__num c4">15000</div>
+          <div class="overlay clinic-statistics__item gsap-reveal">
+            <div class="clinic-statistics__num c4">14</div>
+            <div class="clinic-statistics__text">кандидата медицинских наук</div>
           </div>
         </div>
         <div class="clinic-statistics__col">
-          <div class="overlay clinic-statistics__item clinic-statistics__item--reverse gsap-reveal">
-            <div class="clinic-statistics__text">Медицинских <br> работников</div>
-            <div class="clinic-statistics__num c5">1000</div>
+          <div class="overlay clinic-statistics__item gsap-reveal">
+            <div class="clinic-statistics__num c5">3</div>
+            <div class="clinic-statistics__text">PhD</div>
           </div>
-          <div class="overlay clinic-statistics__item clinic-statistics__item--col clinic-statistics__item--big gsap-reveal">
-            <div class="clinic-statistics__text">Родов принимается <br> ежегодно</div>
-            <div class="clinic-statistics__num c7">4500</div>
+          <div class="overlay clinic-statistics__item gsap-reveal">
+            <div class="clinic-statistics__num c5">33</div>
+            <div class="clinic-statistics__text">магистра</div>
+          </div>
+          <div class="overlay clinic-statistics__item clinic-statistics__item--big gsap-reveal">
+            <div class="clinic-statistics__text">Средних медработников: Всего</div>
+            <div class="clinic-statistics__num c7">318</div>
+          </div>
+          <div class="overlay clinic-statistics__item clinic-statistics__item--big gsap-reveal">
+            <div class="clinic-statistics__text">Из них:</div>
+            <div class="clinic-statistics__num c7">44</div>
+            <div class="clinic-statistics__text">с высшим образованием</div>
           </div>
         </div>
       </div>
@@ -100,6 +111,8 @@
           <img src="@images/clinic/maternal.png" alt="">
         </div>
       </div>
+
+      <iframe style="width: 100%; max-width: 750px; aspect-ratio: 4/3; margin: 0 auto 5rem;" src="https://www.youtube.com/embed/jRWOV7_u0W0?si=XCNpf21p066lRPIt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
   </div>
 </section>

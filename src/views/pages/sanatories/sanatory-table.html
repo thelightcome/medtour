@@ -1,0 +1,120 @@
+{% extends "src/views/layouts/default.html" %}
+
+<!-- set variables used in layout -->
+{% set title="«Окжетпес»" %}
+
+{% block styles %}
+<!-- load specific page style -->
+<link href="@styles/pages/sanatory-table.scss" rel="stylesheet">
+{% endblock %}
+
+{% block scripts %}
+<!-- load specific page script -->
+<script src="@scripts/sanatories.js"></script>
+{% endblock %}
+
+{% block content %}
+<section class="banner sanatory-table__banner">
+  <div class="container">
+    <h1 class="banner-title gsap-reveal">Оздоровление в курортной зоне</h1>
+  </div>
+</section>
+<section class="sanatory-table__body">
+  <div class="container">
+    <div class="sanatory-table__content">
+      <div class="overlay gsap-reveal san-table">
+        <div class="san-table__row san-table__row--head">
+          <div class="san-table__col">
+            Санаторий
+          </div>
+          <div class="san-table__col">
+            Профиль
+          </div>
+          <div class="san-table__col">
+            Цены
+          </div>
+        </div>
+        <div class="san-table__row san-table__row--line">
+          <div class="san-table__col">озеро Щучье (г. Щучинск)</div>
+        </div>
+        <div class="san-table__row">
+          <div class="san-table__col">
+            Санаторий «Щучинский»
+          </div>
+          <div class="san-table__col">
+            заболевания органов дыхания, ЖКТ, сердечно-сосудистой системы, опорно-двигательного аппарата, периферической нервной системы, урология.
+          </div>
+          <div class="san-table__col">
+            от 25 000 тенге/сутки на двоих, 2-местный номер «стандарт»
+          </div>
+        </div>
+        <div class="san-table__row">
+          <div class="san-table__col">
+            Санаторий-профилакторий «Зеленый бор»
+          </div>
+          <div class="san-table__col">
+            заболевания органов дыхания, сердечно-сосудистой системы, опорно-двигательного аппарата и ЖКТ, урология.
+          </div>
+          <div class="san-table__col">
+            от 27 000 тенге в сутки при 2-х местном размещении "Стандарт"
+          </div>
+        </div>
+        <div class="san-table__row">
+          <div class="san-table__col">
+            Пансионат «Жумбактас»
+          </div>
+          <div class="san-table__col">
+            профилактика и лечение заболевания органов дыхания, сердечно-сосудистой системы, опорно-двигательного аппарата, периферической нервной системы, урология.
+          </div>
+          <div class="san-table__col">
+            от 27 000 тенге/сутки за 1 чел. в 2-х местном стандарте
+          </div>
+        </div>
+        <div class="san-table__row">
+          <div class="san-table__col">
+            Санаторий «Алмаз»
+          </div>
+          <div class="san-table__col">
+            Профилактика и лечение заболеваний органов дыхания, опорно-двигательного аппарата, сердечно-сосудистых, гинекологических, неврологических заболеваний, профилактические курсы для детей.
+          </div>
+          <div class="san-table__col">
+            от 25 000 тенге/сутки с 1 чел. в 2-х местном номере
+          </div>
+        </div>
+        <div class="san-table__row san-table__row--line">
+          <div class="san-table__col">озеро Боровое</div>
+        </div>
+        <div class="san-table__row">
+          <div class="san-table__col">
+            Лечебно-оздоровительный комплекс «Окжетпес»
+          </div>
+          <div class="san-table__col">
+            заболевания ЛОР-органов и органов дыхания, пищеварения, сердечно-сосудистой, нервной, эндокринной, костно-мышечной систем, мочеполовой сферы (женщин и мужчин), кожные болезни.
+          </div>
+          <div class="san-table__col">
+            72 000 тенге/сутки на двоих в 2-х местн. Standart 
+          </div>
+        </div>
+        <div class="san-table__row san-table__row--line">
+          <div class="san-table__col">озеро Каратколь</div>
+        </div>
+        <div class="san-table__row">
+          <div class="san-table__col">
+            Центр досуга и здоровья «Приозерный»
+          </div>
+          <div class="san-table__col">
+            синдром хронической усталости, психосоматические, неврологические, кожные заболевания, депрессии, болезни печени, ЖКТ, сердечно-сосудистой, эндокринной системы, верхних дыхательных путей и ЛОР-органов, суставов, аллергии, интоксикации, гинекология, урология, ДЦП, бронхиальная астма.
+          </div>
+          <div class="san-table__col">
+            от 24 000 тенге/сутки за 2-местный номер категории «стандарт»
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <br><br>
+      <br><br>
+      <br><br>
+    </div>
+  </div>
+</section>
+{% endblock %}

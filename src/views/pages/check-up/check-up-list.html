@@ -1,0 +1,339 @@
+{% extends "src/views/layouts/default.html" %}
+
+<!-- set variables used in layout -->
+{% set title="Check-up" %}
+
+{% block styles %}
+<!-- load specific page style -->
+<link href="@styles/pages/check-up-list.scss" rel="stylesheet">
+{% endblock %}
+
+{% block scripts %}
+<!-- load specific page script -->
+<script src="@scripts/check-up-list.js"></script>
+{% endblock %}
+
+{% block content %}
+<section class="check-up-list">
+  <div class="container check-up-list__container">
+    <div class="title-1 check-up-list__title">Check up</div>
+    <div class="check-up-list__body">
+      <div class="check-up-list__menu">
+        <div class="check-up-list__item" data-type="activator" data-id="1">Гастроэнтерологический</div>
+        <div class="check-up-list__item" data-type="activator" data-id="2">Эндокринологический</div>
+        <div class="check-up-list__item" data-type="activator" data-id="3">Кардиологический</div>
+        <div class="check-up-list__item" data-type="activator" data-id="4">Стоматологический</div>
+        <div class="check-up-list__item" data-type="activator" data-id="5">Отоларингологический</div>
+        <div class="check-up-list__item" data-type="activator" data-id="6">Офтальмологический</div>
+        <div class="check-up-list__item" data-type="activator" data-id="7">Неврологический</div>
+        <div class="check-up-list__item" data-type="activator" data-id="8">Онкологический</div>
+        <div class="check-up-list__item" data-type="activator" data-id="9">Готовлюсь стать мамой и папой</div>
+        <div class="check-up-list__item" data-type="activator" data-id="10">Для родителей</div>
+        <div class="check-up-list__item" data-type="activator" data-id="11">Для курящих</div>
+      </div>
+      <div class="check-up-list__contents">
+        <div class="check-up-list__content check-clinic" data-type="target" data-id="1">
+          <div class="check-clinic__title">Гастроэнтерологический</div>
+          <div class="check-clinic__body">
+            <div class="check-clinic__header" data-type="dd-head" data-id="11">
+              <div class="check-clinic__subtitle">
+                <span>Check-up программа - Гастроэнтерологический</span>
+                <img src="@images/icons/chevron-blue.svg" alt="" class="check-clinic__chevron" >
+              </div>
+              <div class="check-clinic__cost">
+                <!-- <span>Стоимость</span>
+                <span>от 134 640тг</span> -->
+              </div>
+            </div>
+            <div class="check-clinic__content" data-type="dd-content" data-id="11">
+              <div class="check-clinic__links">
+                <a href="/documents/clinic-1.pdf">Международный онкологический центр томотерапии "Umit"</a>
+                <a href="/documents/clinic-cost-1.pdf">Больница медицинского центра управления делами президента Республики Казахстан</a>
+                <a href="/documents/clinic-cost-1-1.pdf">Национальный Научный Онкологический Центр</a>
+                <a href="/documents/clinic-cost-1-2.pdf">Национальный Научный Онкологический Центр</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="check-up-list__content check-clinic" data-type="target" data-id="2">
+          <div class="check-clinic__title">Эндокринологический</div>
+          <div class="check-clinic__body">
+            <div class="check-clinic__header" data-type="dd-head" data-id="11">
+              <div class="check-clinic__subtitle">
+                <span>Check-up программа - Эндокринологический</span>
+                <img src="@images/icons/chevron-blue.svg" alt="" class="check-clinic__chevron" >
+              </div>
+              <div class="check-clinic__cost">
+                <!-- <span>Стоимость</span>
+                <span>от 134 640тг</span> -->
+              </div>
+            </div>
+            <div class="check-clinic__content" data-type="dd-content" data-id="11">
+              <div class="check-clinic__links">
+                <!-- <a href="/documents/clinic-3.pdf">Эндокринологический чекап</a> -->
+                <a href="/documents/clinic-cost-2.pdf">Больница медицинского центра управления делами президента Республики Казахстан</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="check-up-list__content check-clinic" data-type="target" data-id="3">
+          <div class="check-clinic__title">Кардиологический</div>
+          <div class="check-clinic__body">
+            <div class="check-clinic__header" data-type="dd-head" data-id="11">
+              <div class="check-clinic__subtitle">
+                <span>Check-up программа - Кардиологический (для взрослых)</span>
+                <img src="@images/icons/chevron-blue.svg" alt="" class="check-clinic__chevron" >
+              </div>
+              <div class="check-clinic__cost">
+                <!-- <span>Стоимость</span>
+                <span>от 134 640тг</span> -->
+              </div>
+            </div>
+            <div class="check-clinic__content" data-type="dd-content" data-id="11">
+              <div class="check-clinic__links">
+                <a href="/documents/clinic-3.pdf">Green Clinic</a>
+                <a href="/documents/clinic-3-1.pdf">Национальный научный кардиохирургический центр</a>
+                <a href="/documents/clinic-cost-3.pdf">Больница медицинского центра управления делами президента Республики Казахстан</a>
+                <a href="/documents/clinic-cost-3-2.pdf">Национальный Научный Онкологический Центр</a>
+              </div>
+              <!-- <div class="check-clinic__list">
+                <div>Первичная консультация куратора</div>
+                <div>Повторная консультация куратора</div>
+                <div>Лабораторные исследования</div>
+                <div>Общий анализ крови (34 параметра)</div>
+                <div>Определение креатинина на анализаторе</div>
+                <div>Определение аланинаминотрансферазы (АЛаТ) в сыворотке крови на анализаторе</div>
+                <div>Определение аспартатаминотрансферазы (АСаТ) в сыворотке крови на анализаторе</div>
+                <div>Определение глюкозы на анализаторе</div>
+                <div>Определение железа (Fe) в сыворотке крови на анализаторе</div>
+                <div>Определение общего холестерина в сыворотке крови на анализаторе</div>
+                <div>Определение липопротеидов низкой плотности в сыворотке крови на анализаторе</div>
+                <div>Определение свободного тироксина (T4) в сыворотке крови методом иммунохемилюминесценции</div>
+                <div>Определение свободного трийодтиронина (T3) в сыворотке крови методом иммунохемилюминесценции</div>
+                <div>Определение тиреотропного гормона (ТТГ) в сыворотке крови методом иммунохемилюминесценции</div>
+                <div>Определение антител к тиреопероксидазе (а-ТПО) в сыворотке крови методом иммунохемилюминесценции</div>
+                <div>Взятие крови</div>
+                <div>Исследование мочи общеклиническое (общий анализ мочи) на анализаторе</div>
+                <div>Инструментальные исследования</div>
+                <div>Суточное мониторирование артериального давления (24 часа)</div>
+                <div>УЗИ щитовидной железы у взрослых</div>
+                <div>УЗИ почек и надпочечников у взрослых</div>
+                <div>УЗДГ сосудов почек у взрослых</div>
+                <div>Холтеровское мониторирование электрокардиограммы (24 часа)</div>
+                <div>ЭХО кардиография</div>
+                <div>УЗДГ брахицефальных артерий и вен шеи</div>
+                <div>Тредмил-тест</div>
+              </div> -->
+            </div>
+          </div>
+          <!-- <div class="check-clinic__body">
+            <div class="check-clinic__header" data-type="dd-head" data-id="12">
+              <div class="check-clinic__subtitle">
+                <span>Check-up программа - Кардиологический (для детей)</span>
+                <img src="@images/icons/chevron-blue.svg" alt="" class="check-clinic__chevron" >
+              </div>
+              <div class="check-clinic__cost">
+                <span>Стоимость</span>
+                <span>от 84 640тг</span>
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <div class="check-up-list__content check-clinic" data-type="target" data-id="4">
+          <div class="check-clinic__title">Стоматологический</div>
+          <div class="check-clinic__body">
+            <div class="check-clinic__header" data-type="dd-head" data-id="11">
+              <div class="check-clinic__subtitle">
+                <span>Check-up программа - Стоматологический</span>
+                <img src="@images/icons/chevron-blue.svg" alt="" class="check-clinic__chevron" >
+              </div>
+              <div class="check-clinic__cost">
+                <!-- <span>Стоимость</span>
+                <span>от 134 640тг</span> -->
+              </div>
+            </div>
+            <div class="check-clinic__content" data-type="dd-content" data-id="11">
+              <div class="check-clinic__links">
+                <a href="/documents/clinic-4.pdf">Стоматологический Check-up</a>
+                <!-- <a href="/documents/clinic-4-1.pdf">Стоматологический Check-up</a> -->
+                <!-- <a href="/documents/clinic-cost-3.pdf">Прейскурант</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="check-up-list__content check-clinic" data-type="target" data-id="5">
+          <div class="check-clinic__title">Отоларингологический</div>
+          <div class="check-clinic__body">
+            <div class="check-clinic__header" data-type="dd-head" data-id="11">
+              <div class="check-clinic__subtitle">
+                <span>Check-up программа - Отоларингологический</span>
+                <img src="@images/icons/chevron-blue.svg" alt="" class="check-clinic__chevron" >
+              </div>
+              <div class="check-clinic__cost">
+                <!-- <span>Стоимость</span>
+                <span>от 134 640тг</span> -->
+              </div>
+            </div>
+            <div class="check-clinic__content" data-type="dd-content" data-id="11">
+              <div class="check-clinic__links">
+                <!-- <a href="/documents/clinic-3.pdf">Отоларингологический чекап</a> -->
+                <a href="/documents/clinic-cost-5.pdf">Больница медицинского центра управления делами президента Республики Казахстан</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="check-up-list__content check-clinic" data-type="target" data-id="6">
+          <div class="check-clinic__title">Офтальмологический</div>
+          <div class="check-clinic__body">
+            <div class="check-clinic__header" data-type="dd-head" data-id="11">
+              <div class="check-clinic__subtitle">
+                <span>Check-up программа - Офтальмологический</span>
+                <img src="@images/icons/chevron-blue.svg" alt="" class="check-clinic__chevron" >
+              </div>
+              <div class="check-clinic__cost">
+                <!-- <span>Стоимость</span>
+                <span>от 134 640тг</span> -->
+              </div>
+            </div>
+            <div class="check-clinic__content" data-type="dd-content" data-id="11">
+              <div class="check-clinic__links">
+                <!-- <a href="/documents/clinic-3.pdf">Офтальмологический чекап</a> -->
+                <a href="/documents/clinic-cost-6.pdf">Больница медицинского центра управления делами президента Республики Казахстан</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="check-up-list__content check-clinic" data-type="target" data-id="7">
+          <div class="check-clinic__title">Неврологический</div>
+          <div class="check-clinic__body">
+            <div class="check-clinic__header" data-type="dd-head" data-id="11">
+              <div class="check-clinic__subtitle">
+                <span>Check-up программа - Неврологический</span>
+                <img src="@images/icons/chevron-blue.svg" alt="" class="check-clinic__chevron" >
+              </div>
+              <div class="check-clinic__cost">
+                <!-- <span>Стоимость</span>
+                <span>от 134 640тг</span> -->
+              </div>
+            </div>
+            <div class="check-clinic__content" data-type="dd-content" data-id="11">
+              <div class="check-clinic__links">
+                <!-- <a href="/documents/clinic-3.pdf">Неврологический чекап</a> -->
+                <a href="/documents/clinic-cost-7.pdf">Больница медицинского центра управления делами президента Республики Казахстан</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="check-up-list__content check-clinic" data-type="target" data-id="8">
+          <div class="check-clinic__title">Онкологический</div>
+          <div class="check-clinic__body">
+            <div class="check-clinic__header" data-type="dd-head" data-id="11">
+              <div class="check-clinic__subtitle">
+                <span>Check-up программа - Онкологический</span>
+                <img src="@images/icons/chevron-blue.svg" alt="" class="check-clinic__chevron" >
+              </div>
+              <div class="check-clinic__cost">
+                <!-- <span>Стоимость</span>
+                <span>от 134 640тг</span> -->
+              </div>
+            </div>
+            <div class="check-clinic__content" data-type="dd-content" data-id="11">
+              <div class="check-clinic__links">
+                <a href="/documents/clinic-8.pdf">Green Clinic</a>
+                <a href="/documents/clinic-cost-9-2-1.pdf">Национальный Научный Онкологический Центр</a>
+                <a href="/documents/clinic-cost-9-2-2.pdf">Национальный Научный Онкологический Центр</a>
+                <a href="/documents/clinic-cost-9-1-1.pdf">Национальный Научный Онкологический Центр</a>
+                <a href="/documents/clinic-cost-9-1-2.pdf">Национальный Научный Онкологический Центр</a>
+                <!-- <a href="/documents/clinic-cost-3.pdf">Прейскурант</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="check-up-list__content check-clinic" data-type="target" data-id="9">
+          <div class="check-clinic__title">Готовлюсь стать мамой и папой</div>
+          <div class="check-clinic__body">
+            <div class="check-clinic__header" data-type="dd-head" data-id="11">
+              <div class="check-clinic__subtitle">
+                <span>Check-up программа - для женщин</span>
+                <img src="@images/icons/chevron-blue.svg" alt="" class="check-clinic__chevron" >
+              </div>
+              <div class="check-clinic__cost">
+                <!-- <span>Стоимость</span>
+                <span>от 134 640тг</span> -->
+              </div>
+            </div>
+            <div class="check-clinic__content" data-type="dd-content" data-id="11">
+              <div class="check-clinic__links">
+                <!-- <a href="/documents/clinic-3.pdf">Чекап для готовящихся стать мамой и папой(doc)</a> -->
+                <a href="/documents/clinic-cost-9-1.pdf">Больница медицинского центра управления делами президента Республики Казахстан</a>
+              </div>
+            </div>
+          </div>
+          <div class="check-clinic__body">
+            <div class="check-clinic__header" data-type="dd-head" data-id="11">
+              <div class="check-clinic__subtitle">
+                <span>Check-up программа - для мужчин</span>
+                <img src="@images/icons/chevron-blue.svg" alt="" class="check-clinic__chevron" >
+              </div>
+              <div class="check-clinic__cost">
+                <!-- <span>Стоимость</span>
+                <span>от 134 640тг</span> -->
+              </div>
+            </div>
+            <div class="check-clinic__content" data-type="dd-content" data-id="11">
+              <div class="check-clinic__links">
+                <!-- <a href="/documents/clinic-3.pdf">Чекап для готовящихся стать мамой и папой(doc)</a> -->
+                <a href="/documents/clinic-cost-9-2.pdf">Прейскурант</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="check-up-list__content check-clinic" data-type="target" data-id="10">
+          <div class="check-clinic__title">Для родителей</div>
+          <div class="check-clinic__body">
+            <div class="check-clinic__header" data-type="dd-head" data-id="11">
+              <div class="check-clinic__subtitle">
+                <span>Check-up программа - Для родителей</span>
+                <img src="@images/icons/chevron-blue.svg" alt="" class="check-clinic__chevron" >
+              </div>
+              <div class="check-clinic__cost">
+                <!-- <span>Стоимость</span> -->
+                <!-- <span>от 134 640тг</span> -->
+              </div>
+            </div>
+            <div class="check-clinic__content" data-type="dd-content" data-id="11">
+              <div class="check-clinic__links">
+                <a href="/documents/clinic-cost-10.pdf">Прейскурант на платные медицинские услуги Корпоративного Фонда University Medical Center</a>
+                <!-- <a href="/documents/clinic-10.xlsx">Чекап для родителей</a> -->
+                <!-- <a href="/documents/clinic-cost-3.pdf">Прейскурант</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="check-up-list__content check-clinic" data-type="target" data-id="11">
+          <div class="check-clinic__title">Для курящих</div>
+          <div class="check-clinic__body">
+            <div class="check-clinic__header" data-type="dd-head" data-id="11">
+              <div class="check-clinic__subtitle">
+                <span>Check-up программа - Для курящих</span>
+                <img src="@images/icons/chevron-blue.svg" alt="" class="check-clinic__chevron" >
+              </div>
+              <div class="check-clinic__cost">
+                <!-- <span>Стоимость</span> -->
+                <!-- <span>от 134 640тг</span> -->
+              </div>
+            </div>
+            <div class="check-clinic__content" data-type="dd-content" data-id="11">
+              <div class="check-clinic__links">
+                <!-- <a href="/documents/clinic-11.pdf">CHECK-UP «Для курящих»</a> -->
+                <a href="/documents/clinic-11-1.pdf">Национальный Научный Онкологический Центр</a>
+                <!-- <a href="/documents/clinic-cost-3.pdf">Прейскурант</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

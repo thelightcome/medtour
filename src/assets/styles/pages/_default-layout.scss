@@ -49,6 +49,8 @@
   }
 
   &__content {
+    position: relative;
+    z-index: 100;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -204,7 +206,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000;
+    z-index: 1100;
     width: 100%;
     min-height: 100vh;
     box-sizing: border-box;

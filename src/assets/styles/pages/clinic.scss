@@ -8,18 +8,23 @@
   @include mixin.laptop {
     padding-bottom: 74rem;
   }
+
   @include mixin.wide-tablet {
     padding-bottom: 65rem;
   }
+
   @include mixin.tablet {
     padding-bottom: 55rem;
   }
+
   @include mixin.small-tablet {
     padding-bottom: 48rem;
   }
+
   @include mixin.phone {
     padding-bottom: 30rem;
   }
+
   @include mixin.sm-phone {
     padding-bottom: 25rem;
   }
@@ -27,10 +32,6 @@
   &__banner {
     min-height: unset;
     max-height: 750px;
-
-    &:before {
-      background-image: url('@images/clinic/clinic.png');
-    }
   }
 }
 
@@ -46,9 +47,11 @@
     @include mixin.wide-tablet {
       margin-top: -8rem;
     }
+
     @include mixin.small-tablet {
       margin-top: -6rem;
     }
+
     @include mixin.sm-phone {
       margin-top: -4rem;
     }
@@ -63,10 +66,12 @@
     margin-bottom: 4rem;
     padding: 3.4rem 3.4rem 6rem 3.8rem;
   }
+
   @include mixin.small-tablet {
     margin-bottom: 3rem;
     padding: 2.7rem 2.6rem 4.8rem 3rem;
   }
+
   @include mixin.sm-phone {
     margin-bottom: 2rem;
     padding: 2rem 1.8rem 3.6rem 2.2rem;
@@ -95,6 +100,7 @@
     @include mixin.laptop {
       max-width: 50%;
     }
+
     @include mixin.tablet {
       max-width: 100%;
     }
@@ -121,6 +127,7 @@
     a {
       img {
         width: 100%;
+
         @include mixin.small-tablet {
           width: auto;
           max-width: 16rem;
@@ -137,10 +144,12 @@
       max-width: 38rem;
       padding: 3rem 2.3rem;
     }
+
     @include mixin.small-tablet {
       max-width: unset;
       padding: 2rem 1.7rem;
     }
+
     @include mixin.sm-phone {
       padding: 1.2rem 1rem;
     }
@@ -149,18 +158,25 @@
   &__address-item {
     display: flex;
     margin-bottom: 2rem;
+    color: var.$color2;
     gap: 1rem;
     font-family: var.$font-family2;
     font-size: 2rem;
+
+    a {
+      color: var.$color2;
+    }
 
     @include mixin.laptop {
       margin-bottom: 1.6rem;
       font-size: 1.6rem;
     }
+
     @include mixin.small-tablet {
       margin-bottom: 1.3rem;
       font-size: 1.4rem;
     }
+
     @include mixin.sm-phone {
       margin-bottom: 1rem;
       font-size: 1.2rem;
@@ -181,24 +197,30 @@
     gap: 2.7rem;
     margin-bottom: 6rem;
   }
+
   @include mixin.laptop {
     gap: 2.5rem;
     margin-bottom: 5rem;
   }
+
   @include mixin.wide-tablet {
     gap: 2.3rem;
     margin-bottom: 4rem;
   }
+
   @include mixin.tablet {
     gap: 2.1rem;
   }
+
   @include mixin.small-tablet {
     gap: 1.9rem;
   }
+
   @include mixin.phone {
     gap: 1.7rem;
     margin-bottom: 3rem;
   }
+
   @include mixin.sm-phone {
     gap: 1.5rem;
     margin-bottom: 2rem;
@@ -215,21 +237,27 @@
     @include mixin.wide-laptop {
       gap: 2.7rem;
     }
+
     @include mixin.laptop {
       gap: 2.5rem;
     }
+
     @include mixin.wide-tablet {
       gap: 2.3rem;
     }
+
     @include mixin.tablet {
       gap: 2.1rem;
     }
+
     @include mixin.small-tablet {
       gap: 1.9rem;
     }
+
     @include mixin.phone {
       gap: 1.7rem;
     }
+
     @include mixin.sm-phone {
       gap: 1.5rem;
     }
@@ -248,26 +276,32 @@
       gap: 1.4rem 2.8rem;
       padding: 3.2rem 3.8rem 3.2rem 5.4rem;
     }
+
     @include mixin.laptop {
       gap: 1.3rem 2.5rem;
       padding: 2.9rem 3.5rem 2.9rem 5rem;
     }
+
     @include mixin.wide-tablet {
       gap: 1.2rem 2.2rem;
       padding: 2.6rem 3.2rem 2.6rem 4.6rem;
     }
+
     @include mixin.tablet {
       gap: 1.1rem 1.9rem;
       padding: 2.3rem 2.9rem 2.3rem 4.2rem;
     }
+
     @include mixin.small-tablet {
       gap: 1rem 1.6rem;
       padding: 2rem 2.6rem 2rem 3.8rem;
     }
+
     @include mixin.phone {
       gap: 0.9rem 1.3rem;
       padding: 1.7rem 2.3rem 1.7rem 3.4rem;
     }
+
     @include mixin.sm-phone {
       gap: 0.8rem 1rem;
       padding: 1.4rem 2rem 1.4rem 3rem;
@@ -303,21 +337,27 @@
     @include mixin.wide-laptop {
       font-size: 8rem;
     }
+
     @include mixin.laptop {
       font-size: 7rem;
     }
+
     @include mixin.wide-tablet {
       font-size: 6rem;
     }
+
     @include mixin.tablet {
       font-size: 5rem;
     }
+
     @include mixin.small-tablet {
       font-size: 4rem;
     }
+
     @include mixin.phone {
       font-size: 3rem;
     }
+
     @include mixin.sm-phone {
       font-size: 2.2rem;
     }
@@ -331,9 +371,11 @@
     @include mixin.laptop {
       font-size: 1.8rem;
     }
+
     @include mixin.tablet {
       font-size: 1.6rem;
     }
+
     @include mixin.phone {
       font-size: 1.4rem;
     }
@@ -377,23 +419,29 @@
   @include mixin.wide-laptop {
     gap: 2.7rem;
   }
+
   @include mixin.laptop {
     gap: 2.5rem;
   }
+
   @include mixin.wide-tablet {
     gap: 2.3rem;
   }
+
   @include mixin.tablet {
     gap: 2.1rem;
   }
+
   @include mixin.small-tablet {
     gap: 1.9rem;
     flex-wrap: wrap;
     justify-content: center;
   }
+
   @include mixin.phone {
     gap: 1.7rem;
   }
+
   @include mixin.sm-phone {
     gap: 1.5rem;
   }
@@ -404,21 +452,27 @@
     @include mixin.wide-laptop {
       margin-bottom: 2.7rem;
     }
+
     @include mixin.laptop {
       margin-bottom: 2.5rem;
     }
+
     @include mixin.wide-tablet {
       margin-bottom: 2.3rem;
     }
+
     @include mixin.tablet {
       margin-bottom: 2.1rem;
     }
+
     @include mixin.small-tablet {
       margin-bottom: 1.9rem;
     }
+
     @include mixin.phone {
       margin-bottom: 1.7rem;
     }
+
     @include mixin.sm-phone {
       margin-bottom: 1.5rem;
     }
@@ -428,51 +482,133 @@
     margin-bottom: 6.5rem;
     flex-direction: row-reverse;
 
+    &.nroc {
+      flex-direction: row;
+    }
+
+    .nroc-img {
+      flex-grow: 1;
+
+      img {
+        max-width: 100%;
+        max-height: 420px;
+        object-fit: contain;
+      }
+    }
+
+    .nroc-imgs {
+      margin: 3rem 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+
     @include mixin.wide-laptop {
       margin-bottom: 5.7rem;
     }
+
     @include mixin.laptop {
       margin-bottom: 5rem;
     }
+
     @include mixin.wide-tablet {
       margin-bottom: 4.3rem;
     }
+
     @include mixin.tablet {
       margin-bottom: 3.6rem;
     }
+
     @include mixin.small-tablet {
       margin-bottom: 2.9rem;
     }
+
     @include mixin.phone {
       margin-bottom: 2.2rem;
     }
+
     @include mixin.sm-phone {
       margin-bottom: 1.5rem;
     }
+  }
+
+  &--2 &__content {
+    max-width: 100% !important;
   }
 
   &--3 {
     margin-bottom: 7rem;
     flex-direction: row-reverse;
 
+    &.nroc {
+      padding: 6.5rem 3.5rem;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .nroc-devices {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      flex-direction: row-reverse;
+    }
+
+    .nroc-imgs {
+      width: 22%;
+      font-size: 1.6rem;
+      text-align: center;
+
+      @include mixin.wide-tablet {
+        width: 31%;
+      }
+
+      @include mixin.small-tablet {
+        width: 48%;
+      }
+
+      @include mixin.phone {
+        width: 100%;
+      }
+
+      img {
+        width: 100%;
+        height: 20rem;
+        object-fit: contain;
+        margin-bottom: 1rem;
+      }
+    }
+
     @include mixin.wide-laptop {
       margin-bottom: 5.7rem;
     }
+
     @include mixin.laptop {
       margin-bottom: 5rem;
     }
+
     @include mixin.wide-tablet {
       margin-bottom: 4.3rem;
     }
+
     @include mixin.tablet {
       margin-bottom: 3.6rem;
     }
+
     @include mixin.small-tablet {
       margin-bottom: 2.9rem;
     }
+
     @include mixin.phone {
       margin-bottom: 2.2rem;
     }
+
     @include mixin.sm-phone {
       margin-bottom: 1.5rem;
     }
@@ -484,25 +620,33 @@
     justify-content: center;
     align-items: flex-start;
     padding: 5.8rem 7.9rem 7.4rem 8.5rem;
+    max-width: 100%;
+    box-sizing: border-box;
 
     @include mixin.wide-laptop {
       padding: 5rem 7.3rem 6.8rem 7.4rem;
     }
+
     @include mixin.laptop {
       padding: 4.5rem 6.6rem 6.1rem 6.7rem;
     }
+
     @include mixin.wide-tablet {
       padding: 4rem 5.9rem 5.4rem 6rem;
     }
+
     @include mixin.tablet {
       padding: 3.5rem 5.2rem 4.7rem 5.3rem;
     }
+
     @include mixin.small-tablet {
       padding: 3rem 4.5rem 4rem 4.6rem;
     }
+
     @include mixin.phone {
       padding: 2.5rem 3.8rem 3.3rem 3.9rem;
     }
+
     @include mixin.sm-phone {
       padding: 2rem 3rem 2.6rem 3.2rem;
     }
@@ -525,9 +669,11 @@
     @include mixin.wide-tablet {
       margin-bottom: 2.8rem;
     }
+
     @include mixin.tablet {
       margin-bottom: 2.2rem;
     }
+
     @include mixin.sm-phone {
       margin-bottom: 1.5rem;
     }
@@ -543,9 +689,11 @@
     @include mixin.wide-tablet {
       font-size: 1.8rem;
     }
+
     @include mixin.tablet {
       font-size: 1.6rem;
     }
+
     @include mixin.sm-phone {
       font-size: 1.4rem;
     }
@@ -578,9 +726,11 @@
     @include mixin.laptop {
       margin-bottom: 3rem;
     }
+
     @include mixin.small-tablet {
       margin-bottom: 2.5rem;
     }
+
     @include mixin.sm-phone {
       margin-bottom: 1.5rem;
     }
@@ -597,15 +747,18 @@
       gap: 3rem;
       margin-bottom: 8.5rem;
     }
+
     @include mixin.wide-tablet {
       margin-bottom: 7rem;
       gap: 2.5rem;
       flex-wrap: wrap;
     }
+
     @include mixin.small-tablet {
       margin-bottom: 5.5rem;
       gap: 2rem;
     }
+
     @include mixin.sm-phone {
       margin-bottom: 4rem;
       gap: 1.5rem;
@@ -620,14 +773,17 @@
     @include mixin.laptop {
       padding: 3.8rem 2.2rem 3.5rem 3.5rem;
     }
+
     @include mixin.wide-tablet {
       max-width: 40%;
       padding: 3.2rem 1.8rem 3rem 3rem;
     }
+
     @include mixin.small-tablet {
       max-width: 100%;
       padding: 2.6rem 1.4rem 2.5rem 2.5rem;
     }
+
     @include mixin.sm-phone {
       padding: 2rem 1rem 2rem 2rem;
     }
@@ -639,6 +795,7 @@
       @include mixin.wide-tablet {
         margin-bottom: 2rem;
       }
+
       @include mixin.sm-phone {
         margin-bottom: 1rem;
       }
@@ -646,6 +803,21 @@
       img {
         width: 100%;
         max-width: 232px;
+      }
+    }
+
+    &.nroc &__img {
+      width: 100%;
+      max-width: 232px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        max-height: unset;
+        object-fit: contain;
       }
     }
 
@@ -669,10 +841,12 @@
         font-size: 1.8rem;
         margin-bottom: 2.5rem;
       }
+
       @include mixin.small-tablet {
         font-size: 1.6rem;
         margin-bottom: 2rem;
       }
+
       @include mixin.sm-phone {
         font-size: 1.4rem;
         margin-bottom: 1.5rem;
@@ -701,10 +875,12 @@
         padding: 1.1rem 2.5rem;
         font-size: 1.26rem;
       }
+
       @include mixin.small-tablet {
         padding: 0.8rem 2rem;
         font-size: 1.13rem;
       }
+
       @include mixin.sm-phone {
         padding: 0.5rem 1.5rem;
         font-size: 1rem;
@@ -721,6 +897,7 @@
   @include mixin.wide-tablet {
     padding: 3.25rem 2.25rem;
   }
+
   @include mixin.small-tablet {
     padding: 2rem 1.5rem;
     max-width: unset;
@@ -737,6 +914,7 @@
       margin-bottom: 3.15rem;
       gap: 4rem;
     }
+
     @include mixin.small-tablet {
       margin-bottom: 2rem;
       gap: 2.5rem;
@@ -750,6 +928,7 @@
     @include mixin.wide-tablet {
       max-width: 17rem;
     }
+
     @include mixin.small-tablet {
       max-width: 15rem;
     }
@@ -767,6 +946,7 @@
     @include mixin.wide-tablet {
       padding-top: 2.95rem;
     }
+
     @include mixin.small-tablet {
       padding-top: 2rem;
     }
@@ -781,6 +961,7 @@
     @include mixin.wide-tablet {
       font-size: 1.8rem;
     }
+
     @include mixin.small-tablet {
       font-size: 1.6rem;
       text-align: center;
@@ -796,6 +977,7 @@
       font-size: 1.8rem;
       margin-bottom: 3rem;
     }
+
     @include mixin.small-tablet {
       font-size: 1.6rem;
       text-align: center;
@@ -813,6 +995,7 @@
     @include mixin.wide-tablet {
       gap: 1.55rem;
     }
+
     @include mixin.small-tablet {
       gap: 1rem;
     }
@@ -831,6 +1014,7 @@
     @include mixin.wide-tablet {
       padding: 0.9rem 0.4rem;
     }
+
     @include mixin.small-tablet {
       padding: 0.6rem 0.3rem;
     }
@@ -846,6 +1030,7 @@
     @include mixin.wide-tablet {
       font-size: 2.1rem;
     }
+
     @include mixin.small-tablet {
       font-size: 1.8rem;
     }
@@ -859,6 +1044,7 @@
     @include mixin.wide-tablet {
       font-size: 1.4rem;
     }
+
     @include mixin.small-tablet {
       font-size: 1.2rem;
     }
@@ -872,9 +1058,11 @@
       @include mixin.wide-tablet {
         font-size: 1.8rem;
       }
+
       @include mixin.tablet {
         font-size: 1.6rem;
       }
+
       @include mixin.small-tablet {
         font-size: 1.4rem;
       }
@@ -891,6 +1079,7 @@
         font-size: 1.4rem;
         margin-bottom: 1rem;
       }
+
       @include mixin.small-tablet {
         font-size: 1.2rem;
         margin-bottom: 0.5rem;
@@ -900,5 +1089,146 @@
         line-height: 1.4;
       }
     }
+  }
+}
+
+.nroc-imgs-slide {
+  margin-top: 4rem;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 4.3rem;
+
+  @include mixin.laptop {
+    margin-bottom: 15rem;
+  }
+
+  @include mixin.wide-tablet {
+    margin-bottom: 13rem;
+  }
+
+  @include mixin.tablet {
+    margin-bottom: 11rem;
+  }
+
+  @include mixin.small-tablet {
+    margin-bottom: 9rem;
+  }
+
+  @include mixin.phone {
+    margin-bottom: 7rem;
+  }
+
+  @include mixin.sm-phone {
+    margin-bottom: 5rem;
+  }
+
+  &__wrap {
+    width: 100%;
+  }
+
+  &__title {
+    margin-bottom: 1.5rem;
+  }
+
+  &__text {
+    margin-bottom: 3rem;
+
+    @include mixin.small-tablet {
+      width: 40%;
+    }
+
+    @include mixin.phone {
+      width: 60%;
+    }
+  }
+
+  &__item {
+    width: 100%;
+
+    img {
+      width: 100%;
+      aspect-ratio: 2.26;
+      max-height: 645px;
+      display: block;
+      margin: 0 auto;
+      object-fit: contain;
+    }
+  }
+
+  &__label {
+    margin-top: 2rem;
+  }
+
+  &__body {
+    overflow: hidden;
+  }
+
+  &__swiper-control {
+    @include mixin.tablet {
+      display: none;
+    }
+
+    div {
+      width: 6%;
+      position: absolute;
+      top: 50%;
+      z-index: 5;
+      cursor: pointer;
+
+      svg {
+        width: 100%;
+      }
+    }
+
+    div.swiper-button-disabled {
+      filter: grayscale(1);
+    }
+  }
+
+  &__swiper-button-prev {
+    left: -10%;
+    transform-origin: center;
+    transform: rotateZ(180deg);
+
+    @include mixin.laptop {
+      left: 5%;
+    }
+  }
+
+  &__swiper-button-next {
+    right: -10%;
+
+    @include mixin.laptop {
+      right: 5%;
+    }
+  }
+
+  &__pagination {
+    position: relative;
+    margin-top: 3rem;
+    width: 100%;
+    border-bottom: 1px solid rgba(var.$color3, 0.2);
+  }
+
+  &__counter {
+    font-family: var.$font-family2;
+    color: var.$color11;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__count {
+    color: var.$color12;
+    font-size: 1.4rem;
+  }
+
+  &__border {
+    position: absolute;
+    bottom: -1px;
+    z-index: 1;
+    height: 1px;
+    background: var.$color3;
+    transition: 0.3s linear;
   }
 }

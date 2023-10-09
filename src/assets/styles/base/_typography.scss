@@ -96,6 +96,14 @@ p {
   font-weight: 700;
   line-height: 1.2;
 
+  a {
+    color: inherit;
+
+    &:hover {
+      color: var.$color21;
+    }
+  }
+
   @include mixin.laptop { font-size: 4.4rem; }
   @include mixin.wide-tablet { font-size: 4rem; }
   @include mixin.tablet { font-size: 3.4rem; }
