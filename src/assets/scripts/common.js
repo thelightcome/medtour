@@ -116,7 +116,7 @@ function backgroundInit() {
     const name = getBlock.dataset.bgId
     pageOptions[name]?.forEach((opt) => {
       const bgBlock = document.createElement('img')
-      bgBlock.src = `/${opt.src}`
+      bgBlock.src = `${opt.src}`
       bgBlock.classList.add('bg-block')
       bgBlock.classList.add(opt.anim)
       bgBlock.style.width = opt.width
