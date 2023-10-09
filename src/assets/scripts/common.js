@@ -235,7 +235,7 @@ const paths = {
     name: 'AMG',
     src: '/amg'
   }],
-  '/placement/': [{
+  '/info/placement/': [{
     name: 'Информация для туристов',
     src: '/info'
   }, {

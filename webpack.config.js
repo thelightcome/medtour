@@ -50,7 +50,7 @@ module.exports = {
         'sanatories/sanatory-table/index': 'src/views/pages/sanatories/sanatory-table.html', // => dist/sanatories/sanatory-table.html
 
         'news/index': 'src/views/pages/news/index.html', // => dist/news/index.html
-        'news/news-2/index': 'src/views/pages/news/news-2.html', // => dist/news/news-2.html
+        'news/news-id/index': 'src/views/pages/news/news-id.html', // => dist/news/news-id.html
         'news/news-10-04/index': 'src/views/pages/news/news-10-04.html', // => dist/news/news-10-04.html
         'news/news-07-04-1/index': 'src/views/pages/news/news-07-04-1.html', // => dist/news/news-07-04-1.html
         'news/news-07-04-2/index': 'src/views/pages/news/news-07-04-2.html', // => dist/news/news-07-04-2.html
