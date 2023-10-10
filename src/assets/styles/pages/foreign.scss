@@ -30,26 +30,33 @@
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
+  padding-left: 4rem;
 
-  @include mixin.small-tablet { flex-wrap: wrap; }
+  @include mixin.small-tablet { flex-wrap: wrap; padding-left: 2rem; justify-content: center; }
 
   &__avatar {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 6.2rem 3.1rem 6.2rem 4rem;
-    min-width: 24%;
-    max-width: 246px;
-    border-radius: 50%;
     overflow: hidden;
+    width: 100%;
+    max-width: 246px;
+    flex-shrink: 0;
+    height: 246px;
+    border-radius: 50%;
+    margin-top: 6.2rem;
+    margin-right: 3.2rem;
+    margin-bottom: 3.2rem;
 
     @include mixin.laptop { padding: 5.4rem 2.82rem 5.4rem 3.6rem; }
     @include mixin.tablet { padding: 4.4rem 2.54rem 4.4rem 3.2rem; }
     @include mixin.small-tablet { padding: 3.4rem 2.27rem 3.4rem 2.7rem; }
-    @include mixin.sm-phone { padding: 2.4rem 2rem 2.4rem 2.2rem; }
+    @include mixin.sm-phone { padding: 2.4rem 2rem 2.4rem 2.2rem; aspect-ratio: 1; height: auto; }
 
     img {
-      width: 100%;
+      width: 246px;
+      height: 246px;
+      object-fit: cover;
     }
   }
 

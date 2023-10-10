@@ -47,18 +47,19 @@
 
     &__item {
       width: 23%;
-      border-radius: 1rem;
+      border-radius: 2.5rem;
       box-shadow: 0 0 6rem 0 rgba(var.$color22, 0.05);
       display: flex;
+      flex-direction: column;
       align-items: center;
       gap: 3rem;
-      padding-right: 2rem;
       font-family: var.$font-family;
       font-size: 1.6rem;
       font-weight: 500;
       color: var.$color2;
       line-height: 1.21;
       overflow: hidden;
+      padding-bottom: 2.5rem;
 
       @include mixin.small-laptop { width: 31%; gap: 3rem; }
       @include mixin.tablet { width: 46%; gap: 3rem; }
@@ -66,7 +67,8 @@
     }
 
     &__img {
-      border-radius: 1rem;
+      width: 100%;
+      aspect-ratio: 0.7;
     }
   }
 }
