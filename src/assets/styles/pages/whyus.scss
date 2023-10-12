@@ -75,11 +75,11 @@
   }
 
   &__text {
-    margin-bottom: 6.9rem;
+    margin-top: 6.9rem;
 
-    @include mixin.laptop { margin-bottom: 5.3rem; }
-    @include mixin.tablet { margin-bottom: 3.9rem; }
-    @include mixin.sm-phone { margin-bottom: 2.5rem; }
+    @include mixin.laptop { margin-top: 5.3rem; }
+    @include mixin.tablet { margin-top: 3.9rem; }
+    @include mixin.sm-phone { margin-top: 2.5rem; }
   }
 
   &__stats {
