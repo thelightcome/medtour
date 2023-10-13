@@ -101,6 +101,13 @@
       height: 54.3rem;
       max-height: 100%;
       object-fit: contain;
+
+      @include mixin.wide-laptop { height: 46rem; }
+      @include mixin.laptop { height: 38rem; }
+      @include mixin.small-laptop  { height: 30rem; }
+      @include mixin.wide-tablet { height: 24rem; }
+      @include mixin.tablet { height: 20rem; }
+      @include mixin.phone { height: 16rem; }
     }
   }
 

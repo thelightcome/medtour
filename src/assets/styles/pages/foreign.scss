@@ -40,9 +40,9 @@
     align-items: center;
     overflow: hidden;
     width: 100%;
-    max-width: 246px;
+    max-width: 150px;
+    height: 150px;
     flex-shrink: 0;
-    height: 246px;
     border-radius: 50%;
     margin-top: 6.2rem;
     margin-right: 3.2rem;
@@ -54,8 +54,8 @@
     @include mixin.sm-phone { padding: 2.4rem 2rem 2.4rem 2.2rem; aspect-ratio: 1; height: auto; }
 
     img {
-      width: 246px;
-      height: 246px;
+      width: 150px;
+      height: 150px;
       object-fit: cover;
     }
   }

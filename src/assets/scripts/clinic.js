@@ -11,13 +11,27 @@ function swiperFunc() {
 
   if (!swiperBorder || !swiperCurrent || !swiperCount) return
 
+  const width = document.body.offsetWidth;
+  let slidesPerView, spaceBetween;
+
+  if (width < 780) {
+    slidesPerView = 1;
+    spaceBetween = 10;
+  } else if (width < 1025) {
+    slidesPerView = 2;
+    spaceBetween = 20;
+  } else {
+    slidesPerView = 3;
+    spaceBetween = 30;
+  }
+
   const swiper = new Swiper('.nroc-imgs-slide-swiper', {
     // configure Swiper to use modules
     init: false,
     direction: 'horizontal',
     modules: [Navigation],
-    slidesPerView: 2,
-    spaceBetween: 30,
+    slidesPerView: slidesPerView,
+    spaceBetween: spaceBetween,
     // navigation: {
     //   nextEl: '.nroc-imgs-slide__swiper-button-next',
     //   prevEl: '.nroc-imgs-slide__swiper-button-prev',

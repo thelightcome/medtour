@@ -71,7 +71,8 @@ module.exports = {
         'clinics/president/index': 'src/views/pages/clinics/president.html', // => dist/clinics/president.html
         'clinics/nroc/index': 'src/views/pages/clinics/nroc.html', // => dist/clinics/nroc.html
         'clinics/stomatology/index': 'src/views/pages/clinics/stomatology.html', // => dist/clinics/stomatology.html
-        
+        'clinics/calisto/index': 'src/views/pages/clinics/calisto.html', // => dist/clinics/calisto.html
+
         'error-404': 'src/views/pages/error-404.html', // => dist/error-404.html
       },
       

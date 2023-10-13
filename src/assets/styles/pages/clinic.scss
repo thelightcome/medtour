@@ -803,6 +803,8 @@
       img {
         width: 100%;
         max-width: 232px;
+        aspect-ratio: 0.8;
+        object-fit: contain;
       }
     }
 

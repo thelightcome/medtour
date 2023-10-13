@@ -40,7 +40,7 @@
 
     @include mixin.wide-laptop { width: 25rem; height: 25rem; }
     @include mixin.laptop { width: 20rem; height: 20rem; }
-    @include mixin.small-tablet { position: static; transform: unset; width: 80%; margin: 0 auto; }
+    @include mixin.small-tablet { position: relative; top: 0; left: 0; transform: unset; width: 80%; margin: 0 auto; }
     @include mixin.sm-phone { width: 100%; }
 
     img {
@@ -103,7 +103,7 @@
     max-width: 37.4%;
     height: 100%;
 
-    @include mixin.small-tablet { max-width: 100%; min-height: unset; }
+    @include mixin.small-tablet { max-width: 100%; min-height: unset; height: 18rem; }
 
     img {
       display: block;

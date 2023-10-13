@@ -294,6 +294,7 @@
 
   &__item-content {
     padding: 9.7rem 6.3rem 9.8rem 9.2rem;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -304,6 +305,8 @@
     @include mixin.phone { padding: 2rem 1.8rem 2rem 2rem; }
 
     p {
+      width: 100%;
+
       &:first-child {
         margin-bottom: 3rem;
 
@@ -316,9 +319,11 @@
 
     img {
       width: 450px;
+      max-width: 100%;
       float: right;
       margin: 2.5rem;
       margin-top: 0;
+      @include mixin.tablet { margin: 0; margin-bottom: 2.5rem; }
     }
 
     ul {

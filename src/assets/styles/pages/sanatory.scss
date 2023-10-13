@@ -44,6 +44,10 @@
     @include mixin.small-tablet {
       flex-wrap: wrap;
     }
+
+    &__content {
+      flex-direction: row;
+    }
   }
 
   &__content {
@@ -134,6 +138,57 @@
       .title-2 {
         margin-top: 25px;
       }
+    }
+  }
+
+  &__address {
+    max-width: 45.5rem;
+    padding: 4rem 3rem;
+
+    @include mixin.laptop {
+      max-width: 38rem;
+      padding: 3rem 2.3rem;
+    }
+
+    @include mixin.small-tablet {
+      max-width: unset;
+      padding: 2rem 1.7rem;
+    }
+
+    @include mixin.sm-phone {
+      padding: 1.2rem 1rem;
+    }
+  }
+
+  &__address-item {
+    display: flex;
+    margin-bottom: 2rem;
+    color: var.$color2;
+    gap: 1rem;
+    font-family: var.$font-family2;
+    font-size: 2rem;
+
+    @include mixin.laptop {
+      margin-bottom: 1.6rem;
+      font-size: 1.6rem;
+    }
+
+    @include mixin.small-tablet {
+      margin-bottom: 1.3rem;
+      font-size: 1.4rem;
+    }
+
+    @include mixin.sm-phone {
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+
+    a {
+      color: var.$color2;
+    }
+
+    img {
+      min-width: 2.5rem;
     }
   }
 }
@@ -477,4 +532,8 @@
 
 .okjetpes-3 {
   width: 100px;
+}
+
+.okjetpes-4 {
+  width: 240px;
 }
