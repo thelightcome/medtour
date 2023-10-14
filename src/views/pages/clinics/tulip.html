@@ -1,0 +1,133 @@
+{% extends "src/views/layouts/default.html" %}
+
+<!-- set variables used in layout -->
+{% set title="Tulip Medicine" %}
+
+{% block styles %}
+<!-- load specific page style -->
+<link href="@styles/pages/clinic.scss" rel="stylesheet">
+{% endblock %}
+
+{% block scripts %}
+<!-- load specific page script -->
+<script src="@scripts/clinic.js"></script>
+{% endblock %}
+
+{% block content %}
+<section class="banner clinic__banner">
+  <div class="container">
+    <div class="banner__img">
+      <img src="@images/clinic/tulip-banner.jpg" alt="">
+    </div>
+    <h1 class="banner-title gsap-reveal">Tulip Medicine</h1>
+  </div>
+</section>
+<section class="clinic-page">
+  <div class="container">
+    <div class="clinic-page__content">
+      <div class="overlay about-clinic gsap-reveal">
+        <div class="row about-clinic__body">
+          <div class="about-clinic__content">
+            <p class="gsap-reveal" data-gsap-delay="300"><strong>Миссия Tulip Medicine:</strong> «Мы даем людям уверенность в себе и повышаем качество их жизни, предоставляя доступные и качественные услуги в сфере эстетической медицины.</p>
+            <p class="gsap-reveal" data-gsap-delay="500">Мы пропагандируем образ жизни antiage и стремимся стать ведущей клиникой превентивной медицины в странах Центральной Азии».</p>
+          </div>
+          <div class="overlay about-clinic__address">
+            <div class="about-clinic__address-item gsap-reveal" data-gsap-delay="550">
+              <div><img src="@images/icons/pin.svg" alt=""></div>
+              <div>Центр косметологии  <br>
+                Ул. Байтурсынова, 1, блок А-2 <br>
+                Клиника эстетической хирургии <br>
+                Ул. Байтурсынова, 1, блок А-5 <br>
+                Центр косметологии <br>
+                Ул. Бараева, 21 <br>
+              </div>
+            </div>
+            <div class="about-clinic__address-item gsap-reveal" data-gsap-delay="700">
+              <div><img src="@images/icons/phone.svg" alt=""></div>
+              <div>+7 702 075 08 08</div>
+            </div>
+            <div class="about-clinic__address-item gsap-reveal" data-gsap-delay="850">
+              <div><img src="@images/icons/instagramm.svg" alt=""></div>
+              <div><a href="https://www.instagram.com/tulip_med/">Tulip_med</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="clinic-statistics">
+        <div class="clinic-statistics__col">
+          <div class="overlay clinic-statistics__item gsap-reveal">
+            <div class="clinic-statistics__text">Основаны в</div>
+            <div class="clinic-statistics__num c1">2004</div>
+            <div class="clinic-statistics__text">году</div>
+          </div>
+          <div class="overlay clinic-statistics__item gsap-reveal">
+            <div class="clinic-statistics__text">Более</div>
+            <div class="clinic-statistics__num c1">60 000</div>
+            <div class="clinic-statistics__text">постоянных клиентов</div>
+          </div>
+        </div>
+        <div class="clinic-statistics__col">
+          <div class="overlay clinic-statistics__item gsap-reveal">
+            <div class="clinic-statistics__text">Более</div>
+            <div class="clinic-statistics__num c1">100</div>
+            <div class="clinic-statistics__text">сотрудников</div>
+          </div>
+          <div class="overlay clinic-statistics__item gsap-reveal">
+            <div class="clinic-statistics__text">Более</div>
+            <div class="clinic-statistics__num c1">40</div>
+            <div class="clinic-statistics__text">дермокосметологовв</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="overlay clinic-block gsap-reveal" style="margin-bottom: 60px;">
+        <div class="clinic-block__img" style="width: 100%;">
+          <img src="@images/clinic/tulip-3.png" alt="">
+        </div>
+        <div class="clinic-block__content">
+          <p class="gsap-reveal">Цель Tulip Medicine – здоровый, красивый и счастливый пациент, который выглядит моложе своего биологического возраста по внутренним и внешним показателям.</p>
+        </div>
+      </div>
+
+      <div class="overlay clinic-block gsap-reveal" style="margin-bottom: 60px;">
+        <div class="clinic-block__content">
+          <p class="gsap-reveal">Для реализации своей миссии Tulip Medicine активно сотрудничает с ведущими научными и медицинскими центрами Казахстана. В частности, с Национальным Центром Биотехнологий, применения передовые научные знания в области клеточных технологий в своей работе.</p>
+        </div>
+        <div class="clinic-block__img" style="width: 100%;">
+          <img src="@images/clinic/tulip-1.jpg" alt="">
+        </div>
+      </div>
+
+      <div class="overlay clinic-block gsap-reveal" style="margin-bottom: 60px;">
+        <div class="clinic-block__img" style="width: 100%;">
+          <img src="@images/clinic/tulip-2.jpg" alt="">
+        </div>
+        <div class="clinic-block__content">
+          <p class="gsap-reveal">В рамках плодотворного международного партнерства Tulip Medicine работает с турецким Центром по пересадке волос Double Hair Center.</p>
+        </div>
+      </div>
+
+      <div class="overlay clinic-block clinic-block--1 gsap-reveal">
+        <div class="clinic-block__content">
+          <div class="title-2 clinic-block__title">Направления Tulip Medicine:</div>
+          <ul class="clinic-block__list">
+            <li class="clinic-block__item">Косметология</li>
+            <li class="clinic-block__item">BTL Exilis Ultra 360 TM (RF и ультразвук)</li>
+            <li class="clinic-block__item">Vitalaser (лазерная биоревитализация)</li>
+            <li class="clinic-block__item">IPL-терапия</li>
+            <li class="clinic-block__item">эрбиевый лазер Asclepion MCL-30</li>
+            <li class="clinic-block__item">неодимовый лазер «SPECTRA XT»</li>
+            <li class="clinic-block__item">Sciton BBL</li>
+            <li class="clinic-block__item">Q-Master Plus и др.</li>
+            <li class="clinic-block__item">Трихология</li>
+            <li class="clinic-block__item">Пластическая хирургия</li>
+            <li class="clinic-block__item">Сосудистая хирургия</li>
+            <li class="clinic-block__item">Гинекология (Отделение интимной реабилитации)</li>
+            <li class="clinic-block__item">Дерматохирургия</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</section>
+{% endblock %}

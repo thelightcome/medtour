@@ -72,6 +72,10 @@ module.exports = {
         'clinics/nroc/index': 'src/views/pages/clinics/nroc.html', // => dist/clinics/nroc.html
         'clinics/stomatology/index': 'src/views/pages/clinics/stomatology.html', // => dist/clinics/stomatology.html
         'clinics/calisto/index': 'src/views/pages/clinics/calisto.html', // => dist/clinics/calisto.html
+        'clinics/ecomed/index': 'src/views/pages/clinics/ecomed.html', // => dist/clinics/ecomed.html
+        'clinics/green-clinic/index': 'src/views/pages/clinics/green-clinic.html', // => dist/clinics/green-clinic.html
+        'clinics/doctor-dent/index': 'src/views/pages/clinics/doctor-dent.html', // => dist/clinics/doctor-dent.html
+        'clinics/tulip/index': 'src/views/pages/clinics/tulip.html', // => dist/clinics/tulip.html
 
         'error-404': 'src/views/pages/error-404.html', // => dist/error-404.html
       },

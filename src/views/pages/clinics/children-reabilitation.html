@@ -10,6 +10,7 @@
 
 {% block scripts %}
 <!-- load specific page script -->
+<script src="@scripts/clinic.js"></script>
 {% endblock %}
 
 {% block content %}
@@ -28,11 +29,15 @@
         <div class="title-2 about-clinic__title gsap-reveal">О клинике</div>
         <div class="row about-clinic__body">
           <div class="about-clinic__content">
-            <p class="gsap-reveal" data-gsap-delay="300">Единственный — реабилитационный центр на территории Восточной Европы и Центральной Азии, который успешно прошел программу аккредитации Joint Commission International для организаций, оказывающих долгосрочную медицинскую помощь.</p>
+            <p class="gsap-reveal" data-gsap-delay="300">Единственный — реабилитационный центр на территории Восточной
+              Европы и Центральной Азии, который успешно прошел программу аккредитации Joint Commission International
+              для организаций, оказывающих долгосрочную медицинскую помощь.</p>
             <p class="gsap-reveal" data-gsap-delay="500">Реабилитацию в НЦДР могут получить взрослые и дети.</p>
             <div class="about-clinic__images">
-              <a href="/" class="gsap-reveal" data-gsap-delay="800"><img src="@images/clinic/clinic-img-2.png" alt=""></a>
-              <a href="/" class="gsap-reveal" data-gsap-delay="900"><img src="@images/clinic/clinic-img-3.png" alt=""></a>
+              <a href="/" class="gsap-reveal" data-gsap-delay="800"><img src="@images/clinic/clinic-img-2.png"
+                  alt=""></a>
+              <a href="/" class="gsap-reveal" data-gsap-delay="900"><img src="@images/clinic/clinic-img-3.png"
+                  alt=""></a>
             </div>
           </div>
           <div class="overlay about-clinic__address">
@@ -58,7 +63,7 @@
 
       <div class="clinic-statistics">
         <div class="clinic-statistics__col">
-					<div class="overlay clinic-statistics__item clinic-statistics__item--reverse gsap-reveal">
+          <div class="overlay clinic-statistics__item clinic-statistics__item--reverse gsap-reveal">
             <div class="clinic-statistics__text">Детей проходят <br> реабилитацию в год</div>
             <div class="clinic-statistics__num c1">4000</div>
           </div>
@@ -73,28 +78,82 @@
             <div class="clinic-statistics__num c5">2300</div>
           </div>
           <div class="overlay clinic-statistics__item clinic-statistics__item--reverse gsap-reveal">
-            <div class="clinic-statistics__text">Детей с расстройством речи и языка <br> ежегодно проходят реабилитацию</div>
+            <div class="clinic-statistics__text">Детей с расстройством речи и языка <br> ежегодно проходят реабилитацию
+            </div>
             <div class="clinic-statistics__num c6">725</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="overlay clinic-block gsap-reveal" style="margin-bottom: 3rem;">
+        <div class="clinic-block__content">
+          <div class="nroc-imgs-slide" style="width: 100%;">
+            <div class="nroc-imgs-slide-wrap" style="width: 100%;">
+              <div class="nroc-imgs-slide__body nroc-imgs-slide-swiper gsap-reveal">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="nroc-imgs-slide__item">
+                      <img src="@images/clinic/nroc-1-1.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="nroc-imgs-slide__item">
+                      <img src="@images/clinic/nroc-1-2.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="nroc-imgs-slide__item">
+                      <img src="@images/clinic/nroc-1-3.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="nroc-imgs-slide__item">
+                      <img src="@images/clinic/nroc-1-4.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="nroc-imgs-slide__item">
+                      <img src="@images/clinic/nroc-1-5.jpg" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="nroc-imgs-slide__item">
+                      <img src="@images/clinic/nroc-1-6.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="nroc-imgs-slide__pagination">
+                <div class="nroc-imgs-slide__counter">
+                  <span class="nroc-imgs-slide__current-slide">1</span>/<span class="nroc-imgs-slide__count">12</span>
+                </div>
+                <div class="nroc-imgs-slide__border"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="overlay clinic-block clinic-block--2 gsap-reveal">
         <div class="clinic-block__content">
-          <div class="title-2 clinic-block__title">Центр оказывает реабилитационную <br/> помощь пациентам с:</div>
+          <div class="title-2 clinic-block__title">Центр оказывает реабилитационную <br /> помощь пациентам с:</div>
           <ul class="clinic-block__list">
             <li class="clinic-block__item">детским церебральным параличом</li>
-						<li class="clinic-block__item">задержкой психо-речевого развития</li>
-						<li class="clinic-block__item">аутизмом и РАС</li>
-						<li class="clinic-block__item">заболеваниями периферической нервной системы</li>
-						<li class="clinic-block__item">заболеваниями опорно-двигательного аппарата</li>
-						<li class="clinic-block__item">нервно-мышечными заболеваниями</li>
-						<li class="clinic-block__item">последствиями инсультов (все виды)</li>
-						<li class="clinic-block__item">последствиями травм головного и спинного мозга</li>
-						<li class="clinic-block__item">психосоматическими нарушениями <br/> (стресс, ВСД, бессонница, тики, заикание, <br/> тревожность, энурезы и др.)</li>
-						<li class="clinic-block__item">заболеваниями позвоночника <br/> (остеохондроз, протрузии, грыжи дисков)</li>
-						<li class="clinic-block__item">последствиями спортивных травм (все виды)</li>
-						<li class="clinic-block__item">А также в Центре проводятся нейрофизиологическая <br/>диагностика и назначение кетогенной диеты при <br/> судорожных синдромах и эпилепсиях.</li>
+            <li class="clinic-block__item">задержкой психо-речевого развития</li>
+            <li class="clinic-block__item">аутизмом и РАС</li>
+            <li class="clinic-block__item">заболеваниями периферической нервной системы</li>
+            <li class="clinic-block__item">заболеваниями опорно-двигательного аппарата</li>
+            <li class="clinic-block__item">нервно-мышечными заболеваниями</li>
+            <li class="clinic-block__item">последствиями инсультов (все виды)</li>
+            <li class="clinic-block__item">последствиями травм головного и спинного мозга</li>
+            <li class="clinic-block__item">психосоматическими нарушениями <br /> (стресс, ВСД, бессонница, тики,
+              заикание, <br /> тревожность, энурезы и др.)</li>
+            <li class="clinic-block__item">заболеваниями позвоночника <br /> (остеохондроз, протрузии, грыжи дисков)
+            </li>
+            <li class="clinic-block__item">последствиями спортивных травм (все виды)</li>
+            <li class="clinic-block__item">А также в Центре проводятся нейрофизиологическая <br />диагностика и
+              назначение кетогенной диеты при <br /> судорожных синдромах и эпилепсиях.</li>
           </ul>
         </div>
         <div class="clinic-block__img" style="width: 50%;">
@@ -102,8 +161,11 @@
         </div>
       </div>
 
-      <iframe style="width: 100%; max-width: 750px; aspect-ratio: 4/3; margin: 0 auto 5rem;" src="https://www.youtube.com/embed/7VxlGH0XLDs?si=HWJsj9XPNVTVAfEA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<!-- 
+      <iframe style="width: 100%; max-width: 750px; aspect-ratio: 4/3; margin: 0 auto 5rem;"
+        src="https://www.youtube.com/embed/7VxlGH0XLDs?si=HWJsj9XPNVTVAfEA" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen></iframe>
+      <!-- 
       <div class="doctors">
         <div class="title-2 doctors__title gsap-reveal">Врачи</div>
         <div class="doctors__list">

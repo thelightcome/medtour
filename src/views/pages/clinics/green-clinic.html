@@ -1,0 +1,299 @@
+{% extends "src/views/layouts/default.html" %}
+
+<!-- set variables used in layout -->
+{% set title="Green Clinic" %}
+
+{% block styles %}
+<!-- load specific page style -->
+<link href="@styles/pages/clinic.scss" rel="stylesheet">
+{% endblock %}
+
+{% block scripts %}
+<!-- load specific page script -->
+<script src="@scripts/clinic.js"></script>
+{% endblock %}
+
+{% block content %}
+<section class="banner clinic__banner">
+  <div class="container">
+    <div class="banner__img">
+      <img src="@images/clinic/green-clinic-banner.jpg" alt="">
+    </div>
+    <h1 class="banner-title gsap-reveal">Green Clinic</h1>
+  </div>
+</section>
+<section class="clinic-page">
+  <div class="container">
+    <div class="clinic-page__content">
+      <div class="overlay about-clinic gsap-reveal">
+        <div class="title-2 about-clinic__title gsap-reveal">О клинике</div>
+        <div class="row about-clinic__body">
+          <div class="about-clinic__content">
+            <p data-gsap-delay="300">Green clinic- это многопрофильный медицинский центр, общей
+              площадью 10 700 кв. м., предоставляющий доступную высококачественную медицинскую помощь населению, и
+              возможность пройти полное обследование у врачей различного профиля, так же при необходимости, получить
+              лечение в стационаре (провести операцию по бесплатной квоте), по лучшим международным стандартам и
+              технологиям.</p>
+            <div class="clinic-block__img" style="width: 100%; max-width: 300px;">
+              <img src="@images/clinic/green-clinic-3.png" alt="">
+            </div>
+          </div>
+          <div class="overlay about-clinic__address">
+            <div class="about-clinic__address-item gsap-reveal" data-gsap-delay="550">
+              <div><img src="@images/icons/pin.svg" alt=""></div>
+              <div>ул. Хусейн бен талал 25/1, район ЕХРО</div>
+            </div>
+            <div class="about-clinic__address-item gsap-reveal" data-gsap-delay="700">
+              <div><img src="@images/icons/phone.svg" alt=""></div>
+              <div>+7(71-72) 79-77-22 - call-центр <br> +7 (771) 103-01-43 - связь с доктором</div>
+            </div>
+            <div class="about-clinic__address-item gsap-reveal" data-gsap-delay="850">
+              <div><img src="@images/icons/e-mail.svg" alt=""></div>
+              <div><a href="mailto:info@greenclinic.kz">info@greenclinic.kz</a></div>
+            </div>
+            <div class="about-clinic__address-item gsap-reveal" data-gsap-delay="1000">
+              <div><img src="@images/icons/globe.svg" alt=""></div>
+              <div><a href="https://greenclinic.kz/ru/">greenclinic.kz</a></div>
+            </div>
+            <div class="about-clinic__address-item gsap-reveal" data-gsap-delay="850">
+              <div><img src="@images/icons/e-mail.svg" alt=""></div>
+              <div><a href="https://www.instagram.com/greenclinic_astana/?hl=ru">greenclinic_astana</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="doctors nroc">
+        <div class="title-2 doctors__title gsap-reveal">Врачи</div>
+        <div class="doctors__list">
+          <div class="overlay doctor gsap-reveal" data-gsap-delay="300">
+            <div class="doctor__img">
+              <img src="@images/clinic/green-clinic-doctor-1.png" alt="">
+            </div>
+            <div class="doctor__title">Байгошкарова Рахат Усербаевна</div>
+            <div class="doctor__text" style="max-width: 500px;">
+              <span>Медицинский директор, к.м.н.</span> <br>
+              <span>Врач высшей категории по терапии</span> <br>
+              <span>Врач высшей категории по общественному здравоохранению</span> <br>
+            </div>
+            <!-- <button class="doctor__btn" data-id="1">Подробнее <img src="@images/icons/small-white-icon.svg"
+                alt=""></button> -->
+          </div>
+          <div class="overlay doctor gsap-reveal" data-gsap-delay="300">
+            <div class="doctor__img">
+              <img src="@images/clinic/green-clinic-doctor-2.jpg" alt="">
+            </div>
+            <div class="doctor__title">Оспанов Орал Базарбаевич</div>
+            <div class="doctor__text" style="max-width: 500px;">
+              <ul style="list-style-type: disc;">
+                <li>более 30 лет практики, хирург общий, абдоминальный, бариатрический</li>
+                <li>доктор медицинских наук</li>
+                <li>профессор</li>
+                <li>академик европейской академии естественных наук (еаен)</li>
+                <li>руководитель «центра хирургии ожирения и сахарного диабета» клиники “green clinic”</li>
+                <li>президент роо «казахстанское общество бариатрических и метаболических хирургов — кобимх»</li>
+                <li>член генерального совета всемирной федерации по лечению морбидного ожирения и метаболических
+                  нарушений (ifso)</li>
+              </ul>
+            </div>
+            <!-- <button class="doctor__btn" data-id="1">Подробнее <img src="@images/icons/small-white-icon.svg"
+                alt=""></button> -->
+          </div>
+          <div class="overlay doctor gsap-reveal" data-gsap-delay="300">
+            <div class="doctor__img">
+              <img src="@images/clinic/green-clinic-doctor-3.jpg" alt="">
+            </div>
+            <div class="doctor__title">Биханов Нуржан Актлеуович</div>
+            <div class="doctor__text" style="max-width: 500px;">
+              <span>Главный хирург «центра хирургии» клиники «Green Clinic»</span> <br>
+              <span>Кандидат медицинских наук</span> <br>
+              <span>Опыт работы более 27 лет</span> <br>
+              <span>Хирург общий, абдоминальный онколог</span> <br>
+              <span>Колопроктолог</span> <br>
+              <span>Врач высшей квалификационной категории</span> <br>
+            </div>
+            <!-- <button class="doctor__btn" data-id="1">Подробнее <img src="@images/icons/small-white-icon.svg"
+                alt=""></button> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="overlay clinic-block gsap-reveal" style="margin-bottom: 60px;">
+        <div class="clinic-block__content">
+          <div class="title-2 clinic-block__title">Инновационный метод лечения ожирения</div>
+          <p>
+            <strong>Бариатрическая хирургия</strong> <br>
+            Показания и противопоказания к бариатрическим операциям <br>
+            Бариатрическая хирургия доступна не всем людям. <br>
+            Основным условием для назначения операции является ожирение 3 степени – морбидное ожирение. <br>
+            Этот тип характеризуется индексом массы тела ИМТ выше 40. <br>
+            ИМТ — величина, которая помогает оценить соотношение веса и роста человека. Определяется как масса в
+            килограммах деленная на рост в метрах в квадрате. <br>
+            Если ИМТ менее 40 операция может быть показана при наличии любых заболеваний, вызванных ожирением (например,
+            сахарного диабета 2 типа). <br> <br>
+            Другие условия при которых возможна операция:
+          <ul style="font-size: 1.8rem; margin-top: 10px; list-style-type: disc;">
+            <li>возраст от 18 до 65 лет;</li>
+            <li>безрезультатные диеты;</li>
+            <li>физическая активность и прием медикаментов для похудения в прошлом;</li>
+            <li>реалистичные представления об операции, ее рисках и результатах;</li>
+            <li>мотивация к похудению после бариатрии и готовность следовать рекомендациям врача.</li>
+          </ul>
+          </p>
+        </div>
+        <div class="clinic-block__img" style="width: 100%;">
+          <img src="@images/clinic/green-clinic-2.jpg" alt="" style="object-fit: contain;">
+        </div>
+      </div>
+
+      <div class="overlay clinic-block clinic-block--1 gsap-reveal">
+        <div class="clinic-block__content">
+          <p>
+            <strong>Бариатрические операции противопоказаны при:</strong> <br><br>
+            ИМТ меньше 30; <br>
+            Беременности или сопутствующих заболеваниях; <br>
+            Циррозе печени; <br>
+            Аутоиммунных болезней. <br>
+            Врач может отменить вмешательство, если за 3 месяца до него пациент набрал вес или продолжил курить. <br>
+            Видимый результат уже через месяц! <br>
+            Забудьте о мучительных диетах и осложнениях в виде гастрита. Хирургические процедуры профессора Оспанова
+            гарантируют не только снижение веса до нормального уровня, но и здоровья для всего организма
+            Ожирение определяется мировым медицинским сообществом как хроническое обменное заболевание. Поэтому для
+            лечения тяжелых случаев болезни необходимы радикальные методы. Речь идет о бариатрической хирургии. <br>
+            Бариатрия — подвид хирургии, которая специализируется на лечении ожирения. Бариатрические
+            манипуляции помогают уменьшить объем желудка и скорректировать обменные процессы. <br>
+            В результате человек насыщается меньшим количеством пищи и получает из еды больше энергии.
+          </p>
+        </div>
+      </div>
+
+      <div class="overlay clinic-block clinic-block--1 gsap-reveal">
+        <div class="clinic-block__content">
+          <p><strong>Оперативное лечение в условиях многопрофильного стационара “Green clinic” это:</strong></p>
+          <ul style="font-size: 1.8rem; margin-top: 10px; list-style-type: disc;">
+            <li>высокий уровень безопасности, с соблюдением требований санитарно-эпидемиологической безопасности и
+              требований стандарта по безопасному пребыванию пациентов в медицинском учреждении;</li>
+            <li>квалифицированный и внимательный медицинский персонал;</li>
+            <li>новейшее европейское оборудование;</li>
+            <li>комфортабельные условия пребывания;</li>
+            <li>предоперационный check-up за один день.</li>
+          </ul>
+          <br>
+          <p><strong>Виды проводимых операций:</strong></p>
+          <ul style="font-size: 1.8rem; margin-top: 10px; list-style-type: disc;">
+            <li>авторский метод - лапароскопическое одномоментное минигастрошунтирование с фундопликацией (выключенной
+              частью желудка) фундорингмгш.</li>
+            <li>лапароскопическая продольная (рукавная), слив-резекция желудка</li>
+            <li>лапароскопическое мини-шунтирование</li>
+            <li>лапароскопическое желудочное шунтирование по ру</li>
+            <li>лапароскопическое бандажирование желудка.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="overlay clinic-block clinic-block--1 gsap-reveal">
+        <div class="clinic-block__content">
+          <div class="title-2 clinic-block__title">Современные инновационные подходы в лечении хирургических
+            заболеваний:</div>
+           <p><strong>Высокий уровень безопасности, с соблюдением требований и стандартов санитарно-эпидемиологической
+            безопасности;</strong></p>
+          <ul style="font-size: 1.8rem; margin-top: 10px; list-style-type: disc;">
+            <li>квалифицированный и внимательный медицинский персонал;</li>
+            <li>новейшее европейское оборудование;</li>
+            <li>комфортабельные условия пребывания;</li>
+            <li>предоперационный check-up за один день.</li>
+          </ul>
+          <br>
+          <p>Данные виды лечений проводятся как платно, так и бесплатно в рамках осмс. виды проводимых операций:</p>
+          <br>
+          <p><strong>ЭНДОКРИННЫЕ ЗАБОЛЕВАНИЯ</strong></p>
+          <ul style="font-size: 1.8rem; margin-top: 10px; list-style-type: disc; text-transform: lowercase;">
+            <li>УЗЛОВОЙ И ДИФФУЗНО - УЗЛОВОЙ ЗОБ</li>
+            <li>ГИПЕРПАРАТИРЕОЗ</li>
+            <li>ТИМОМЫ</li>
+            <li>ДОБРОКАЧЕСТВЕННОЕ ОБРАЗОВАНИЕ НАДПОЧЕЧНИКОВ</li>
+          </ul>
+          <p style="text-transform: lowercase;">
+            ОПЕРАТИВНОЕ ЛЕЧЕНИЕ <br>
+            ТЕРИОДЭКТОМИЯ, ГЕМИТЕРИДЭКТОМИЯ, ПАРАТЕРИОДЭКТОМИЯ. <br>
+            ИННОВАЦИОННЫЕ МЕТОДЫ <br>
+            ЭНДОСКОПИЧЕСКАЯ ГЕМИТЕРИОЙДЭКТОМИЯ. <br>
+            ТОРОКОСКОПИЧЕСКАЯ ТИМЭКТОМИЯ, ЛАПАРОСКОПИЧЕСКАЯ АДРЕНАЛЭКТОМИЯ
+          </p>
+        </div>
+      </div>
+
+      <div class="overlay clinic-block clinic-block--1 gsap-reveal">
+        <div class="clinic-block__content">
+          <p><strong>ЗАБОЛЕВАНИЯ ПИЩЕВОДА</strong></p> <br>
+          <ul style="font-size: 1.8rem; margin-top: 10px; list-style-type: disc; text-transform: lowercase;">
+            <li>ГЭРБ</li>
+            <li>ГПОД</li>
+            <li>АХАЛАЗИЯ КАРДИИ</li>
+            <li>ДИВЕРТИКУЛЫ ПИЩЕВОДА</li>
+            <li>РУБЦОВЫЕ СТРИКТУРЫ ПИЩЕВОДА</li>
+          </ul>
+          <br>
+          <p style="text-transform: lowercase;">
+            ОПЕРАТИВНОЕ ЛЕЧЕНИЕ <br>
+            ДИВЕРТИКУЛЭКТОМИЯ, РЕКОНСТРУКТИВНО-ВОССТАНОВИТЕЛЬНЫЕ ОПЕРАЦИИ НА ПИЩЕВОДЕ. <br>
+            ИННОВАЦИОННЫЕ МЕТОДЫ: <br>
+            ЛАПАРОСКОПИЧЕСКАЯ ФУНДОПЛИКАЦИЯ, КРУРОРАФИЯ.ЛАПАРОСКОПИЧЕСКАЯ ЭЗОФАГОКАРДИОМИОТОМИЯ ПОГЕЛЛЕРУ С
+            ФУНДОПЛИКАЦИЕЙ ПО ДОРУ.
+          </p>
+          <br><br>
+          <p><strong>ЗАБОЛЕВАНИЯ ЖЕЛУДКА</strong></p> <br>
+          <ul style="font-size: 1.8rem; margin-top: 10px; list-style-type: disc; text-transform: lowercase;">
+            <li>КАЛЛЕЗНЫЕ ЯЗВЫ С ПЕНЕТРАЦИЕЙ</li>
+            <li>РУБЦОВЫЙ СТЕНОЗ ПРИВРАТНИКА</li>
+            <li>ДОБРОКАЧЕСТВЕННЫЕ ОПУХОЛИ ЖЕЛУДКА</li>
+            <li>МОРБИДНОЕ ОЖИРЕНИЕ</li>
+          </ul>
+          <br>
+          <p style="text-transform: lowercase;">
+            ОПЕРАТИВНОЕ ЛЕЧЕНИЕ <br>
+            РЕЗЕКЦИЯ ЖЕЛУДКА В РАЗЛИЧНЫХ МОДИФИКАЦИЯХ. <br>
+            ИННОВАЦИОННЫЕ МЕТОДЫ <br>
+            ЛАПАРОСКОПИЧЕСКАЯ РЕЗЕКЦИЯ ЖЕЛУДКА. СЛИВ – РЕЗЕКЦИЯ ЖЕЛУДКА. МИНИГАСТРОШУНТИРОВАНИЕ. <br>
+          </p>
+        </div>
+      </div>
+
+      <div class="overlay clinic-block clinic-block--1 gsap-reveal">
+        <div class="clinic-block__content">
+          <p style="text-transform: unset;"><strong>ЗАБОЛЕВАНИЯ ПЕЧЕНИ ЖЕЛЧНОГОПУЗЫРЯ И ПОДЖЕЛУДОЧНОЙ ЖЕЛЕЗЫ</strong> <br><br></p>
+          <p style="text-transform: lowercase;">
+            ЖКБ; <br>
+            ПОЛИПОЗ ЖЕЛЧНОГО ПУЗЫРЯ <br>
+            ПРОСТЫЕ И ПАРАЗИТАРНЫЕ КИСТЫ ПЕЧЕНИ <br>
+            РУБЦОВЫЕ СТРИКТУРЫ ЖЕЛЧНЫХ ПРОТОКОВ <br>
+            ВИРСУНГОЛИТИАЗ <br>
+            КИСТЫ ПОДЖЕЛУДОЧНОЙ ЖЕЛЕЗЫ <br>
+            ОПЕРАТИВНОЕ ЛЕЧЕНИЕ <br>
+            ЭХИНОКОККЭКТОМИЯ И ПЕРИЦИСТЭКТОМИЯ.ПАНКРЕАТОЦИСТОЕЮНОСТОМИЯ НА РУ ПЕТЛЕ.РЕКОНСТРУКТИВНО-ВОССТАНОВИТЕЛЬНЫЕ ОПЕРАЦИИ НАЖЕЛЧЕВЫВОДЯЩИХ ПУТЯХ. <br>
+            ИННОВАЦИОННЫЕ МЕТОДЫ <br>
+            ЛАПАРОСКОПИЧЕСКАЯ ЭХИНОКОККЭКТОМИЯ. <br>
+            ЛАПАРОСКОПИЧЕСКАЯ ЦИСТОЕЮНОСТОМИЯ.ЛАПАРОСКОПИЧЕСКАЯ ХОЛЕЦИСТЭКТОМИЯ. <br>
+            ГРЫЖИ РАЗЛИЧНОЙ ЛОКАЛИЗАЦИИ <br>
+            ГРЫЖЕСЕЧЕНИЕ С АЛЛОПЛАСТИКОЙ <br>
+            ЛАПАРОСКОПИЧЕСКАЯ ГЕРНИОПЛАСТИКА ПРИПАХОВЫХ ГРЫЖАХ И ГРЫЖАХ ПЕРЕДНЕЙБРЮШНОЙ СТЕНКИ <br>
+            КОЛОПРОКТОЛОГИЯ <br>
+            ДОЛИХОСИГМЫ <br>
+            МЕГАКОЛОНЫ <br>
+            ВЫПАДЕНИЕ ПРЯМОЙ КИШКИ <br>
+            СВИЩИ ТОЛСТОЙ КИШКИ И ПАРАРЕКТАЛЬНОЙ ОБЛАСТИ <br>
+            ГЕМОРРОЙ <br>
+            ОПЕРАТИВНОЕ ЛЕЧЕНИЕ <br>
+            ЗАКРЫТИЕ СВИЩЕЙ ТОЛСТОЙ И ТОНКОЙ КИШКИ ЛЮБОЙСЛОЖНОСТИ. <br>
+            ИННОВАЦИОННЫЕ МЕТОДЫ: <br>
+            ЛАПАРОСКОПИЧЕСКАЯ ГЕМИКОЛЭКТОМИЯ.ЛАПАРОСКОПИЧЕСКАЯ РЕКТОПЕКСИЯ. <br>
+            ГЕМОРРОЙЭКТОМИЯ С ИСПОЛЬЗОВАНИЕМ УЛЬТРОЗВУКОВОГОДИССЕКТОРА. <br>
+          </p>
+        </div>
+        <div class="clinic-block__img" style="width: 100%;">
+          <img src="@images/clinic/green-clinic-1.jpg" alt="" style="object-fit: contain;">
+        </div>
+      </div>
+    </div>
+</section>
+{% endblock %}

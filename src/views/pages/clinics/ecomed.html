@@ -1,0 +1,133 @@
+{% extends "src/views/layouts/default.html" %}
+
+<!-- set variables used in layout -->
+{% set title="Экомед " %}
+
+{% block styles %}
+<!-- load specific page style -->
+<link href="@styles/pages/clinic.scss" rel="stylesheet">
+{% endblock %}
+
+{% block scripts %}
+<!-- load specific page script -->
+<script src="@scripts/clinic.js"></script>
+{% endblock %}
+
+{% block content %}
+<section class="banner clinic__banner">
+  <div class="container">
+    <div class="banner__img">
+      <img src="@images/clinic/ecomed-banner.jpg" alt="">
+    </div>
+    <h1 class="banner-title gsap-reveal">Экомед</h1>
+  </div>
+</section>
+<section class="clinic-page">
+  <div class="container">
+    <div class="clinic-page__content">
+      <div class="overlay about-clinic gsap-reveal">
+        <div class="title-2 about-clinic__title gsap-reveal">О клинике</div>
+        <div class="row about-clinic__body">
+          <div class="about-clinic__content">
+            <p class="gsap-reveal" data-gsap-delay="300">Рождение первого «экстракорпорального ребенка» в Казахстане 31 июля 1996 года в клинике «Экомед» положило начало новой эпохе в лечении бесплодия в Казахстане, автором которой выступил организатором эмбриолог Салтанат Берденовна Байкошкарова.</p>
+            <p class="gsap-reveal" data-gsap-delay="500">В 1995 году клиника «Экомед» была включена во Всемирный регистр ЭКО во Франции как первая ЭКО лаборатория в Казахстане.</p>
+            <p class="gsap-reveal" data-gsap-delay="500">В настоящее время клиника имеет возможность диагностики лечения бесплодия на самом высоком научном уровне, может оказывать все виды высококвалифицированной помощи в области вспомогательных репродуктивных технологий (ВРТ), не выезжая за границу. Об этом свидетельствуют многочисленные заявки на лечение от пациентов из стран СНГ (России, Кыргызстана, Таджикистана, Узбекистана, Азербайджана и др.), так и из дальнего зарубежья (Германия, США, Турция, Италия, Великобритания и др.).</p>
+          </div>
+          <div class="overlay about-clinic__address">
+            <div class="about-clinic__address-item gsap-reveal" data-gsap-delay="700">
+              <div><img src="@images/icons/phone.svg" alt=""></div>
+              <div>+7 775 007 07 00</div>
+            </div>
+            <div class="about-clinic__address-item gsap-reveal" data-gsap-delay="1000">
+              <div><img src="@images/icons/globe.svg" alt=""></div>
+              <div><a href="https://ecomed.kz/">www.ecomed.kz</a></div>
+            </div>
+            <div class="about-clinic__address-item gsap-reveal" data-gsap-delay="850">
+              <div><img src="@images/icons/e-mail.svg" alt=""></div>
+              <div><a href="mailto:info@ecomed.kz">info@ecomed.kz</a></div>
+            </div>
+            <div class="about-clinic__address-item gsap-reveal" data-gsap-delay="850">
+              <div><img src="@images/icons/e-mail.svg" alt=""></div>
+              <div><a href="https://www.instagram.com/ecomed.kz/">@ECOMED.KZ</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="clinic-statistics">
+        <div class="clinic-statistics__col">
+          <div class="overlay clinic-statistics__item gsap-reveal">
+            <div class="clinic-statistics__text">Основан в</div>
+            <div class="clinic-statistics__num c1">1995</div>
+            <div class="clinic-statistics__text">году</div>
+          </div>
+          <div class="overlay clinic-statistics__item gsap-reveal">
+            <div class="clinic-statistics__text">Опыт</div>
+            <div class="clinic-statistics__num c1">28</div>
+            <div class="clinic-statistics__text">лет</div>
+          </div>
+        </div>
+        <div class="clinic-statistics__col">
+          <div class="overlay clinic-statistics__item gsap-reveal" style="max-width: 600px;">
+            <div class="clinic-statistics__text">Более</div>
+            <div class="clinic-statistics__num c1">16</div>
+            <div class="clinic-statistics__text">тысяч детей, рожденных методом ЭКО</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="overlay clinic-block clinic-block--1 gsap-reveal">
+        <div class="clinic-block__img" style="width: 100%;">
+          <img src="@images/clinic/ecomed-3.jpg" alt="" style="object-fit: contain;">
+        </div>
+        <div class="clinic-block__content">
+          <p>В Казахстане функционируют клиники в Алматы, Астане, Атырау, Актау, Шымкенте, Таразе , Кызылорде, Усть-Каменогорске, Туркестане.</p>
+          <ul class="clinic-block__list">
+            <li class="clinic-block__item">14 центров в разных городах Казахстана</li>
+            <li class="clinic-block__item">Более 100 партнеров в Казахстане</li>
+            <li class="clinic-block__item">400 квалифицированных специалистов</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="overlay clinic-block clinic-block--1 gsap-reveal">
+        <div class="clinic-block__content">
+          <p>28-летний опыт позволяет успешно внедрять уникальные технологии, являющиеся визитной карточкой Центра и гарантией высоких результатов.</p>
+          <ul class="clinic-block__list">
+            <li class="clinic-block__item">Первый ребенок «из пробирки» в Казахстане</li>
+            <li class="clinic-block__item">Более 30 тысяч циклов ВРТ</li>
+            <li class="clinic-block__item">Более 16 тысяч детей, рожденных методом ЭКО</li>
+          </ul>
+          <p>Высокая эффективность:</p>
+          <ul class="clinic-block__list">
+            <li class="clinic-block__item">Частота клинической беременности в стимулированном цикле – 51%</li>
+            <li class="clinic-block__item">Клиническая частота наступления беременности в криоциклах – 70%</li>
+            <li class="clinic-block__item">1 цикл стимуляции + 1 криоцикл = 90%</li>
+          </ul>
+        </div>
+        <div class="clinic-block__img" style="width: 100%;">
+          <img src="@images/clinic/ecomed-2.jpg" alt="" style="object-fit: contain;">
+        </div>
+      </div>
+
+      <div class="overlay clinic-block clinic-block--1 gsap-reveal">
+        <div class="clinic-block__content">
+          <p>Уникальные технологии: <br> EMBRYOSCOPE PLUS обеспечивает наиболее стабильные условия культивирования эмбрионов.</p>
+          <ul class="clinic-block__list">
+            <li class="clinic-block__item">Коэффициент оплодотворения – 83%</li>
+            <li class="clinic-block__item">бластуляции – 59%</li>
+          </ul>
+          <p>Мы единственный центр в Казахстане, прошедший официальную сертификацию по японской технологии заморозки яйцеклеток, спермы и эмбрионов в «Cryotec» с автором этой технологии доктором Масашиге Куваяма. Это единственная технология, позволяющая добиться 100% выживания яйцеклеток, сперматозоидов и эмбрионов после разморозки.</p>
+          <ul class="clinic-block__list">
+            <li class="clinic-block__item">Высокая скорость бластуляции позволяет в 67% случаев заморозить эмбрион</li>
+            <li class="clinic-block__item"></li>
+            <li class="clinic-block__item">Выживаемость эмбрионов – 100%</li>
+          </ul>
+        </div>
+        <div class="clinic-block__img" style="width: 100%;">
+          <img src="@images/clinic/ecomed-1.jpg" alt="" style="object-fit: contain;">
+        </div>
+      </div>
+    </div>
+</section>
+{% endblock %}
