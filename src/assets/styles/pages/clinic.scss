@@ -446,6 +446,10 @@
     gap: 1.5rem;
   }
 
+  &.overlay {
+    overflow: unset;
+  }
+
   &--1 {
     margin-bottom: 3rem;
 
@@ -1174,7 +1178,7 @@
     div {
       width: 6%;
       position: absolute;
-      top: 50%;
+      top: 25%;
       z-index: 5;
       cursor: pointer;
 

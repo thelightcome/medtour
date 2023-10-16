@@ -32,27 +32,29 @@ function swiperFunc() {
     modules: [Navigation],
     slidesPerView: slidesPerView,
     spaceBetween: spaceBetween,
-    // navigation: {
-    //   nextEl: '.nroc-imgs-slide__swiper-button-next',
-    //   prevEl: '.nroc-imgs-slide__swiper-button-prev',
-    // },
+    navigation: {
+      nextEl: '.nroc-imgs-slide__swiper-button-next',
+      prevEl: '.nroc-imgs-slide__swiper-button-prev',
+    },
   });
 
   swiper.on('init', () => {
-    swiperBorder.style.width = 100 / (swiper.slides.length) + '%';
+    swiperBorder.style.width = 100 / (swiper.slides.length - slidesPerView) + '%';
     swiperCount.innerHTML = swiper.slides.length
   })
 
   swiper.on('progress', (swiper, progress) => {
-    const maxW = 100 - 100 / (swiper.slides.length)
+    const maxW = 100 - 100 / (swiper.slides.length - slidesPerView)
     swiperBorder.style.left = progress * maxW + '%';
   })
 
   swiper.on('activeIndexChange', (swiper, progress) => {
-    swiperCurrent.innerHTML = swiper.realIndex + 1;
+    swiperCurrent.innerHTML = swiper.realIndex + slidesPerView;
   })
 
   swiper.init();
+
+  swiperCurrent.innerHTML = slidesPerView;
 }
 
 document.addEventListener('DOMContentLoaded', () => {
