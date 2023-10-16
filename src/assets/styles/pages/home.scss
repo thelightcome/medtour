@@ -458,6 +458,12 @@
     @include mixin.sm-phone {
       margin-bottom: 2rem;
     }
+
+    span {
+      &:last-child {
+        color: var.$color3;
+      }
+    }
   }
 
   .form {
