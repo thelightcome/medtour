@@ -1,0 +1,87 @@
+{% extends "src/views/layouts/default.html" %}
+
+<!-- set variables used in layout -->
+{% set title="Городская детская больница № 2 акимата г. Астана" %}
+
+{% block styles %}
+<!-- load specific page style -->
+<link href="@styles/pages/clinic.scss" rel="stylesheet">
+{% endblock %}
+
+{% block scripts %}
+<!-- load specific page script -->
+<script src="@scripts/clinic.js"></script>
+{% endblock %}
+
+{% block content %}
+<section class="banner clinic__banner">
+  <div class="container">
+    <div class="banner__img">
+      <img src="@images/clinic/cchnur-sultan-banner.jpg" alt="">
+    </div>
+    <h1 class="banner-title gsap-reveal">Городская детская больница № 2 акимата г. Астана</h1>
+  </div>
+</section>
+<section class="clinic-page">
+  <div class="container">
+    <div class="clinic-page__content">
+      <div class="overlay about-clinic gsap-reveal">
+        <div class="row about-clinic__body">
+          <div class="about-clinic__content">
+            <p class="gsap-reveal" data-gsap-delay="300">Больница имеет 13 клинических и 8 параклинических отделений, а также приемный покой с экстренной хирургии и травматологическим пунктом; Мощность клиники составляет 350 коек стационара, из них 80% нагрузки несут хирургический профиль (280 из 350).</p>
+            <p class="gsap-reveal" data-gsap-delay="500">20% составляют соматические отделения такие как: неврология, отделение сложной соматики (профили: гастроэнтерологический, эндокринологический, пульмонологический, педиатрический, токсикологический, ревматологический). При больнице имеется консультативно-диагностический центр, который оказывает узко-специализированную помощь детям города до 500 посещений в день. Прием ведется по 25 детским специальностям, а также оказывается психолого-педагогическая коррекция (логопедами, дефектологами и психологами). Также, функционирует дневной стационар смешанного профиля на 40 коек: педиатрического и хирургического направления.</p>
+          </div>
+          <div class="overlay about-clinic__address">
+            <div class="about-clinic__address-item gsap-reveal" data-gsap-delay="550">
+              <div><img src="@images/icons/pin.svg" alt=""></div>
+              <div>Республика Казахстан г.Астана, ул. Р. Кошкарбаева, 64</div>
+            </div>
+            <div class="about-clinic__address-item gsap-reveal" data-gsap-delay="700">
+              <div><img src="@images/icons/phone.svg" alt=""></div>
+              <div>+7 (7172) 70-97-72 <br> +7 (7172) 70-97-39 <br> +7 701 589 66 31 (whatsapp)</div>
+            </div>
+            <div class="about-clinic__address-item gsap-reveal" data-gsap-delay="850">
+              <div><img src="@images/icons/e-mail.svg" alt=""></div>
+              <div><a href="mailto:gdb2astana@mail.ru">gdb2astana@mail.ruz</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="clinic-statistics">
+        <div class="clinic-statistics__col">
+          <div class="overlay clinic-statistics__item gsap-reveal">
+            <div class="clinic-statistics__num c1">25</div>
+            <div class="clinic-statistics__text">детских специальностей</div>
+          </div>
+          <div class="overlay clinic-statistics__item gsap-reveal">
+            <div class="clinic-statistics__num c1">350</div>
+            <div class="clinic-statistics__text">коек стационара</div>
+          </div>
+        </div>
+        <div class="clinic-statistics__col">
+          <div class="overlay clinic-statistics__item gsap-reveal">
+            <div class="clinic-statistics__num c1">13</div>
+            <div class="clinic-statistics__text">клинических отделений</div>
+          </div>
+          <div class="overlay clinic-statistics__item gsap-reveal">
+            <div class="clinic-statistics__num c1">8</div>
+            <div class="clinic-statistics__text">параклинических отделений</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="overlay clinic-block clinic-block--1 gsap-reveal">
+        <div class="clinic-block__content">
+          <div class="title-2 clinic-block__title">Услуги:</div>
+          <ul class="clinic-block__list">
+            <li class="clinic-block__item">специализированной и высокоспециализированной стационарной помощь. Медицинские направления: педиатрия, пульмонология, гастроэнтерология, ревматология, эндокринология, токсикология, неврология, оториноларингология, нейрохирургия, общая хирургия, травматология, ортопедия, офтальмология, урология и нефрология, ЧЛХ</li>
+            <li class="clinic-block__item">стационарозамещающей медицинской помощью</li>
+            <li class="clinic-block__item">оказывает экстренную неотложную медицинскую помощь при острых формах заболеваний и травмах</li>
+            <li class="clinic-block__item">предоставляет специализированную консультативно-диагностическую помощь детскому населению города</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+</section>
+{% endblock %}

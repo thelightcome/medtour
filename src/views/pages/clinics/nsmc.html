@@ -1,0 +1,257 @@
+{% extends "src/views/layouts/default.html" %}
+
+<!-- set variables used in layout -->
+{% set title="Национальный Научный Медицинский Центр" %}
+
+{% block styles %}
+<!-- load specific page style -->
+<link href="@styles/pages/clinic.scss" rel="stylesheet">
+{% endblock %}
+
+{% block scripts %}
+<!-- load specific page script -->
+<script src="@scripts/clinic.js"></script>
+{% endblock %}
+
+{% block content %}
+<section class="banner clinic__banner">
+  <div class="container">
+    <div class="banner__img">
+      <img src="@images/clinic/nsmc-banner.jpg" alt="">
+    </div>
+    <h1 class="banner-title gsap-reveal">Национальный Научный Медицинский Центр</h1>
+  </div>
+</section>
+<section class="clinic-page">
+  <div class="container">
+    <div class="clinic-page__content">
+      <div class="overlay about-clinic gsap-reveal">
+        <div class="row about-clinic__body">
+          <div class="about-clinic__content">
+            <p class="gsap-reveal" data-gsap-delay="300">ННМЦ – единственный Центр в Центральной Азии, получивший разрешение на применение в клинике стволовых клеток. <br> В центре открыта казахстанско-американская лаборатория по трансплантации стволовых клеток с криобанком. С 2012 года в центре выполняются операции по трансплантации органов и клеток, решением FDA наш центр был внесен в базу безопасных клиник для проведения международных исследований. В июне 2010 г. центр сертифицирован на уровень «Признанное совершенство — 4 звезды», а в ноябре 2012 г. — на уровень «Признанное совершенство — 5 звезд» модели EFQM.</p>
+          </div>
+          <div class="overlay about-clinic__address">
+            <div class="about-clinic__address-item gsap-reveal" data-gsap-delay="550">
+              <div><img src="@images/icons/pin.svg" alt=""></div>
+              <div>Казахстан, г.Астана, пр. Абылайхана 42</div>
+            </div>
+            <div class="about-clinic__address-item gsap-reveal" data-gsap-delay="700">
+              <div><img src="@images/icons/phone.svg" alt=""></div>
+              <div>+7 (7172) 57-76-64 <br> +7 (7172) 57-78-23 <br> +7 (7172) 57-74-40;</div>
+            </div>
+            <div class="about-clinic__address-item gsap-reveal" data-gsap-delay="850">
+              <div><img src="@images/icons/e-mail.svg" alt=""></div>
+              <div><a href="mailto:national_clinic@nnmc.kz">national_clinic@nnmc.kz</a></div>
+            </div>
+            <div class="about-clinic__address-item gsap-reveal" data-gsap-delay="1000">
+              <div><img src="@images/icons/globe.svg" alt=""></div>
+              <div><a href="https://www.nnmc.kz/">www.nnmc.kz</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="overlay clinic-block gsap-reveal" style="margin-bottom: 60px;">
+        <div class="clinic-block__content">
+          <p class="gsap-reveal">ННМЦ – это многопрофильный Центр, включенный в первую десятку образцовых 
+            клиник Европы с дипломом «Лучшее предприятие Европы в области медицины», штаб-квартира Евро-Азиатского респираторного общества. ННМЦ осуществляет сотрудничество с Американским агентством аэрокосмических исследований NASA. Клиника ННМЦ – ведущий сертифицированный центр уровня «Признанное совершенство» Европейской организации менеджмента качества (EFQM). <br>
+            Центр развивает наиболее актуальные направления здравоохранения и медицинской науки Казахстана: клеточные технологии, кардиологию, кардиохирургию и аритмологию, респираторную медицину, решает сложные проблемы клиники 
+            внутренних болезней и хирургии.</p>
+        </div>
+      </div>
+
+      <div class="overlay clinic-block clinic-block--1 gsap-reveal">
+        <div class="clinic-block__content">
+          <div class="title-2 clinic-block__title">НАПРАВЛЕНИЯ</div>
+          <p>Центр клеточных технологий и трансплантации</p>
+          <ul class="clinic-block__list">
+            <li class="clinic-block__item">трансплантации гепатоцитов</li>
+            <li class="clinic-block__item">клеток поджелудочной железы</li>
+            <li class="clinic-block__item">хондроцитов</li>
+            <li class="clinic-block__item">нейроцитов</li>
+            <li class="clinic-block__item">медиаторов</li>
+            <li class="clinic-block__item">нейромедиаторов</li>
+            <li class="clinic-block__item">фибробластов</li>
+            <li class="clinic-block__item">клеток почек для лечения печеночной недостаточной</li>
+            <li class="clinic-block__item">циррозов печени</li>
+            <li class="clinic-block__item">сахарного диабета</li>
+            <li class="clinic-block__item">различных нефропатий и почечной недостаточности</li>
+            <li class="clinic-block__item">при недостаточности функции щитовидной железы</li>
+            <li class="clinic-block__item">при болезни Альцгеймера</li>
+            <li class="clinic-block__item">болезни Паркинсона</li>
+            <li class="clinic-block__item">в реабилитационном периоде спинальных травм;
+              при состояниях после ОНМК</li>
+            <li class="clinic-block__item">при различных кардиомиопатиях</li>
+            <li class="clinic-block__item">длительно не заживающих трофических язвах</li>
+            <li class="clinic-block__item">при системной склеродермии</li>
+            <li class="clinic-block__item">СКВ</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="overlay clinic-block clinic-block--1 gsap-reveal">
+        <div class="clinic-block__content">
+          <div class="title-2 clinic-block__title">Отдел HIFU терапии и ультразвуковой </div>
+          <ul class="clinic-block__list">
+            <li class="clinic-block__item">феброаденомы молочных желез и матки</li>
+            <li class="clinic-block__item">рака молочных желез, опухолей и кист печени (первичный 
+              рак печени, метастазы в печени, эхинококкоз, альвеококкоз)</li>
+            <li class="clinic-block__item">доброкачественных и злокачественных опухолей поджулудочной железы и почек</li>
+            <li class="clinic-block__item">остеои миелосаркомы конечностей (рак мягких тканей и 
+              костей конечностей)</li>
+          </ul>
+          <p>Отдел интервенционной кардиологии и эндоваскулярной рентгенхирургии</p>
+          <ul class="clinic-block__list">
+            <li class="clinic-block__item">взрослая и детская кардиохирургия</li>
+            <li class="clinic-block__item">урология</li>
+            <li class="clinic-block__item">хирургия и онкология</li>
+            <li class="clinic-block__item">аритмология</li>
+            <li class="clinic-block__item">кардиология</li>
+            <li class="clinic-block__item">гинекология</li>
+            <li class="clinic-block__item">нifu терапия и ультразвуковая визуализация</li>
+            <li class="clinic-block__item">этерапия и соматика</li>
+            <li class="clinic-block__item">эинтервенционная кардиология</li>
+            <li class="clinic-block__item">экардиология</li>
+            <li class="clinic-block__item">экстракорпоральная гемокоррекция</li>
+          </ul>
+          <p>Management (EFQM)</p>
+        </div>
+      </div>
+
+      <div class="doctors nroc">
+        <div class="title-2 doctors__title gsap-reveal">Врачи</div>
+        <div class="doctors__list">
+          <div class="overlay doctor gsap-reveal" data-gsap-delay="300">
+            <div class="doctor__img">
+              <img src="@images/clinic/clinic-nsmc-1.jpg" alt="">
+            </div>
+            <div class="doctor__title">Альбазаров Адильжан Бауржанович</div>
+            <div class="doctor__text" style="max-width: 500px;">Руководитель кардиохирургического отдела. <br> Кандидат медицинских наук.</div>
+            <button class="doctor__btn" data-id="1">Подробнее <img src="@images/icons/small-white-icon.svg"
+                alt=""></button>
+          </div>
+          <div class="overlay doctor gsap-reveal" data-gsap-delay="500">
+            <div class="doctor__img">
+              <img src="@images/clinic/clinic-nsmc-2.jpg" alt="">
+            </div>
+            <div class="doctor__title">Аскаров Манарбек Бапович</div>
+            <div class="doctor__text">Руководитель центра клеточных технологий и трансплантации.</div>
+            <button class="doctor__btn" data-id="2">Подробнее <img src="@images/icons/small-white-icon.svg"
+                alt=""></button>
+          </div>
+          <div class="overlay doctor gsap-reveal" data-gsap-delay="500">
+            <div class="doctor__img">
+              <img src="@images/clinic/clinic-nsmc-3.jpg" alt="">
+            </div>
+            <div class="doctor__title">Кабаев Улан Темиржанович</div>
+            <div class="doctor__text">Руководитель аритмологического отдела</div>
+            <button class="doctor__btn" data-id="3">Подробнее <img src="@images/icons/small-white-icon.svg"
+                alt=""></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" data-id="1">
+        <div class="modal__overlay">
+          <div class="overlay modal__content doctor-info">
+            <button class="btn modal__close" data-id="1">
+              <img src="@images/icons/close-modal.svg" alt="">
+            </button>
+            <div class="doctor-info__header">
+              <div class="doctor-info__img">
+                <img src="@images/clinic/clinic-nsmc-1.jpg" alt="">
+              </div>
+              <div class="doctor-info__data">
+                <div class="doctor-info__name">Альбазаров Адильжан Бауржанович</div>
+                <div class="doctor-info__text">Руководитель кардиохирургического отдела. <br> Кандидат медицинских наук.</div>
+              </div>
+            </div>
+            <div class="doctor-info__body">
+              <p>Стаж работы – более 20 лет. </p>
+              <p>Проводит оперции по открытой реконструкции клапанов сердца:</p>
+              <ul>
+                <li>аортального клапана</li>
+                <li>митрального клапана</li>
+                <li>клапана легочного ствола</li>
+                <li>трехстворчатого клапана</li>
+              </ul>
+              <p>Замене сердечного клапана:</p>
+              <ul>
+                <li>замена аортального клапана с использованием биологического протеза</li>
+                <li>замена митрального клапана с использованием тканевого трансплантата</li>
+                <li>замена трехстворчатого клапана с использованием тканевого трансплантата</li>
+                <li>замена легочного клапана с использованием тканевого трансплантата</li>
+              </ul>
+              <p>Устранение дефекта межпредсердной и межжелудочковой перегородки с помощью протеза и других материалов</p>
+              <ul>
+                <li>удаление новообразований органов средостения и сердца</li>
+                <li>удаление кисты органов средостения и сердца</li>
+                <li>обходной анастомоз в целях реваскуляризации сердца</li>
+                <li>аортокоронарное шунтирование одной, двух, трех, четырех и более коронарной артерии</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" data-id="2">
+        <div class="modal__overlay">
+          <div class="overlay modal__content doctor-info">
+            <button class="btn modal__close" data-id="2">
+              <img src="@images/icons/close-modal.svg" alt="">
+            </button>
+            <div class="doctor-info__header">
+              <div class="doctor-info__img">
+                <img src="@images/clinic/clinic-nsmc-2.jpg" alt="">
+              </div>
+              <div class="doctor-info__data">
+                <div class="doctor-info__name">Аскаров Манарбек Бапович</div>
+                <div class="doctor-info__text">Руководитель центра клеточных технологий и трансплантации.</div>
+              </div>
+            </div>
+            <div class="doctor-info__body">
+              <p>Доктор медицинских наук. <br> Стаж работы – более 30 лет.</p>
+              <p>Проводит:</p>
+              <ul>
+                <li>аутогенную трансплантацию гемопоэтических стволовых клеток костного мозга</li>
+                <li>аутогенную трансплантацию мезенхимальных стволовых клеток костного мозга</li>
+                <li>трансплантацию фетальных клеток (тиреоциты, гепатоциты, хондроциты, клетки поджелудочной железы, нефроциты, нейроциты, фибробласты)</li>
+                <li>трансплантацию фетальных медиаторов (нейромедиаторы и медиаторы фетальных гепатоцитов)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" data-id="3">
+        <div class="modal__overlay">
+          <div class="overlay modal__content doctor-info">
+            <button class="btn modal__close" data-id="3">
+              <img src="@images/icons/close-modal.svg" alt="">
+            </button>
+            <div class="doctor-info__header">
+              <div class="doctor-info__img">
+                <img src="@images/clinic/clinic-nsmc-3.jpg" alt="">
+              </div>
+              <div class="doctor-info__data">
+                <div class="doctor-info__name">Кабаев Улан Темиржанович</div>
+                <div class="doctor-info__text">Руководитель аритмологического отдела</div>
+              </div>
+            </div>
+            <div class="doctor-info__body">
+              <p>Доктор медицинских наук. <br> Стаж работы – более 30 лет.</p>
+              <p>Проводит операции по:</p>
+              <ul>
+                <li>имплантация CRT и ICD</li>
+                <li>ЭКС</li>
+                <li>РЧА</li>
+                <li>криоабляция</li>
+                <li>имплантция окклюдера ложка левого предсердия</li>
+                <li>замена электровдов</li>
+                <li>смена ЭКС</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+{% endblock %}
